@@ -39,6 +39,7 @@ public class RangedWeaponHandler : WeaponHandlerBase
         var bullet = Instantiate(weapon.BulletPrefab, firePoint.position, firePoint.rotation);
 
         bullet.Init(weapon, firePoint.up, layerDamage);
+        AudioController.Instance?.PlayPlayerHit();
         
         _currentAmmo--;
     }

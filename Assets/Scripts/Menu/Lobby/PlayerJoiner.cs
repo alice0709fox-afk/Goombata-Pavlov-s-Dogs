@@ -8,6 +8,14 @@ using UnityEngine.InputSystem.Utilities;
 
 public class PlayerJoiner : MonoBehaviour
 {
+    private sealed class RespawnRequest
+    {
+        public string ControlSchemeName;
+        public readonly List<InputDevice> Devices = new List<InputDevice>();
+    }
+
+    private static readonly List<RespawnRequest> PendingRespawnRequests = new List<RespawnRequest>();
+
     [SerializeField] private PlayerInput playerPrefab;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private int maxPlayers = 6;
@@ -20,6 +28,57 @@ public class PlayerJoiner : MonoBehaviour
     private bool _isLocked;
     
     private IDisposable _anyButtonSubscription;
+
+    public static void CaptureCurrentPlayersForRespawn()
+    {
+        PendingRespawnRequests.Clear();
+
+        var players = FindObjectsByType<PlayerInput>(FindObjectsSortMode.None);
+        for (var playerIndex = 0; playerIndex < players.Length; playerIndex++)
+        {
+            var player = players[playerIndex];
+            if (player == null)
+            {
+                continue;
+            }
+
+            var request = new RespawnRequest
+            {
+                ControlSchemeName = !string.IsNullOrWhiteSpace(player.currentControlScheme)
+                    ? player.currentControlScheme
+                    : player.defaultControlScheme
+            };
+
+            for (var deviceIndex = 0; deviceIndex < player.user.pairedDevices.Count; deviceIndex++)
+            {
+                var device = player.user.pairedDevices[deviceIndex];
+                if (device != null && !request.Devices.Contains(device))
+                {
+                    request.Devices.Add(device);
+                }
+            }
+
+            if (request.Devices.Count == 0)
+            {
+                var devices = player.devices;
+                for (var deviceIndex = 0; deviceIndex < devices.Count; deviceIndex++)
+                {
+                    var device = devices[deviceIndex];
+                    if (device != null && !request.Devices.Contains(device))
+                    {
+                        request.Devices.Add(device);
+                    }
+                }
+            }
+
+            PendingRespawnRequests.Add(request);
+        }
+    }
+
+    public static void ClearPendingRespawn()
+    {
+        PendingRespawnRequests.Clear();
+    }
  
     private void OnEnable()
     {
@@ -35,14 +94,20 @@ public class PlayerJoiner : MonoBehaviour
             return;
         }
 
-        if (disableWhenPlayerAlreadyExists)
+        RegisterExistingPlayers();
+
+        var spawnedPendingPlayers = false;
+        if (_players.Count == 0)
         {
-            var existingPlayers = FindObjectsByType<PlayerInput>(FindObjectsSortMode.None);
-            if (existingPlayers.Length > 0)
+            spawnedPendingPlayers = TrySpawnPendingPlayers();
+            if (!spawnedPendingPlayers)
             {
-                Debug.Log("PlayerJoiner: Existing player detected, joiner will not spawn another player.", this);
-                return;
+                TrySpawnPreferredPlayer();
             }
+        }
+        else if (disableWhenPlayerAlreadyExists)
+        {
+            Debug.Log("PlayerJoiner: Existing player detected, joiner will reuse it instead of spawning another player.", this);
         }
 
         _anyButtonSubscription = InputSystem.onAnyButtonPress.Call(OnAnyButtonPressed);
@@ -60,6 +125,12 @@ public class PlayerJoiner : MonoBehaviour
         if(_isLocked) return;
 
         var device = control.device;
+
+        if (_players.Count > 0)
+        {
+            SwitchExistingPlayerToDevice(device);
+            return;
+        }
         
         if(_devices.Contains(device)) return;
         if(_playerCount >= maxPlayers) return;
@@ -80,10 +151,178 @@ public class PlayerJoiner : MonoBehaviour
             return;
         }
         
-        SpawnPlayer(device, schemeName, hasScheme);
+        SpawnPlayer(new[] { device }, schemeName, hasScheme);
     }
 
-    private void SpawnPlayer(InputDevice device, string schemeName, bool hasScheme)
+    private void RegisterExistingPlayers()
+    {
+        _players.Clear();
+        _devices.Clear();
+
+        var existingPlayers = FindObjectsByType<PlayerInput>(FindObjectsSortMode.None);
+        for (var playerIndex = 0; playerIndex < existingPlayers.Length; playerIndex++)
+        {
+            var player = existingPlayers[playerIndex];
+            if (player == null)
+            {
+                continue;
+            }
+
+            _players.Add(player);
+
+            var devices = player.devices;
+            for (var deviceIndex = 0; deviceIndex < devices.Count; deviceIndex++)
+            {
+                var device = devices[deviceIndex];
+                if (device != null && !_devices.Contains(device))
+                {
+                    _devices.Add(device);
+                }
+            }
+        }
+
+        _playerCount = _players.Count;
+    }
+
+    private void SwitchExistingPlayerToDevice(InputDevice device)
+    {
+        if (device == null)
+        {
+            return;
+        }
+
+        var player = _players.FirstOrDefault(playerInput => playerInput != null);
+        if (player == null)
+        {
+            RegisterExistingPlayers();
+            player = _players.FirstOrDefault(playerInput => playerInput != null);
+            if (player == null)
+            {
+                return;
+            }
+        }
+
+        if (!TryGetControlScheme(device, out var controlScheme))
+        {
+            return;
+        }
+
+        var schemeName = controlScheme.bindingGroup;
+        var schemeDevices = BuildDevicesForScheme(device, schemeName);
+        if (schemeDevices.Count == 0)
+        {
+            return;
+        }
+
+        player.defaultControlScheme = schemeName;
+        player.SwitchCurrentControlScheme(schemeName, schemeDevices.ToArray());
+        player.ActivateInput();
+        GameSettings.PreferredControlScheme = schemeName;
+
+        for (var deviceIndex = 0; deviceIndex < schemeDevices.Count; deviceIndex++)
+        {
+            var pairedDevice = schemeDevices[deviceIndex];
+            if (!_devices.Contains(pairedDevice))
+            {
+                _devices.Add(pairedDevice);
+            }
+        }
+    }
+
+    private static List<InputDevice> BuildDevicesForScheme(InputDevice triggerDevice, string schemeName)
+    {
+        var devices = new List<InputDevice>();
+        if (string.Equals(schemeName, "Keyboard", StringComparison.OrdinalIgnoreCase))
+        {
+            if (Keyboard.current != null)
+            {
+                devices.Add(Keyboard.current);
+            }
+
+            if (Mouse.current != null)
+            {
+                devices.Add(Mouse.current);
+            }
+
+            if (devices.Count == 0 && triggerDevice != null)
+            {
+                devices.Add(triggerDevice);
+            }
+
+            return devices;
+        }
+
+        if (triggerDevice != null)
+        {
+            devices.Add(triggerDevice);
+        }
+
+        return devices;
+    }
+
+    private bool TrySpawnPendingPlayers()
+    {
+        if (PendingRespawnRequests.Count == 0)
+        {
+            return false;
+        }
+
+        for (var index = 0; index < PendingRespawnRequests.Count; index++)
+        {
+            var request = PendingRespawnRequests[index];
+            if (request == null || request.Devices.Count == 0)
+            {
+                continue;
+            }
+
+            SpawnPlayer(request.Devices, request.ControlSchemeName, !string.IsNullOrWhiteSpace(request.ControlSchemeName));
+        }
+
+        PendingRespawnRequests.Clear();
+        return true;
+    }
+
+    private void TrySpawnPreferredPlayer()
+    {
+        if (_playerCount > 0)
+        {
+            return;
+        }
+
+        var preferredScheme = GameSettings.PreferredControlScheme;
+        if (string.Equals(preferredScheme, "Gamepad", StringComparison.OrdinalIgnoreCase))
+        {
+            if (GamepadUiNavigation.TryGetActiveGamepad(out var gamepad))
+            {
+                SpawnPlayer(new InputDevice[] { gamepad }, "Gamepad", hasScheme: true);
+                return;
+            }
+        }
+
+        var keyboardDevices = new List<InputDevice>();
+        if (Keyboard.current != null)
+        {
+            keyboardDevices.Add(Keyboard.current);
+        }
+
+        if (Mouse.current != null)
+        {
+            keyboardDevices.Add(Mouse.current);
+        }
+
+        if (keyboardDevices.Count > 0)
+        {
+            SpawnPlayer(keyboardDevices, "Keyboard", hasScheme: true);
+            return;
+        }
+
+        if (GamepadUiNavigation.TryGetActiveGamepad(out var fallbackGamepad))
+        {
+            SpawnPlayer(new InputDevice[] { fallbackGamepad }, "Gamepad", hasScheme: true);
+        }
+    }
+
+    private void SpawnPlayer(IReadOnlyList<InputDevice> devices, string schemeName, bool hasScheme)
     {
         if (_playerCount >= spawnPoints.Length)
         {
@@ -108,24 +347,59 @@ public class PlayerJoiner : MonoBehaviour
 
         DontDestroyOnLoad(player.gameObject);
         PlayerSpawnHelper.StabilizeAfterSpawn(player.transform);
-        
-        if (hasScheme)
+
+        if (devices != null)
         {
-            InputUser.PerformPairingWithDevice(device, playerInput.user);
+            for (var deviceIndex = 0; deviceIndex < devices.Count; deviceIndex++)
+            {
+                var device = devices[deviceIndex];
+                if (device == null)
+                {
+                    continue;
+                }
+
+                InputUser.PerformPairingWithDevice(device, playerInput.user);
+
+                if (!_devices.Contains(device))
+                {
+                    _devices.Add(device);
+                }
+            }
         }
-        else
+
+        if ((devices == null || devices.Count == 0) && !hasScheme)
         {
-            Debug.LogWarning("PlayerJoiner: Control scheme not found for device, player spawned without explicit pairing.", this);
+            Debug.LogWarning("PlayerJoiner: Respawned player has no paired devices.", this);
         }
-        
-        _devices.Add(device);
+
         _players.Add(playerInput);
         _playerCount++;
         
         if (hasScheme && !string.IsNullOrEmpty(schemeName))
         {
             playerInput.defaultControlScheme = schemeName;
+
+            var pairedDevices = new List<InputDevice>();
+            if (devices != null)
+            {
+                for (var deviceIndex = 0; deviceIndex < devices.Count; deviceIndex++)
+                {
+                    var device = devices[deviceIndex];
+                    if (device != null)
+                    {
+                        pairedDevices.Add(device);
+                    }
+                }
+            }
+
+            if (pairedDevices.Count > 0)
+            {
+                playerInput.SwitchCurrentControlScheme(schemeName, pairedDevices.ToArray());
+            }
+
+            GameSettings.PreferredControlScheme = schemeName;
         }
+
         playerInput.ActivateInput();
     }
 

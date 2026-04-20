@@ -78,17 +78,23 @@ public class MeleeWeaponHandler : WeaponHandlerBase
             return;
         }
 
-        var targets = Physics2D.OverlapCircle(pivotRadius.position, radiusDamage, layerDamage);
+        AudioController.Instance?.PlayPlayerHit();
 
-        if (targets != null)
+        var targets = layerDamage.value == 0
+            ? Physics2D.OverlapCircleAll(pivotRadius.position, radiusDamage)
+            : Physics2D.OverlapCircleAll(pivotRadius.position, radiusDamage, layerDamage);
+
+        foreach (var target in targets)
         {
-            // if(targets.TryGetComponent())
-            // {
-            //     //DAMAGE
-            // }
+            if (target == null)
+                continue;
+
+            if (target.TryGetComponent<EnemyController>(out var enemy))
+                enemy.TakeDamage(weapon.Damage);
+            else if (target.GetComponentInParent<EnemyController>() is { } parentEnemy)
+                parentEnemy.TakeDamage(weapon.Damage);
         }
         
-        Debug.Log("Damage");
     }
 
     private bool HasRequiredReferences()

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class Dialogue : MonoBehaviour
 {
@@ -87,7 +88,7 @@ public class Dialogue : MonoBehaviour
     {
         if(!started)
             return;
-        if(waitForNext && Input.GetKeyDown(KeyCode.E))
+    if(waitForNext && WasInteractPressedThisFrame())
         {
            waitForNext = false;
            index++;
@@ -102,4 +103,14 @@ public class Dialogue : MonoBehaviour
            
         }
     }
+
+        private static bool WasInteractPressedThisFrame()
+        {
+          if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+          {
+            return true;
+          }
+
+          return GamepadUiNavigation.TryGetActiveGamepad(out var gamepad) && gamepad.buttonWest.wasPressedThisFrame;
+        }
 }

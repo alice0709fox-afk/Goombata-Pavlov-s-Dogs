@@ -7,14 +7,20 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private WeaponHandlerBase weapon;
     [SerializeField] private GroundChecker groundChecker;
+    [SerializeField] private RuntimeAnimatorController deathController;
 
     private Vector3 _startScale;
+    private bool _isWeaponSubscribed;
+    private bool _isDead;
+    private RuntimeAnimatorController _defaultController;
     
     private const string NameAnimationWalk = "Walk";
     private const string NameAnimationRun = "Run";
     private const string NameAnimationAttack = "Attack";
     private const string NameAnimationJump = "Jump";
-    private bool _isWeaponSubscribed;
+    private const string NameAnimationHurt = "Hurt";
+    private const string NameAnimationDead = "Dead";
+    private const string DeadStatePath = "Base Layer.Gangster_2 Dead";
 
     private void Start()
     {
@@ -46,6 +52,11 @@ public class PlayerAnimator : MonoBehaviour
         {
             groundChecker.CheckGround();
         }
+
+        if (animator != null)
+        {
+            _defaultController = animator.runtimeAnimatorController;
+        }
     }
 
     private void OnDestroy()
@@ -58,6 +69,9 @@ public class PlayerAnimator : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_isDead)
+            return;
+
         MoveAnimation();
         JumpAnimation();
         Flip();
@@ -81,7 +95,6 @@ public class PlayerAnimator : MonoBehaviour
         animator.SetBool(NameAnimationRun, movement.MoveInput.x != 0 && movement.RunningPressed);
     }
 
-
     private void JumpAnimation()
     {
         if (animator == null || groundChecker == null) return;
@@ -91,8 +104,45 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Attack(bool isAttacking)
     {
-        if (animator == null) return;
+        if (animator == null || _isDead) return;
 
         animator.SetBool(NameAnimationAttack, isAttacking);
+    }
+
+    public void PlayHurt()
+    {
+        if (animator == null || _isDead)
+            return;
+
+        animator.ResetTrigger(NameAnimationHurt);
+        animator.SetTrigger(NameAnimationHurt);
+    }
+
+    public void PlayDeath()
+    {
+        if (animator == null || _isDead)
+            return;
+
+        _isDead = true;
+
+        animator.SetBool(NameAnimationWalk, false);
+        animator.SetBool(NameAnimationRun, false);
+        animator.SetBool(NameAnimationJump, false);
+        animator.SetBool(NameAnimationAttack, false);
+        animator.ResetTrigger(NameAnimationHurt);
+
+        animator.speed = 1f;
+
+        if (deathController != null)
+        {
+            animator.runtimeAnimatorController = deathController;
+            animator.Rebind();
+            animator.Update(0f);
+            animator.Play(DeadStatePath, 0, 0f);
+            return;
+        }
+
+        animator.SetBool(NameAnimationDead, true);
+        animator.CrossFadeInFixedTime(DeadStatePath, 0f, 0, 0f);
     }
 }

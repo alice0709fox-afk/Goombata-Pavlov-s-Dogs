@@ -55,13 +55,13 @@ public class Bullet : MonoBehaviour
         if ((passThroughLayers.value & (1 << other.gameObject.layer)) != 0)
             return;
         
-        if((_layerDamage.value & (1 << other.gameObject.layer)) == 0)
+        if(_layerDamage.value != 0 && (_layerDamage.value & (1 << other.gameObject.layer)) == 0)
             return;
         
-        // if(other.gameObject.TryGetComponent())
-        // {
-        //     //DAMAGE
-        // }
+        if (other.TryGetComponent<EnemyController>(out var enemy))
+            enemy.TakeDamage(_damage);
+        else if (other.GetComponentInParent<EnemyController>() is { } parentEnemy)
+            parentEnemy.TakeDamage(_damage);
         
         StopAllCoroutines();
         Kill();

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -27,10 +28,20 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update()
     {
-         if(playerDetected && Input.GetKeyDown(KeyCode.E))
+         if(playerDetected && WasInteractPressedThisFrame())
         {
             dialogueScript.StartDialogue();
         
         }
+    }
+
+    private static bool WasInteractPressedThisFrame()
+    {
+        if (Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            return true;
+        }
+
+        return GamepadUiNavigation.TryGetActiveGamepad(out var gamepad) && gamepad.buttonWest.wasPressedThisFrame;
     }
 }

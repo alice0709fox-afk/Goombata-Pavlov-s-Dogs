@@ -18,6 +18,8 @@ public class PlayerAttackHandler : MonoBehaviour
             return;
         }
 
+        ResolveWeapon();
+
         _input.OnAttackPressed += SetStateAttack;
     }
 
@@ -31,6 +33,8 @@ public class PlayerAttackHandler : MonoBehaviour
 
     private void SetStateAttack(bool isAttacking)
     {
+        ResolveWeapon();
+
         if (weapon == null)
         {
             if (!_missingWeaponLogged)
@@ -42,5 +46,21 @@ public class PlayerAttackHandler : MonoBehaviour
         }
 
         weapon.SetStateAttack(isAttacking);
+    }
+
+    private void ResolveWeapon()
+    {
+        if (weapon != null)
+        {
+            _missingWeaponLogged = false;
+            return;
+        }
+
+        weapon = GetComponent<WeaponHandlerBase>();
+        if (weapon == null)
+            weapon = GetComponentInChildren<WeaponHandlerBase>(true);
+
+        if (weapon != null)
+            _missingWeaponLogged = false;
     }
 }
