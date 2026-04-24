@@ -11,6 +11,8 @@ public class Dialogue : MonoBehaviour
   public TMP_Text dialogueText;
   public List<string> dialogues;
   public float writingSpeed;
+  [SerializeField] private GameObject transitionObjectOnEnd;
+  [SerializeField] private GameObject triggerObjectOnEnd;
   [SerializeField] private string sceneToLoadOnEnd;
     [SerializeField] private string sceneSpawnPointName = "TargetSpawnPointName";
   private int index;
@@ -22,6 +24,16 @@ public class Dialogue : MonoBehaviour
     {
         ToggleIndicator(false);
         ToggleWindow(false);
+
+        if (transitionObjectOnEnd != null)
+        {
+            transitionObjectOnEnd.SetActive(false);
+        }
+
+        if (triggerObjectOnEnd != null)
+        {
+            triggerObjectOnEnd.SetActive(false);
+        }
     }
 
     private void ToggleWindow(bool show)
@@ -59,6 +71,16 @@ public class Dialogue : MonoBehaviour
     {
         ToggleWindow(false);
         waitForNext = false;
+
+        if (transitionObjectOnEnd != null)
+        {
+            transitionObjectOnEnd.SetActive(true);
+        }
+
+        if (triggerObjectOnEnd != null)
+        {
+            triggerObjectOnEnd.SetActive(true);
+        }
 
         if (!string.IsNullOrWhiteSpace(sceneToLoadOnEnd))
         {

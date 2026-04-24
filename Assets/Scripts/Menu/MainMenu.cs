@@ -19,6 +19,8 @@ public class MainMenu : MonoBehaviour
     private const string HardButtonName = "Hard";
     private const string MusicSliderName = "Slider";
 
+    [SerializeField] private bool playIntroCutsceneOnNewGame = true;
+    [SerializeField] private string introSceneName = "3_Intro";
     [SerializeField] private string levelSceneName = "Level_0";
     [SerializeField] private AudioClip newGameShotSfx;
     [SerializeField] [Range(0f, 1f)] private float shotVolume = 1f;
@@ -162,7 +164,14 @@ public class MainMenu : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
 
-        SceneTransitionManager.Instance.LoadScene(levelSceneName);
+        var transitionManager = SceneTransitionManager.Instance;
+        if (playIntroCutsceneOnNewGame && !string.IsNullOrWhiteSpace(introSceneName))
+        {
+            transitionManager.LoadSceneWithoutSpawn(introSceneName);
+            yield break;
+        }
+
+        transitionManager.LoadScene(levelSceneName);
     }
 
     public void OpenOptionsPanel()
