@@ -191,11 +191,6 @@ public class DeathScreenManager : MonoBehaviour
             _scenePanelRoot.SetActive(visible);
         }
 
-        if (_sceneCanvas != null)
-        {
-            _sceneCanvas.enabled = visible;
-        }
-
         if (_sceneCanvasRect != null && _sceneCanvasRect.localScale == Vector3.zero)
         {
             _sceneCanvasRect.localScale = Vector3.one;
@@ -303,7 +298,13 @@ public class DeathScreenManager : MonoBehaviour
             return false;
         }
 
-        return !sceneName.Contains("Loading");
+        if (sceneName.Contains("Intro"))
+        {
+            return false;
+        }
+
+        return sceneName.StartsWith("Level_", System.StringComparison.OrdinalIgnoreCase)
+            || sceneName.ToLowerInvariant().Contains("boss");
     }
 
     private void EnsureEventSystem()

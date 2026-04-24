@@ -39,6 +39,7 @@ public class EnemyController : MonoBehaviour
     public float CurrentHealth => _currentHealth;
     public float MaxHealth => maxHealth;
     public bool IsDead => _isDead;
+    public float DeathPresentationDuration => GetDeathAnimationDuration() + Mathf.Max(0f, destroyDelay);
 
     public event System.Action Died;
 
@@ -173,6 +174,7 @@ public class EnemyController : MonoBehaviour
 
         Died?.Invoke();
         AnyEnemyDied?.Invoke(this);
+        BossVictoryPanelManager.NotifyEnemyDied(this);
 
         _deactivateRoutine = StartCoroutine(DeactivateAfterDeath());
     }

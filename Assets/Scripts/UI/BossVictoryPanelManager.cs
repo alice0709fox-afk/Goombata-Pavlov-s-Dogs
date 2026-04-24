@@ -10,6 +10,7 @@ public class BossVictoryPanelManager : MonoBehaviour
     private static BossVictoryPanelManager _instance;
 
     [Header("Panel Binding")]
+    [SerializeField] private Canvas victoryCanvas;
     [SerializeField] private GameObject victoryPanelRoot;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text timeText;
@@ -19,18 +20,17 @@ public class BossVictoryPanelManager : MonoBehaviour
     [SerializeField] private string scorePrefix = "";
     [SerializeField] private string timePrefix = "";
 
-    [Header("Auto Find Name Hints")]
-    [SerializeField] private string[] panelNameHints = { "panel", "victory", "win", "pobeda", "panelwin", "panelvictory" };
-    [SerializeField] private string[] scoreNameHints = { "scorevalue", "pointsvalue", "glasses", "scoresum", "resultscore" };
-    [SerializeField] private string[] timeNameHints = { "timevalue", "timeresult", "timer_value", "resulttime" };
-    [SerializeField] private string[] nextButtonNameHints = { "next", "dalee", "continue" };
-
     [Header("Button Action")]
     [SerializeField] private UnityEvent onNextClicked;
 
+    [Header("Show Delay")]
+    [SerializeField, Min(0f)] private float extraShowDelay = 0f;
+
     private bool _isVisible;
+    private bool _showPending;
     private float _elapsedAtVictory;
     private Scene _boundScene;
+    private Coroutine _showRoutine;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Bootstrap()
@@ -70,12 +70,18 @@ public class BossVictoryPanelManager : MonoBehaviour
 
     private void Start()
     {
+        if (!IsBossScene(SceneManager.GetActiveScene()))
+            return;
+
         ResolveBindings(SceneManager.GetActiveScene());
         SetPanelVisible(false);
     }
 
     private void Update()
     {
+        if (!IsBossScene(SceneManager.GetActiveScene()))
+            return;
+
         if (_isVisible)
             return;
 
@@ -91,19 +97,99 @@ public class BossVictoryPanelManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         ResetBindings();
+
+        if (!IsBossScene(scene))
+            return;
+
         ResolveBindings(scene);
         SetPanelVisible(false);
     }
 
     private void OnAnyEnemyDied(EnemyController enemy)
     {
-        if (_isVisible || enemy == null)
+        HandleEnemyDied(enemy);
+    }
+
+    public static void NotifyEnemyDied(EnemyController enemy)
+    {
+        EnsureInstance();
+        _instance?.HandleEnemyDied(enemy);
+    }
+
+    private static void EnsureInstance()
+    {
+        if (_instance != null)
             return;
 
-        if (enemy.GetComponent<BossController>() == null)
+        _instance = FindFirstObjectByType<BossVictoryPanelManager>();
+        if (_instance != null)
             return;
+
+        var host = new GameObject(nameof(BossVictoryPanelManager));
+        _instance = host.AddComponent<BossVictoryPanelManager>();
+        DontDestroyOnLoad(host);
+    }
+
+    private void HandleEnemyDied(EnemyController enemy)
+    {
+        if (!IsBossScene(SceneManager.GetActiveScene()))
+            return;
+
+        if (_isVisible || _showPending || enemy == null)
+            return;
+
+        if (!IsBossEnemy(enemy))
+            return;
+
+        _showRoutine = StartCoroutine(ShowVictoryAfterDeathRoutine(enemy));
+    }
+
+    private System.Collections.IEnumerator ShowVictoryAfterDeathRoutine(EnemyController enemy)
+    {
+        _showPending = true;
+
+        var delay = extraShowDelay;
+        if (enemy != null)
+            delay += enemy.DeathPresentationDuration;
+
+        if (delay > 0f)
+            yield return new WaitForSeconds(delay);
+
+        _showPending = false;
+        _showRoutine = null;
+
+        if (_isVisible)
+            yield break;
 
         ShowVictory();
+    }
+
+    private static bool IsBossEnemy(EnemyController enemy)
+    {
+        if (enemy == null)
+            return false;
+
+        if (enemy.GetComponent<BossController>() != null)
+            return true;
+
+        if (enemy.GetComponentInParent<BossController>() != null)
+            return true;
+
+        if (enemy.GetComponentInChildren<BossController>(true) != null)
+            return true;
+
+        if (enemy.CompareTag("Boss"))
+            return true;
+
+        if (enemy.name.ToLowerInvariant().Contains("boss"))
+            return true;
+
+        // Фолбэк: если в сцене не найдено явных "boss" маркеров, считаем смерть врага победой.
+        var hasBossController = FindFirstObjectByType<BossController>(FindObjectsInactive.Include) != null;
+        if (!hasBossController)
+            return true;
+
+        return false;
     }
 
     private void ShowVictory()
@@ -112,18 +198,12 @@ public class BossVictoryPanelManager : MonoBehaviour
 
         if (victoryPanelRoot == null)
         {
-            Debug.LogError("BossVictoryPanelManager: Victory panel not found! Attempting manual bind...");
-            var canvas = FindObjectsByType<Canvas>(FindObjectsSortMode.None);
-            for (int i = 0; i < canvas.Length; i++)
-            {
-                var panel = canvas[i].transform.Find("Panel");
-                if (panel != null)
-                {
-                    victoryPanelRoot = panel.gameObject;
-                    break;
-                }
-            }
+            Debug.LogError("BossVictoryPanelManager: Victory panel not found in expected hierarchy Canvas/Victory.");
+            return;
         }
+
+        if (victoryCanvas != null)
+            victoryCanvas.gameObject.SetActive(true);
 
         if (victoryPanelRoot != null)
             victoryPanelRoot.SetActive(true);
@@ -218,6 +298,9 @@ public class BossVictoryPanelManager : MonoBehaviour
         if (!scene.IsValid() || !scene.isLoaded)
             return;
 
+        if (!IsBossScene(scene))
+            return;
+
         if (_boundScene == scene && victoryPanelRoot != null)
             return;
 
@@ -225,79 +308,15 @@ public class BossVictoryPanelManager : MonoBehaviour
 
         var roots = scene.GetRootGameObjects();
 
-        // First, try to find Canvas named "Victory" directly
-        if (victoryPanelRoot == null)
+        // Жесткая привязка к вашей иерархии: Canvas/Victory/(Score, Time, Button).
+        if (TryBindExactVictoryHierarchy(roots))
         {
-            var allCanvases = FindObjectsByType<Canvas>(FindObjectsSortMode.None);
-            for (int i = 0; i < allCanvases.Length; i++)
-            {
-                if (allCanvases[i] != null && allCanvases[i].name == "Victory")
-                {
-                    victoryPanelRoot = allCanvases[i].gameObject;
-                    break;
-                }
-            }
-        }
-
-        if (victoryPanelRoot == null)
-            victoryPanelRoot = FindCanvasPanelRoot(roots);
-
-        if (victoryPanelRoot == null)
-            victoryPanelRoot = FindObjectByHints(roots, panelNameHints);
-
-        if (victoryPanelRoot == null)
+            BindNextButton();
             return;
-
-        // If victoryPanelRoot is a Canvas, don't normalize
-        var canvasComponent = victoryPanelRoot.GetComponent<Canvas>();
-        if (canvasComponent == null)
-            victoryPanelRoot = NormalizePanelRoot(victoryPanelRoot);
-
-        // Жесткая привязка к текущей иерархии сцены: Panel/glasses и Panel/Time/Time.
-        if (scoreText == null)
-        {
-            var scoreByPath = FindByPath(victoryPanelRoot.transform, "glasses");
-            if (scoreByPath != null)
-                scoreText = scoreByPath.GetComponent<TMP_Text>();
         }
-
-        if (timeText == null)
-        {
-            var timeByPath = FindByPath(victoryPanelRoot.transform, "Time/Time");
-            if (timeByPath != null)
-                timeText = timeByPath.GetComponent<TMP_Text>();
-        }
-
-        if (scoreText == null)
-            scoreText = FindTextByHints(victoryPanelRoot.transform, scoreNameHints);
-
-        if (timeText == null)
-            timeText = FindTextByHints(victoryPanelRoot.transform, timeNameHints);
-
-        ResolveValueTextsFromNumericPlaceholders(victoryPanelRoot.transform, ref scoreText, ref timeText);
-
-        if (nextButton == null)
-            nextButton = FindButtonByHints(victoryPanelRoot.transform, nextButtonNameHints);
-
-        if (nextButton == null)
-            nextButton = victoryPanelRoot.GetComponentInChildren<Button>(true);
-
-        BindNextButton();
     }
 
-    private static GameObject FindObjectByHints(GameObject[] roots, string[] hints)
-    {
-        for (int i = 0; i < roots.Length; i++)
-        {
-            var found = FindTransformByHints(roots[i].transform, hints);
-            if (found != null)
-                return found.gameObject;
-        }
-
-        return null;
-    }
-
-    private static GameObject FindCanvasPanelRoot(GameObject[] roots)
+    private bool TryBindExactVictoryHierarchy(GameObject[] roots)
     {
         for (int i = 0; i < roots.Length; i++)
         {
@@ -308,155 +327,61 @@ public class BossVictoryPanelManager : MonoBehaviour
             if (!root.name.Equals("Canvas", System.StringComparison.OrdinalIgnoreCase))
                 continue;
 
-            var panel = root.transform.Find("Panel");
-            if (panel != null)
-                return panel.gameObject;
-        }
-
-        return null;
-    }
-
-    private static TMP_Text FindTextByHints(Transform root, string[] hints)
-    {
-        var texts = root.GetComponentsInChildren<TMP_Text>(true);
-        for (int i = 0; i < texts.Length; i++)
-        {
-            if (ContainsAnyHint(texts[i].name, hints))
-                return texts[i];
-        }
-
-        return null;
-    }
-
-    private static void ResolveValueTextsFromNumericPlaceholders(Transform root, ref TMP_Text score, ref TMP_Text time)
-    {
-        if (score != null && time != null)
-            return;
-
-        var texts = root.GetComponentsInChildren<TMP_Text>(true);
-        var numericCandidates = new System.Collections.Generic.List<TMP_Text>();
-
-        for (int i = 0; i < texts.Length; i++)
-        {
-            var text = texts[i];
-            if (text == null || string.IsNullOrWhiteSpace(text.text))
+            var canvas = root.GetComponent<Canvas>();
+            if (canvas == null)
                 continue;
 
-            var value = text.text.Trim();
-            if (!ContainsDigit(value))
+            var panel = root.transform.Find("Victory");
+            if (panel == null)
                 continue;
 
-            numericCandidates.Add(text);
-        }
+            var scoreValueNode = panel.Find("Score/ScoreTXT");
+            var timeValueNode = panel.Find("Time/TimeTXT");
+            var buttonNode = panel.Find("Button");
+            var button = buttonNode != null ? buttonNode.GetComponent<Button>() : null;
 
-        if (numericCandidates.Count == 0)
-            return;
+            if (scoreValueNode == null || timeValueNode == null || button == null)
+                continue;
 
-        numericCandidates.Sort((a, b) => b.rectTransform.position.y.CompareTo(a.rectTransform.position.y));
+            victoryCanvas = canvas;
+            victoryPanelRoot = panel.gameObject;
+            scoreText = scoreValueNode.GetComponent<TMP_Text>();
+            timeText = timeValueNode.GetComponent<TMP_Text>();
+            nextButton = button;
 
-        if (score == null)
-            score = numericCandidates[0];
-
-        if (time == null)
-        {
-            if (numericCandidates.Count > 1)
-                time = numericCandidates[1];
-            else
-                time = numericCandidates[0];
-        }
-    }
-
-    private static Button FindButtonByHints(Transform root, string[] hints)
-    {
-        var buttons = root.GetComponentsInChildren<Button>(true);
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            if (ContainsAnyHint(buttons[i].name, hints))
-                return buttons[i];
-        }
-
-        return null;
-    }
-
-    private static Transform FindTransformByHints(Transform root, string[] hints)
-    {
-        if (ContainsAnyHint(root.name, hints))
-            return root;
-
-        for (int i = 0; i < root.childCount; i++)
-        {
-            var found = FindTransformByHints(root.GetChild(i), hints);
-            if (found != null)
-                return found;
-        }
-
-        return null;
-    }
-
-    private static GameObject NormalizePanelRoot(GameObject source)
-    {
-        if (source == null)
-            return null;
-
-        var current = source.transform;
-        while (current != null)
-        {
-            var hasButton = current.GetComponentInChildren<Button>(true) != null;
-            var textCount = current.GetComponentsInChildren<TMP_Text>(true).Length;
-            if (hasButton && textCount >= 2)
-                return current.gameObject;
-
-            current = current.parent;
-        }
-
-        return source;
-    }
-
-    private static bool ContainsDigit(string value)
-    {
-        for (int i = 0; i < value.Length; i++)
-        {
-            if (char.IsDigit(value[i]))
-                return true;
+            return true;
         }
 
         return false;
     }
 
-    private static bool ContainsAnyHint(string value, string[] hints)
+    private static bool IsBossScene(Scene scene)
     {
-        if (string.IsNullOrWhiteSpace(value) || hints == null)
+        if (!scene.IsValid() || !scene.isLoaded)
             return false;
 
-        var lower = value.ToLowerInvariant();
-        for (int i = 0; i < hints.Length; i++)
-        {
-            if (string.IsNullOrWhiteSpace(hints[i]))
-                continue;
+        if (scene.name.ToLowerInvariant().Contains("boss"))
+            return true;
 
-            if (lower.Contains(hints[i].ToLowerInvariant()))
-                return true;
-        }
-
-        return false;
-    }
-
-    private static Transform FindByPath(Transform root, string path)
-    {
-        if (root == null || string.IsNullOrWhiteSpace(path))
-            return null;
-
-        return root.Find(path);
+        return FindFirstObjectByType<BossController>(FindObjectsInactive.Include) != null;
     }
 
     private void ResetBindings()
     {
+        if (_showRoutine != null)
+        {
+            StopCoroutine(_showRoutine);
+            _showRoutine = null;
+        }
+
         UnbindNextButton();
+        victoryCanvas = null;
         victoryPanelRoot = null;
         scoreText = null;
         timeText = null;
         nextButton = null;
         _boundScene = default;
         _isVisible = false;
+        _showPending = false;
     }
 }
