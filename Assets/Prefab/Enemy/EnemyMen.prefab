@@ -87,7 +87,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 352a967b531e7b1498ec672693f0ff8d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.25, y: 2.7916667}
@@ -173,6 +173,18 @@ MonoBehaviour:
   healthBarBackgroundColor: {r: 0, g: 0, b: 0, a: 0.75}
   healthBarFillColor: {r: 0.85, g: 0.15, b: 0.15, a: 1}
   healthBarSortingOrder: 50
+  autoRaiseHealthBar: 1
+  healthBarTopPadding: 0.7
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  hurtTriggerName: Hurt
+  deadBoolName: Dead
+  deadStateName: EnemyMen_Dead
+  deadAnimationSpeed: 0.35
+  destroyDelay: 0.1
+  keepColliderOnDeath: 0
+  freezeRigidbodyOnDeath: 1
+  deathGroundSnapDistance: 2
 --- !u!114 &3490245160028401135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,3 +199,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamageDealer
   damage: 10
   damageCooldown: 0.35
+  attackRange: 1.35
+  attackOffset: {x: 0.9, y: 0.15}
+  attackRadius: 0.45
+  attackWindup: 0.1
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  attackTriggerName: Attack

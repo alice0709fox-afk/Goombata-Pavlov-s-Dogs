@@ -80,7 +80,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6637002753577497737, guid: 4ac85c88fb82c17438ddc869d567a373, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -196,5 +196,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01f440ef75d4144ab5b4d9650a8f8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyVisualAnimator
+  floatFrequency: 2.2
+  floatAmplitude: 0.18
+  swayAmplitude: 0.04
   pulseFrequency: 2.2
   pulseAmount: 0.08
+  rotationSpeed: 28
+  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  glowColor: {r: 1, g: 0.92, b: 0.55, a: 1}
+  glowStrength: 0.45
