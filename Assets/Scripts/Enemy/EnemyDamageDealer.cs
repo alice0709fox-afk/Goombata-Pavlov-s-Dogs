@@ -32,6 +32,9 @@ public class EnemyDamageDealer : MonoBehaviour
         if (_enemyController != null && _enemyController.IsDead)
             return;
 
+        if (_enemyController != null && !_enemyController.CanDealDamage)
+            return;
+
         var playerHealth = FindNearestPlayerInRange();
         if (playerHealth == null)
             return;
@@ -93,6 +96,12 @@ public class EnemyDamageDealer : MonoBehaviour
 
         if (attackWindup > 0f)
             yield return new WaitForSeconds(attackWindup);
+
+        if (_enemyController != null && (_enemyController.IsDead || !_enemyController.CanDealDamage))
+        {
+            _isAttacking = false;
+            yield break;
+        }
 
         DealDamageInHitArea();
         _isAttacking = false;

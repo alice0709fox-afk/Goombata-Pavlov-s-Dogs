@@ -9,17 +9,31 @@ public class OneWayPlatformPassThrough : MonoBehaviour
     [SerializeField] private float restoreDelay = 0.12f;
     [SerializeField] private float restoreIfStuckAfter = 1.25f;
     [SerializeField] private float restoreClearance = 0.03f;
+    [SerializeField] private float dropDownInputThreshold = 0.5f;
 
     private readonly Dictionary<Collider2D, float> _ignoredPlatforms = new Dictionary<Collider2D, float>();
     private readonly Collider2D[] _platformScanBuffer = new Collider2D[32];
 
     private Rigidbody2D _rigidbody2D;
     private Collider2D[] _playerColliders;
+    private PlayerMovement _playerMovement;
+    private PlayerInputHandler _inputHandler;
+    private bool _dropDownRequested;
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerColliders = GetComponentsInChildren<Collider2D>(true);
+        _playerMovement = GetComponent<PlayerMovement>();
+        _inputHandler = GetComponent<PlayerInputHandler>();
+    }
+
+    private void OnEnable()
+    {
+        if (_inputHandler != null)
+        {
+            _inputHandler.OnJumpPressed += HandleJumpPressed;
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -69,6 +83,12 @@ public class OneWayPlatformPassThrough : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_dropDownRequested)
+        {
+            TryDropDownThroughCurrentPlatform();
+            _dropDownRequested = false;
+        }
+
         TryIgnoreNearbyPlatforms();
 
         if (_ignoredPlatforms.Count == 0)
@@ -97,9 +117,10 @@ public class OneWayPlatformPassThrough : MonoBehaviour
             var platformBounds = platformCollider.bounds;
 
             var isAboveTop = playerBounds.min.y >= platformBounds.max.y - restoreClearance;
+            var isBelowBottom = playerBounds.max.y <= platformBounds.min.y + restoreClearance;
             var forceRestore = Time.time >= ignoredSince + restoreIfStuckAfter;
 
-            if (isAboveTop || forceRestore)
+            if (isAboveTop || isBelowBottom || forceRestore)
             {
                 toRestore.Add(platformCollider);
             }
@@ -109,7 +130,14 @@ public class OneWayPlatformPassThrough : MonoBehaviour
         {
             if (platformCollider != null)
             {
-                SnapPlayerToPlatformTop(platformCollider);
+                var playerBounds = GetPlayerBounds();
+                var platformBounds = platformCollider.bounds;
+                var shouldSnapToTop = playerBounds.min.y >= platformBounds.max.y - restoreClearance;
+                if (shouldSnapToTop)
+                {
+                    SnapPlayerToPlatformTop(platformCollider);
+                }
+
                 IgnorePlatform(platformCollider, false);
             }
 
@@ -163,8 +191,85 @@ public class OneWayPlatformPassThrough : MonoBehaviour
         return _rigidbody2D.linearVelocity.y > requiredUpwardVelocity;
     }
 
+    private void HandleJumpPressed()
+    {
+        if (!IsDropDownInputActive())
+        {
+            return;
+        }
+
+        _dropDownRequested = true;
+    }
+
+    private bool IsDropDownInputActive()
+    {
+        if (_playerMovement == null)
+        {
+            return false;
+        }
+
+        return _playerMovement.MoveInput.y <= -Mathf.Abs(dropDownInputThreshold);
+    }
+
+    private void TryDropDownThroughCurrentPlatform()
+    {
+        var playerBounds = GetPlayerBounds();
+        var center = new Vector2(playerBounds.center.x, playerBounds.min.y - 0.03f);
+        var size = new Vector2(
+            Mathf.Max(0.1f, playerBounds.size.x * 0.92f),
+            Mathf.Max(0.12f, playerBounds.size.y * 0.35f));
+
+        var filter = new ContactFilter2D
+        {
+            useLayerMask = true,
+            layerMask = oneWayPlatformLayers,
+            useTriggers = true
+        };
+
+        var count = Physics2D.OverlapBox(center, size, 0f, filter, _platformScanBuffer);
+        for (var i = 0; i < count; i++)
+        {
+            var platformCollider = _platformScanBuffer[i];
+            _platformScanBuffer[i] = null;
+
+            if (platformCollider == null)
+            {
+                continue;
+            }
+
+            if (!IsPlayerStandingOnTop(playerBounds, platformCollider.bounds))
+            {
+                continue;
+            }
+
+            IgnorePlatform(platformCollider, true);
+            _ignoredPlatforms[platformCollider] = Time.time;
+        }
+
+        if (_rigidbody2D != null && _rigidbody2D.linearVelocity.y > -1f)
+        {
+            _rigidbody2D.linearVelocity = new Vector2(_rigidbody2D.linearVelocity.x, -1f);
+        }
+    }
+
+    private bool IsPlayerStandingOnTop(Bounds playerBounds, Bounds platformBounds)
+    {
+        var verticalMatch = Mathf.Abs(playerBounds.min.y - platformBounds.max.y) <= 0.12f;
+        if (!verticalMatch)
+        {
+            return false;
+        }
+
+        return playerBounds.max.x >= platformBounds.min.x && playerBounds.min.x <= platformBounds.max.x;
+    }
+
     private void OnDisable()
     {
+        if (_inputHandler != null)
+        {
+            _inputHandler.OnJumpPressed -= HandleJumpPressed;
+        }
+
         foreach (var pair in _ignoredPlatforms)
         {
             IgnorePlatform(pair.Key, false);

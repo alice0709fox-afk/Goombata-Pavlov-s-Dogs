@@ -31,6 +31,14 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float deadAnimationSpeed = 0.35f;
     [SerializeField] private float destroyDelay = 0.1f;
 
+    [Header("Hurt Feedback")]
+    [SerializeField, Min(0f)] private float hurtInvulnerabilityDuration = 0.12f;
+    [SerializeField, Min(0f)] private float hurtAttackLockDuration = 0.18f;
+    [SerializeField] private Color hurtFlashHighlightColor = Color.white;
+    [SerializeField, Min(0f)] private float hurtFlashHighlightDuration = 0.04f;
+    [SerializeField] private Color hurtFlashColor = new Color(1f, 0.05f, 0.05f, 1f);
+    [SerializeField, Min(0.01f)] private float hurtFlashDuration = 0.09f;
+
     [Header("Death Physics")]
     [SerializeField] private bool keepColliderOnDeath;
     [SerializeField] private bool freezeRigidbodyOnDeath = true;
@@ -39,6 +47,7 @@ public class EnemyController : MonoBehaviour
     public float CurrentHealth => _currentHealth;
     public float MaxHealth => maxHealth;
     public bool IsDead => _isDead;
+    public bool CanDealDamage => !_isDead && Time.time >= _hurtLockedUntilTime;
     public float DeathPresentationDuration => GetDeathAnimationDuration() + Mathf.Max(0f, destroyDelay);
 
     public event System.Action Died;
@@ -55,11 +64,25 @@ public class EnemyController : MonoBehaviour
     private EnemyPatrolChase2D _patrolChase;
     private float _defaultAnimatorSpeed = 1f;
     private Coroutine _deactivateRoutine;
+    private Coroutine _hurtFlashRoutine;
+    private float _nextAllowedDamageTime;
+    private float _hurtLockedUntilTime;
+    private Color _defaultSpriteColor = Color.white;
+    private SpriteRenderer[] _flashSpriteRenderers = System.Array.Empty<SpriteRenderer>();
+    private Color[] _defaultFlashColors = System.Array.Empty<Color>();
 
     private void Awake()
     {
         animator = animator != null ? animator : GetComponent<Animator>();
         spriteRenderer = spriteRenderer != null ? spriteRenderer : GetComponent<SpriteRenderer>();
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        if (spriteRenderer != null)
+            _defaultSpriteColor = spriteRenderer.color;
+
+        CacheFlashRenderers();
+
         _collider2D = GetComponent<Collider2D>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _damageDealer = GetComponent<EnemyDamageDealer>();
@@ -107,9 +130,16 @@ public class EnemyController : MonoBehaviour
         if (damage <= 0f || _currentHealth <= 0f || _isDead)
             return;
 
+        if (Time.time < _nextAllowedDamageTime)
+            return;
+
         _currentHealth = Mathf.Max(0f, _currentHealth - damage);
+        _nextAllowedDamageTime = Time.time + hurtInvulnerabilityDuration;
+        _hurtLockedUntilTime = Mathf.Max(_hurtLockedUntilTime, Time.time + hurtAttackLockDuration);
+
         Debug.Log($"Enemy '{name}' took {damage} damage. HP: {_currentHealth}/{maxHealth}", this);
         TriggerHurtAnimation();
+        TriggerHurtFlash();
         UpdateHealthBar();
 
         if (_currentHealth <= 0f)
@@ -122,6 +152,17 @@ public class EnemyController : MonoBehaviour
             return;
 
         _isDead = true;
+
+        if (_hurtFlashRoutine != null)
+        {
+            StopCoroutine(_hurtFlashRoutine);
+            _hurtFlashRoutine = null;
+        }
+
+        if (spriteRenderer != null)
+            spriteRenderer.color = _defaultSpriteColor;
+
+        RestoreFlashColors();
 
         if (_damageDealer != null)
             _damageDealer.enabled = false;
@@ -265,6 +306,90 @@ public class EnemyController : MonoBehaviour
 
         animator.ResetTrigger(hurtTriggerName);
         animator.SetTrigger(hurtTriggerName);
+    }
+
+    private void TriggerHurtFlash()
+    {
+        if (_isDead || spriteRenderer == null)
+            return;
+
+        if (_hurtFlashRoutine != null)
+            StopCoroutine(_hurtFlashRoutine);
+
+        _hurtFlashRoutine = StartCoroutine(HurtFlashRoutine());
+    }
+
+    private System.Collections.IEnumerator HurtFlashRoutine()
+    {
+        for (int i = 0; i < _flashSpriteRenderers.Length; i++)
+        {
+            var rendererRef = _flashSpriteRenderers[i];
+            if (rendererRef == null)
+                continue;
+
+            rendererRef.color = hurtFlashHighlightColor;
+        }
+
+        if (hurtFlashHighlightDuration > 0f)
+            yield return new WaitForSeconds(hurtFlashHighlightDuration);
+
+        for (int i = 0; i < _flashSpriteRenderers.Length; i++)
+        {
+            var rendererRef = _flashSpriteRenderers[i];
+            if (rendererRef == null)
+                continue;
+
+            rendererRef.color = hurtFlashColor;
+        }
+
+        yield return new WaitForSeconds(hurtFlashDuration);
+
+        if (!_isDead)
+            RestoreFlashColors();
+
+        _hurtFlashRoutine = null;
+    }
+
+    private void OnDisable()
+    {
+        if (_hurtFlashRoutine != null)
+        {
+            StopCoroutine(_hurtFlashRoutine);
+            _hurtFlashRoutine = null;
+        }
+
+        if (spriteRenderer != null)
+            spriteRenderer.color = _defaultSpriteColor;
+
+        RestoreFlashColors();
+    }
+
+    private void CacheFlashRenderers()
+    {
+        _flashSpriteRenderers = GetComponentsInChildren<SpriteRenderer>(true);
+        _defaultFlashColors = new Color[_flashSpriteRenderers.Length];
+
+        for (int i = 0; i < _flashSpriteRenderers.Length; i++)
+        {
+            var rendererRef = _flashSpriteRenderers[i];
+            _defaultFlashColors[i] = rendererRef != null ? rendererRef.color : Color.white;
+        }
+    }
+
+    private void RestoreFlashColors()
+    {
+        if (_flashSpriteRenderers == null || _defaultFlashColors == null)
+            return;
+
+        var length = Mathf.Min(_flashSpriteRenderers.Length, _defaultFlashColors.Length);
+        for (int i = 0; i < length; i++)
+        {
+            var rendererRef = _flashSpriteRenderers[i];
+            if (rendererRef == null)
+                continue;
+
+            rendererRef.color = _defaultFlashColors[i];
+        }
     }
 
     private float GetDeathAnimationDuration()

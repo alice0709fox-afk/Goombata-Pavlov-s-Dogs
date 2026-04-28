@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2697267026078887252}
   - component: {fileID: 2385677002088986157}
   - component: {fileID: 7390939592220190933}
+  - component: {fileID: 3771053227913640201}
   - component: {fileID: 8549228066600801284}
   - component: {fileID: 5156669871499959269}
   - component: {fileID: 2012588892308077538}
@@ -197,6 +198,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputHandler
   input: {fileID: 2385677002088986157}
+--- !u!114 &3771053227913640201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191935276952205468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f5699eef60b55546be0c82e76b9f41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OneWayPlatformPassThrough
+  oneWayPlatformLayers:
+    serializedVersion: 2
+    m_Bits: 2048
+  upwardVelocityThreshold: -0.05
+  restoreDelay: 0.12
+  restoreIfStuckAfter: 1.25
+  restoreClearance: 0.03
+  dropDownInputThreshold: 0.5
 --- !u!114 &8549228066600801284
 MonoBehaviour:
   m_ObjectHideFlags: 0

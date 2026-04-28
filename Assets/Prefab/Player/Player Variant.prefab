@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3771053227913640201, guid: 5bf4150a334c558479dd55b7b801dd06, type: 3}
+      propertyPath: oneWayPlatformLayers.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771053227913640201, guid: 5bf4150a334c558479dd55b7b801dd06, type: 3}
+      propertyPath: dropDownInputThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5202767332673372587, guid: 5bf4150a334c558479dd55b7b801dd06, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0508738
