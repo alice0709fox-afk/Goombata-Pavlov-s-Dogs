@@ -95,6 +95,8 @@ InitTestScene*.unity*
 # OS files
 .DS_Store
 Thumbs.db
+._*
+__MACOSX/
 
 # Optional: large recordings and captures
 *.stacktrace

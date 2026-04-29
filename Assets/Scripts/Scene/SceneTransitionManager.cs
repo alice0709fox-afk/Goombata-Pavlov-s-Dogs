@@ -11,6 +11,8 @@ using UnityEditor;
 
 public class SceneTransitionManager : MonoBehaviour
 {
+    private const string Level2SceneName = "Level_2";
+
     private static SceneTransitionManager _instance;
     private static float _loadingProgress;
 
@@ -21,6 +23,14 @@ public class SceneTransitionManager : MonoBehaviour
     private string _pendingTargetSceneName;
     private bool _isLoading;
     private Coroutine _applySpawnRoutine;
+    private Coroutine _attachCameraRoutine;
+    private bool _initialSceneHandled;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    private static void EnsureInstanceAfterSceneLoad()
+    {
+        _ = Instance;
+    }
 
     public static float LoadingProgress
     {
@@ -76,6 +86,12 @@ public class SceneTransitionManager : MonoBehaviour
             {
                 StopCoroutine(_applySpawnRoutine);
                 _applySpawnRoutine = null;
+            }
+
+            if (_attachCameraRoutine != null)
+            {
+                StopCoroutine(_attachCameraRoutine);
+                _attachCameraRoutine = null;
             }
 
             _instance = null;
@@ -151,6 +167,20 @@ public class SceneTransitionManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SceneManager.sceneLoaded -= OnSceneLoaded;
         SceneManager.sceneLoaded += OnSceneLoaded;
+
+        if (_initialSceneHandled)
+        {
+            return;
+        }
+
+        var activeScene = SceneManager.GetActiveScene();
+        if (!activeScene.IsValid())
+        {
+            return;
+        }
+
+        _initialSceneHandled = true;
+        OnSceneLoaded(activeScene, LoadSceneMode.Single);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -170,6 +200,26 @@ public class SceneTransitionManager : MonoBehaviour
 
         if (string.IsNullOrWhiteSpace(_pendingSpawnPointName))
         {
+            if (!string.Equals(scene.name, Level2SceneName))
+            {
+                return;
+            }
+
+            var fallbackTarget = GetFirstPlayerTarget();
+            if (fallbackTarget != null)
+            {
+                AttachSceneCamerasToTarget(scene, fallbackTarget);
+            }
+            else
+            {
+                if (_attachCameraRoutine != null)
+                {
+                    StopCoroutine(_attachCameraRoutine);
+                }
+
+                _attachCameraRoutine = StartCoroutine(AttachSceneCamerasWhenReady(scene));
+            }
+
             return;
         }
 
@@ -179,6 +229,84 @@ public class SceneTransitionManager : MonoBehaviour
         }
 
         _applySpawnRoutine = StartCoroutine(ApplyPendingSpawnWhenReady(scene, _pendingSpawnPointName));
+    }
+
+    private IEnumerator AttachSceneCamerasWhenReady(Scene scene)
+    {
+        const int maxFramesToWait = 120;
+        for (var frame = 0; frame <= maxFramesToWait; frame++)
+        {
+            var target = GetFirstPlayerTarget();
+            if (target != null)
+            {
+                AttachSceneCamerasToTarget(scene, target);
+                _attachCameraRoutine = null;
+                yield break;
+            }
+
+            yield return null;
+        }
+
+        Debug.LogWarning($"SceneTransitionManager: Could not find player target for camera binding in scene '{scene.name}'.", this);
+        _attachCameraRoutine = null;
+    }
+
+    private static Transform GetFirstPlayerTarget()
+    {
+        var players = FindObjectsByType<PlayerInput>(FindObjectsSortMode.None);
+        for (var index = 0; index < players.Length; index++)
+        {
+            var player = players[index];
+            if (player == null)
+            {
+                continue;
+            }
+
+            var body = player.GetComponent<Rigidbody2D>();
+            return body != null ? body.transform : player.transform;
+        }
+
+        var healthComponents = FindObjectsByType<PlayerHealth>(FindObjectsSortMode.None);
+        for (var index = 0; index < healthComponents.Length; index++)
+        {
+            var health = healthComponents[index];
+            if (health == null)
+            {
+                continue;
+            }
+
+            var body = health.GetComponent<Rigidbody2D>();
+            return body != null ? body.transform : health.transform;
+        }
+
+        var movementComponents = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
+        for (var index = 0; index < movementComponents.Length; index++)
+        {
+            var movement = movementComponents[index];
+            if (movement == null)
+            {
+                continue;
+            }
+
+            var body = movement.GetComponent<Rigidbody2D>();
+            return body != null ? body.transform : movement.transform;
+        }
+
+        try
+        {
+            var taggedPlayer = GameObject.FindGameObjectWithTag("Player");
+            if (taggedPlayer != null)
+            {
+                var body = taggedPlayer.GetComponent<Rigidbody2D>();
+                return body != null ? body.transform : taggedPlayer.transform;
+            }
+        }
+        catch (UnityException)
+        {
+            // The project may not define Player tag in every scene.
+        }
+
+        return null;
     }
 
     private IEnumerator ApplyPendingSpawnWhenReady(Scene scene, string spawnPointName)
@@ -321,6 +449,18 @@ public class SceneTransitionManager : MonoBehaviour
             if (virtualCamera.LookAt == null)
             {
                 virtualCamera.LookAt = target;
+            }
+
+            if (virtualCamera is CinemachineCamera cinemachineCamera)
+            {
+                var cameraTarget = cinemachineCamera.Target;
+                cameraTarget.TrackingTarget = target;
+                if (cameraTarget.LookAtTarget == null)
+                {
+                    cameraTarget.LookAtTarget = target;
+                }
+
+                cinemachineCamera.Target = cameraTarget;
             }
         }
     }

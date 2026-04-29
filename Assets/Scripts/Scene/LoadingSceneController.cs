@@ -5,6 +5,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.SceneManagement;
+#endif
+
 public class LoadingSceneController : MonoBehaviour
 {
     [SerializeField] private Slider loadingSlider;
@@ -74,7 +79,7 @@ public class LoadingSceneController : MonoBehaviour
         AsyncOperation operation;
         try
         {
-            operation = SceneManager.LoadSceneAsync(manager.PendingTargetSceneName);
+            operation = TryLoadSceneAsync(manager.PendingTargetSceneName);
         }
         catch (System.Exception ex)
         {
@@ -114,6 +119,59 @@ public class LoadingSceneController : MonoBehaviour
         SceneTransitionManager.LoadingProgress = 1f;
         operation.allowSceneActivation = true;
     }
+
+    private static AsyncOperation TryLoadSceneAsync(string sceneName)
+    {
+        if (Application.CanStreamedLevelBeLoaded(sceneName))
+        {
+            return SceneManager.LoadSceneAsync(sceneName);
+        }
+
+#if UNITY_EDITOR
+        var scenePath = ResolveEditorScenePath(sceneName);
+        if (!string.IsNullOrWhiteSpace(scenePath))
+        {
+            var parameters = new LoadSceneParameters(LoadSceneMode.Single);
+            return EditorSceneManager.LoadSceneAsyncInPlayMode(scenePath, parameters);
+        }
+#endif
+
+        return null;
+    }
+
+#if UNITY_EDITOR
+    private static string ResolveEditorScenePath(string sceneName)
+    {
+        if (string.IsNullOrWhiteSpace(sceneName))
+        {
+            return null;
+        }
+
+        var exactPath = $"Assets/_Scenes/{sceneName}.unity";
+        if (AssetDatabase.LoadAssetAtPath<SceneAsset>(exactPath) != null)
+        {
+            return exactPath;
+        }
+
+        var guids = AssetDatabase.FindAssets($"{sceneName} t:Scene");
+        for (var i = 0; i < guids.Length; i++)
+        {
+            var path = AssetDatabase.GUIDToAssetPath(guids[i]);
+            if (string.IsNullOrWhiteSpace(path))
+            {
+                continue;
+            }
+
+            var fileName = System.IO.Path.GetFileNameWithoutExtension(path);
+            if (fileName.Equals(sceneName, System.StringComparison.OrdinalIgnoreCase))
+            {
+                return path;
+            }
+        }
+
+        return null;
+    }
+#endif
 
     private void ApplyProgress(float progress)
     {

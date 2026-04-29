@@ -3,9 +3,11 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using UnityEngine.InputSystem;
+using System;
 
 public class Dialogue : MonoBehaviour
 {
+  public event Action DialogueEnded;
   public GameObject window;
   public GameObject indicator;
   public TMP_Text dialogueText;
@@ -14,11 +16,15 @@ public class Dialogue : MonoBehaviour
   [SerializeField] private GameObject transitionObjectOnEnd;
   [SerializeField] private GameObject triggerObjectOnEnd;
   [SerializeField] private string sceneToLoadOnEnd;
-    [SerializeField] private string sceneSpawnPointName = "TargetSpawnPointName";
+  [SerializeField] private string sceneSpawnPointName = "TargetSpawnPointName";
+  [SerializeField] private bool allowRestartAfterEnd;
   private int index;
   private int charIndex;
   private bool started;
+  private bool dialogueActive;
   private bool waitForNext;
+
+  public bool IsRunning => dialogueActive;
 
     private void Awake()
     {
@@ -38,12 +44,18 @@ public class Dialogue : MonoBehaviour
 
     private void ToggleWindow(bool show)
     {
+      if (window != null)
+      {
         window.SetActive(show);
+      }
     }
 
   public void ToggleIndicator(bool show)
     {
+      if (indicator != null)
+      {
         indicator.SetActive(show);
+      }
     }
 
   public void StartDialogue()
@@ -51,6 +63,7 @@ public class Dialogue : MonoBehaviour
         if(started)
            return;
         started = true;
+        dialogueActive = true;
         ToggleWindow(true);
         ToggleIndicator(false);
 
@@ -63,12 +76,25 @@ public class Dialogue : MonoBehaviour
     {
         index = i;
         charIndex =0;
-        dialogueText.text = string.Empty;
+      if (dialogueText == null)
+      {
+        EndDialogue();
+        return;
+      }
+
+      dialogueText.text = string.Empty;
         StartCoroutine(Writing());
     }
 
     public void EndDialogue()
     {
+      dialogueActive = false;
+
+      if (allowRestartAfterEnd)
+      {
+        started = false;
+      }
+
         ToggleWindow(false);
         waitForNext = false;
 
@@ -86,6 +112,8 @@ public class Dialogue : MonoBehaviour
         {
             SceneTransitionManager.Instance.LoadScene(sceneToLoadOnEnd, sceneSpawnPointName);
         }
+
+        DialogueEnded?.Invoke();
     }
 
   IEnumerator Writing()

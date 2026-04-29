@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -22,6 +23,8 @@ public class BossVictoryPanelManager : MonoBehaviour
 
     [Header("Button Action")]
     [SerializeField] private UnityEvent onNextClicked;
+    [SerializeField] private string nextSceneName = "Level_2";
+    [SerializeField] private string nextSpawnPointName = "TargetSpawnPointName";
 
     [Header("Show Delay")]
     [SerializeField, Min(0f)] private float extraShowDelay = 0f;
@@ -83,7 +86,24 @@ public class BossVictoryPanelManager : MonoBehaviour
             return;
 
         if (_isVisible)
+        {
+            if (victoryPanelRoot != null && victoryPanelRoot.activeInHierarchy && nextButton != null)
+            {
+                GamepadUiNavigation.EnsureEventSystem();
+
+                if (EventSystem.current != null && EventSystem.current.currentSelectedGameObject != nextButton.gameObject)
+                {
+                    EventSystem.current.SetSelectedGameObject(nextButton.gameObject);
+                }
+
+                if (GamepadUiNavigation.WasSubmitPressedThisFrame())
+                {
+                    nextButton.onClick.Invoke();
+                }
+            }
+
             return;
+        }
 
         if (victoryPanelRoot != null)
             return;
@@ -289,8 +309,26 @@ public class BossVictoryPanelManager : MonoBehaviour
         Time.timeScale = 1f;
         onNextClicked?.Invoke();
 
-        if (onNextClicked == null || onNextClicked.GetPersistentEventCount() == 0)
-            Debug.Log("BossVictoryPanelManager: Next clicked. Assign onNextClicked later to load next level.");
+        if (string.IsNullOrWhiteSpace(nextSceneName))
+        {
+            Debug.LogError("BossVictoryPanelManager: Next scene is not configured.", this);
+            return;
+        }
+
+        var transitionManager = SceneTransitionManager.Instance;
+        if (transitionManager == null)
+        {
+            Debug.LogError("BossVictoryPanelManager: SceneTransitionManager is not available.", this);
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(nextSpawnPointName))
+        {
+            transitionManager.LoadSceneWithoutSpawn(nextSceneName);
+            return;
+        }
+
+        transitionManager.LoadScene(nextSceneName, nextSpawnPointName);
     }
 
     private void ResolveBindings(Scene scene)
