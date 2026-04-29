@@ -25,9 +25,9 @@ public class Bullet : MonoBehaviour
             _collider.isTrigger = true;
     }
     
-    public void Init(RangedWeaponData data, Vector2 direction, LayerMask layerDamage)
+    public void Init(RangedWeaponData data, Vector2 direction, LayerMask layerDamage, float bonusDamage = 0f)
     {
-        _damage = data.Damage;
+        _damage = Mathf.Max(0f, data.Damage + bonusDamage);
         _speed = data.SpeedBullet;
         _lifeTime = data.LifeTimeBullet;
         _direction = direction.normalized;

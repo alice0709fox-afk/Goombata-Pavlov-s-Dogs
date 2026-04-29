@@ -13,9 +13,16 @@ public class PlayerHealthSlider : MonoBehaviour
     [SerializeField] private bool hideWhenPlayerMissing;
     [SerializeField] private Color fillColor = new Color(0.1496978f, 0.9622642f, 0.031772893f, 1f);
     [SerializeField] private string sliderObjectName = "HpPlayer";
+    [Header("Size By Max HP")]
+    [SerializeField] private bool resizeByMaxHealth = true;
+    [SerializeField, Min(1f)] private float baseMaxHealthForSize = 100f;
+    [SerializeField, Min(0f)] private float widthPerHealthPoint = 1.2f;
+    [SerializeField, Min(1f)] private float maxWidthMultiplier = 3f;
 
     private PlayerHealth _subscribedPlayerHealth;
     private RectTransform _rectTransform;
+    private RectTransform _sliderRectTransform;
+    private float _baseSliderWidth;
     private float _nextRebindAttemptTime;
 
     private void Reset()
@@ -30,6 +37,7 @@ public class PlayerHealthSlider : MonoBehaviour
     {
         _rectTransform = transform as RectTransform;
         ResolveSlider();
+        CacheSliderRect();
 
         ResolveFillImage();
         ApplyFillColor();
@@ -52,6 +60,7 @@ public class PlayerHealthSlider : MonoBehaviour
     {
         _rectTransform = transform as RectTransform;
         ResolveSlider();
+        CacheSliderRect();
 
         ResolveFillImage();
         ApplyFillColor();
@@ -79,6 +88,7 @@ public class PlayerHealthSlider : MonoBehaviour
         Unsubscribe();
 
         ResolveSlider();
+        CacheSliderRect();
 
         ResolveFillImage();
         ApplyFillColor();
@@ -121,6 +131,7 @@ public class PlayerHealthSlider : MonoBehaviour
         slider.minValue = 0f;
         slider.maxValue = Mathf.Max(1f, maxHealth);
         slider.value = Mathf.Clamp(currentHealth, 0f, slider.maxValue);
+        UpdateSliderSize(maxHealth);
         UpdateVisibility();
     }
 
@@ -183,6 +194,20 @@ public class PlayerHealthSlider : MonoBehaviour
         }
     }
 
+    private void CacheSliderRect()
+    {
+        if (slider == null)
+        {
+            return;
+        }
+
+        _sliderRectTransform = slider.transform as RectTransform;
+        if (_sliderRectTransform != null && _baseSliderWidth <= 0f)
+        {
+            _baseSliderWidth = Mathf.Max(1f, _sliderRectTransform.sizeDelta.x);
+        }
+    }
+
     private void ApplyFillColor()
     {
         if (fillImage != null)
@@ -207,6 +232,35 @@ public class PlayerHealthSlider : MonoBehaviour
         {
             _rectTransform.localScale = Vector3.one;
         }
+    }
+
+    private void UpdateSliderSize(float maxHealth)
+    {
+        if (!resizeByMaxHealth)
+        {
+            return;
+        }
+
+        if (_sliderRectTransform == null)
+        {
+            CacheSliderRect();
+        }
+
+        if (_sliderRectTransform == null || _baseSliderWidth <= 0f)
+        {
+            return;
+        }
+
+        var targetHealth = Mathf.Max(1f, maxHealth);
+        var baseHealth = Mathf.Max(1f, baseMaxHealthForSize);
+        var extraHealth = Mathf.Max(0f, targetHealth - baseHealth);
+        var grownWidth = _baseSliderWidth + extraHealth * widthPerHealthPoint;
+        var maxWidth = _baseSliderWidth * Mathf.Max(1f, maxWidthMultiplier);
+        var finalWidth = Mathf.Clamp(grownWidth, _baseSliderWidth, maxWidth);
+
+        var size = _sliderRectTransform.sizeDelta;
+        size.x = finalWidth;
+        _sliderRectTransform.sizeDelta = size;
     }
 
     private void UpdateVisibility()

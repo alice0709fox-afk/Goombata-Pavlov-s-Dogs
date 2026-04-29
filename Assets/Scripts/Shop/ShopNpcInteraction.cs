@@ -31,6 +31,9 @@ public class ShopNpcInteraction : MonoBehaviour
     private Coroutine _openAfterDialogueRoutine;
     private Coroutine _approvalRoutine;
     private readonly List<PlayerInputHandler> _disabledInputHandlers = new List<PlayerInputHandler>();
+    private ShopLevelUpgradePanel _levelUpgradePanel;
+    private PlayerSouls _playerSouls;
+    private PlayerHealth _playerHealth;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void Bootstrap()
@@ -84,6 +87,8 @@ public class ShopNpcInteraction : MonoBehaviour
         EnsureTriggerCollider();
         _dialogue = GetComponent<Dialogue>() ?? GetComponentInChildren<Dialogue>(true) ?? GetComponentInParent<Dialogue>();
         _animator = GetComponent<Animator>();
+        _playerSouls = FindFirstObjectByType<PlayerSouls>();
+        _playerHealth = FindFirstObjectByType<PlayerHealth>();
 
         if (_dialogue != null)
         {
@@ -138,14 +143,29 @@ public class ShopNpcInteraction : MonoBehaviour
             return;
         }
 
-        if (!WasInteractPressedThisFrame())
+        if (_isPanelOpen)
         {
+            if (_levelUpgradePanel != null)
+            {
+                _levelUpgradePanel.HandleSelectionInput();
+            }
+
+            if (WasCloseShopPressedThisFrame())
+            {
+                CloseShopPanel();
+                return;
+            }
+
+            if (WasInteractPressedThisFrame() && _levelUpgradePanel != null)
+            {
+                _levelUpgradePanel.TryPurchaseSelectedUpgrade();
+            }
+
             return;
         }
 
-        if (_isPanelOpen)
+        if (!WasInteractPressedThisFrame())
         {
-            CloseShopPanel();
             return;
         }
 
@@ -288,6 +308,18 @@ public class ShopNpcInteraction : MonoBehaviour
         _shopPanel.SetActive(true);
         _isPanelOpen = true;
 
+        _levelUpgradePanel = _shopPanel.GetComponent<ShopLevelUpgradePanel>()
+                             ?? _shopPanel.GetComponentInChildren<ShopLevelUpgradePanel>(true);
+        if (_levelUpgradePanel == null)
+        {
+            _levelUpgradePanel = _shopPanel.AddComponent<ShopLevelUpgradePanel>();
+        }
+
+        if (_levelUpgradePanel != null)
+        {
+            _levelUpgradePanel.Initialize(_playerSouls, _playerHealth);
+        }
+
         DisableGameplayInput();
         Time.timeScale = 0f;
     }
@@ -300,6 +332,7 @@ public class ShopNpcInteraction : MonoBehaviour
         }
 
         _isPanelOpen = false;
+        _levelUpgradePanel = null;
         Time.timeScale = 1f;
         RestoreGameplayInput();
     }
@@ -426,6 +459,16 @@ public class ShopNpcInteraction : MonoBehaviour
         }
 
         return GamepadUiNavigation.TryGetActiveGamepad(out var gamepad) && gamepad.buttonWest.wasPressedThisFrame;
+    }
+
+    private static bool WasCloseShopPressedThisFrame()
+    {
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            return true;
+        }
+
+        return GamepadUiNavigation.TryGetActiveGamepad(out var gamepad) && gamepad.buttonEast.wasPressedThisFrame;
     }
 
     private void PlayApprovalGreeting()

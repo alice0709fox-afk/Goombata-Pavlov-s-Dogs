@@ -13,6 +13,12 @@ public class MeleeWeaponHandler : WeaponHandlerBase
 
     private Coroutine _attackRoutine;
     private bool _missingReferencesLogged;
+    private PlayerCombatUpgrades _combatUpgrades;
+
+    private void Awake()
+    {
+        _combatUpgrades = GetComponent<PlayerCombatUpgrades>() ?? GetComponentInParent<PlayerCombatUpgrades>();
+    }
     
     public override void SetStateAttack(bool active)
     {
@@ -84,15 +90,17 @@ public class MeleeWeaponHandler : WeaponHandlerBase
             ? Physics2D.OverlapCircleAll(pivotRadius.position, radiusDamage)
             : Physics2D.OverlapCircleAll(pivotRadius.position, radiusDamage, layerDamage);
 
+        var damage = Mathf.Max(0f, weapon.Damage + (_combatUpgrades != null ? _combatUpgrades.FlatDamageBonus : 0f));
+
         foreach (var target in targets)
         {
             if (target == null)
                 continue;
 
             if (target.TryGetComponent<EnemyController>(out var enemy))
-                enemy.TakeDamage(weapon.Damage);
+                enemy.TakeDamage(damage);
             else if (target.GetComponentInParent<EnemyController>() is { } parentEnemy)
-                parentEnemy.TakeDamage(weapon.Damage);
+                parentEnemy.TakeDamage(damage);
         }
         
     }

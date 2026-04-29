@@ -10,8 +10,14 @@ public class RangedWeaponHandler : WeaponHandlerBase
 
     private int _currentAmmo;
     private bool _isReloading;
+    private PlayerCombatUpgrades _combatUpgrades;
     
     private Coroutine _shotRoutine;
+
+    private void Awake()
+    {
+        _combatUpgrades = GetComponent<PlayerCombatUpgrades>() ?? GetComponentInParent<PlayerCombatUpgrades>();
+    }
 
     private void Start()
     {
@@ -37,8 +43,9 @@ public class RangedWeaponHandler : WeaponHandlerBase
     private void Shot()
     {
         var bullet = Instantiate(weapon.BulletPrefab, firePoint.position, firePoint.rotation);
+        var bonusDamage = _combatUpgrades != null ? _combatUpgrades.FlatDamageBonus : 0f;
 
-        bullet.Init(weapon, firePoint.up, layerDamage);
+        bullet.Init(weapon, firePoint.up, layerDamage, bonusDamage);
         AudioController.Instance?.PlayPlayerHit();
         
         _currentAmmo--;
