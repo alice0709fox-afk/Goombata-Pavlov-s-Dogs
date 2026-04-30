@@ -90,6 +90,16 @@ public class PlayerHealth : MonoBehaviour
         NotifyHealthChanged();
     }
 
+    public void KillInstantly()
+    {
+        if (_isDead)
+            return;
+
+        CurrentHealth = 0f;
+        NotifyHealthChanged();
+        Die();
+    }
+
     private void Die()
     {
         if (_isDead)
