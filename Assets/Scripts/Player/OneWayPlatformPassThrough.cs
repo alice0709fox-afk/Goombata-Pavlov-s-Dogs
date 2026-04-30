@@ -18,6 +18,7 @@ public class OneWayPlatformPassThrough : MonoBehaviour
     private Collider2D[] _playerColliders;
     private PlayerMovement _playerMovement;
     private PlayerInputHandler _inputHandler;
+    private GroundChecker _groundChecker;
     private bool _dropDownRequested;
 
     private void Awake()
@@ -26,6 +27,7 @@ public class OneWayPlatformPassThrough : MonoBehaviour
         _playerColliders = GetComponentsInChildren<Collider2D>(true);
         _playerMovement = GetComponent<PlayerMovement>();
         _inputHandler = GetComponent<PlayerInputHandler>();
+        _groundChecker = GetComponentInChildren<GroundChecker>(true);
     }
 
     private void OnEnable()
@@ -56,6 +58,13 @@ public class OneWayPlatformPassThrough : MonoBehaviour
 
         var platformLayerMask = 1 << platformCollider.gameObject.layer;
         if ((oneWayPlatformLayers.value & platformLayerMask) == 0)
+        {
+            return;
+        }
+
+        // While grounded on a slope, vertical velocity can become slightly positive.
+        // Do not treat this as pass-through, otherwise collision gets disabled mid-run.
+        if (IsGrounded())
         {
             return;
         }
@@ -149,6 +158,11 @@ public class OneWayPlatformPassThrough : MonoBehaviour
 
     private void TryIgnoreNearbyPlatforms()
     {
+        if (IsGrounded())
+        {
+            return;
+        }
+
         if (!IsMovingUpwardForPassThrough())
         {
             return;
@@ -189,6 +203,11 @@ public class OneWayPlatformPassThrough : MonoBehaviour
         // Prevent negative thresholds from treating idle/falling states as upward movement.
         var requiredUpwardVelocity = Mathf.Max(0.05f, upwardVelocityThreshold);
         return _rigidbody2D.linearVelocity.y > requiredUpwardVelocity;
+    }
+
+    private bool IsGrounded()
+    {
+        return _groundChecker != null && _groundChecker.CheckGround();
     }
 
     private void HandleJumpPressed()

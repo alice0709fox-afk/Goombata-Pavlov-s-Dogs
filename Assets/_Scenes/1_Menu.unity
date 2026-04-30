@@ -768,6 +768,10 @@ MonoBehaviour:
     musicClip: {fileID: 8300000, guid: 2c1dabe60edf69c4397ff0f6a2aff227, type: 3}
     volume: 0.4
     loop: 1
+  - sceneName: ' Level_2'
+    musicClip: {fileID: 8300000, guid: 2c1dabe60edf69c4397ff0f6a2aff227, type: 3}
+    volume: 0.4
+    loop: 1
   stopWhenSceneHasNoMusic: 1
   playerHitClip: {fileID: 8300000, guid: 2d8341a222f62d5469f949f3f698e07e, type: 3}
   playerHurtClip: {fileID: 8300000, guid: bce81c0328363974cae21c490bf7b871, type: 3}
@@ -1285,7 +1289,7 @@ RectTransform:
   m_GameObject: {fileID: 1389867816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 646450067}
@@ -1467,6 +1471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2426a1c2e3c61264cb2b4efbbeb7bf1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  playIntroCutsceneOnNewGame: 1
+  introSceneName: 3_Intro
   levelSceneName: level_0
   newGameShotSfx: {fileID: 8300000, guid: a9f97b048c3358041977259652c0cc1f, type: 3}
   shotVolume: 1

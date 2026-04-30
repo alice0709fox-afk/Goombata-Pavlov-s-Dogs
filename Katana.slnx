@@ -11,11 +11,17 @@
   <Project Path="Unity.2D.IK.Editor.csproj" />
   <Project Path="Unity.2D.Tooling.Editor.csproj" />
   <Project Path="Unity.InternalAPIEditorBridge.001.csproj" />
+  <Project Path="CFXRRuntime.csproj" />
   <Project Path="Unity.2D.Aseprite.EditorTests.csproj" />
+  <Project Path="CFXRDemo.csproj" />
+  <Project Path="CFXREditor.csproj" />
   <Project Path="Unity.2D.Animation.EditorTests.csproj" />
   <Project Path="Unity.2D.Tilemap.Extras.csproj" />
   <Project Path="Unity.2D.Animation.Runtime.csproj" />
+  <Project Path="KinoBloom.Runtime.csproj" />
   <Project Path="Unity.2D.Aseprite.Common.csproj" />
+  <Project Path="CFXR.WelcomeScreen.csproj" />
+  <Project Path="ToonyColorsPro.Demo.Editor.csproj" />
   <Project Path="Unity.2D.SpriteShape.EditorTests.csproj" />
   <Project Path="Unity.2D.Psdimporter.EditorTests.csproj" />
 </Solution>
