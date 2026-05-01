@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.InputSystem;
+using Unity.Cinemachine;
 
 [RequireComponent(typeof(Collider2D))]
 [DisallowMultipleComponent]
@@ -15,6 +16,12 @@ public class TimelineTriggerZone2D : MonoBehaviour
 
     [Header("Player During Cutscene")]
     [SerializeField] private bool hideTriggeringPlayerDuringCutscene = true;
+    [SerializeField] private bool forcePlayerPositionAfterCutscene = true;
+    [SerializeField] private Vector3 playerPositionAfterCutscene = new Vector3(432.220215f, -132.739212f, 0f);
+
+    [Header("Cutscene Camera")]
+    [SerializeField] private GameObject cutsceneCameraToDisableOnFinish;
+    [SerializeField] private string fallbackCutsceneCameraName = "CinemachineCamera (2)";
 
     [Header("Player Filter")]
     [SerializeField] private string playerTag = "Player";
@@ -29,6 +36,8 @@ public class TimelineTriggerZone2D : MonoBehaviour
     private PlayerAttackHandler _cutscenePlayerAttack;
     private Rigidbody2D _cutscenePlayerBody;
     private SpriteRenderer[] _cutscenePlayerRenderers = System.Array.Empty<SpriteRenderer>();
+    private bool _cutsceneCompletionHandled;
+    private Coroutine _cutsceneWatchdogRoutine;
 
     private void Awake()
     {
@@ -36,6 +45,7 @@ public class TimelineTriggerZone2D : MonoBehaviour
         _triggerCollider.isTrigger = true;
 
         EnsureDirectorIsReadyForManualTrigger();
+        ResolveCutsceneCameraReference();
     }
 
     private void Start()
@@ -69,6 +79,7 @@ public class TimelineTriggerZone2D : MonoBehaviour
         }
 
         _triggered = true;
+        _cutsceneCompletionHandled = false;
         CacheCutscenePlayer(other);
         SetCutscenePlayerVisible(visible: !hideTriggeringPlayerDuringCutscene);
         SetCutscenePlayerControlEnabled(enabled: false);
@@ -78,7 +89,8 @@ public class TimelineTriggerZone2D : MonoBehaviour
         timelineDirector.extrapolationMode = keepFinalStateAfterCutscene
             ? DirectorWrapMode.Hold
             : DirectorWrapMode.None;
-        timelineDirector.timeUpdateMode = DirectorUpdateMode.GameTime;
+        timelineDirector.timeUpdateMode = DirectorUpdateMode.UnscaledGameTime;
+        timelineDirector.enabled = true;
 
         if (Mathf.Approximately(Time.timeScale, 0f))
         {
@@ -93,33 +105,18 @@ public class TimelineTriggerZone2D : MonoBehaviour
         }
 
         timelineDirector.Play();
+
+        if (_cutsceneWatchdogRoutine != null)
+        {
+            StopCoroutine(_cutsceneWatchdogRoutine);
+        }
+
+        _cutsceneWatchdogRoutine = StartCoroutine(CutsceneWatchdogRoutine());
     }
 
     private void OnTimelineStopped(PlayableDirector director)
     {
-        if (director == null)
-        {
-            return;
-        }
-
-        director.stopped -= OnTimelineStopped;
-
-        if (keepFinalStateAfterCutscene)
-        {
-            director.time = director.duration;
-            director.Evaluate();
-        }
-
-        SetCutscenePlayerVisible(visible: true);
-        SetCutscenePlayerControlEnabled(enabled: true);
-
-        // Guard: if any cutscene signal paused gameplay globally, restore normal running state.
-        if (Mathf.Approximately(Time.timeScale, 0f))
-        {
-            Time.timeScale = 1f;
-        }
-
-        AudioListener.pause = false;
+        CompleteCutscene(director);
     }
 
     private void OnDisable()
@@ -127,6 +124,12 @@ public class TimelineTriggerZone2D : MonoBehaviour
         if (timelineDirector != null)
         {
             timelineDirector.stopped -= OnTimelineStopped;
+        }
+
+        if (_cutsceneWatchdogRoutine != null)
+        {
+            StopCoroutine(_cutsceneWatchdogRoutine);
+            _cutsceneWatchdogRoutine = null;
         }
 
         // In case this object gets disabled while a cutscene is active.
@@ -197,12 +200,138 @@ public class TimelineTriggerZone2D : MonoBehaviour
         timelineDirector.playOnAwake = false;
         timelineDirector.Stop();
         timelineDirector.stopped -= OnTimelineStopped;
+        timelineDirector.timeUpdateMode = DirectorUpdateMode.UnscaledGameTime;
 
         if (restartFromBeginning)
         {
             timelineDirector.time = 0d;
             timelineDirector.Evaluate();
         }
+    }
+
+    private void ResolveCutsceneCameraReference()
+    {
+        if (cutsceneCameraToDisableOnFinish != null)
+        {
+            return;
+        }
+
+        if (!string.IsNullOrWhiteSpace(fallbackCutsceneCameraName))
+        {
+            var byName = GameObject.Find(fallbackCutsceneCameraName);
+            if (byName != null)
+            {
+                cutsceneCameraToDisableOnFinish = byName;
+                return;
+            }
+        }
+
+        var noiseCameras = FindObjectsByType<CinemachineCamera>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (var i = 0; i < noiseCameras.Length; i++)
+        {
+            var cam = noiseCameras[i];
+            if (cam == null)
+            {
+                continue;
+            }
+
+            var hasNoise = cam.GetComponent<CinemachineBasicMultiChannelPerlin>() != null;
+            if (hasNoise)
+            {
+                cutsceneCameraToDisableOnFinish = cam.gameObject;
+                return;
+            }
+        }
+    }
+
+    private void DisableCutsceneCameraAfterTimeline()
+    {
+        ResolveCutsceneCameraReference();
+        if (cutsceneCameraToDisableOnFinish == null)
+        {
+            return;
+        }
+
+        var noise = cutsceneCameraToDisableOnFinish.GetComponent<CinemachineBasicMultiChannelPerlin>();
+        if (noise != null)
+        {
+            noise.AmplitudeGain = 0f;
+            noise.FrequencyGain = 0f;
+            noise.enabled = false;
+        }
+
+        cutsceneCameraToDisableOnFinish.SetActive(false);
+    }
+
+    private System.Collections.IEnumerator CutsceneWatchdogRoutine()
+    {
+        if (timelineDirector == null)
+        {
+            yield break;
+        }
+
+        var timeout = Mathf.Max((float)timelineDirector.duration + 1f, 5f);
+        var elapsed = 0f;
+
+        while (!_cutsceneCompletionHandled && elapsed < timeout)
+        {
+            if (timelineDirector.state != PlayState.Playing && timelineDirector.time > 0d)
+            {
+                CompleteCutscene(timelineDirector);
+                yield break;
+            }
+
+            elapsed += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        if (!_cutsceneCompletionHandled)
+        {
+            CompleteCutscene(timelineDirector);
+        }
+    }
+
+    private void CompleteCutscene(PlayableDirector director)
+    {
+        if (_cutsceneCompletionHandled || director == null)
+        {
+            return;
+        }
+
+        _cutsceneCompletionHandled = true;
+
+        if (_cutsceneWatchdogRoutine != null)
+        {
+            StopCoroutine(_cutsceneWatchdogRoutine);
+            _cutsceneWatchdogRoutine = null;
+        }
+
+        director.stopped -= OnTimelineStopped;
+
+        if (director.state == PlayState.Playing)
+        {
+            director.Stop();
+        }
+
+        if (keepFinalStateAfterCutscene)
+        {
+            director.time = director.duration;
+            director.Evaluate();
+        }
+
+        DisableCutsceneCameraAfterTimeline();
+
+        ApplyPlayerPositionAfterCutscene();
+
+        SetCutscenePlayerVisible(visible: true);
+        SetCutscenePlayerControlEnabled(enabled: true);
+
+        if (Mathf.Approximately(Time.timeScale, 0f))
+        {
+            Time.timeScale = 1f;
+        }
+
+        AudioListener.pause = false;
     }
 
     private void CacheCutscenePlayer(Collider2D sourceCollider)
@@ -292,5 +421,24 @@ public class TimelineTriggerZone2D : MonoBehaviour
                 playerInput.DeactivateInput();
             }
         }
+    }
+
+    private void ApplyPlayerPositionAfterCutscene()
+    {
+        if (!forcePlayerPositionAfterCutscene || _cutscenePlayerRoot == null)
+        {
+            return;
+        }
+
+        _cutscenePlayerRoot.transform.position = playerPositionAfterCutscene;
+
+        if (_cutscenePlayerBody != null)
+        {
+            _cutscenePlayerBody.position = (Vector2)playerPositionAfterCutscene;
+            _cutscenePlayerBody.linearVelocity = Vector2.zero;
+            _cutscenePlayerBody.angularVelocity = 0f;
+        }
+
+        Physics2D.SyncTransforms();
     }
 }

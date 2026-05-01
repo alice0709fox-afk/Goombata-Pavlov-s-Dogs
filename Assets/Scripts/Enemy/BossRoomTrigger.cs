@@ -25,6 +25,8 @@ public class BossRoomTrigger : MonoBehaviour
 
     private bool _triggered;
     private bool _bossFightStarted;
+    private bool _cutsceneCompletionHandled;
+    private Coroutine _cutsceneWatchdogRoutine;
 
     private void Start()
     {
@@ -50,6 +52,7 @@ public class BossRoomTrigger : MonoBehaviour
             return;
 
         _triggered = true;
+        _cutsceneCompletionHandled = false;
         GetComponent<Collider2D>().enabled = false;
 
         if (cutsceneDirector != null)
@@ -57,9 +60,17 @@ public class BossRoomTrigger : MonoBehaviour
             cutsceneDirector.extrapolationMode = keepFinalStateAfterCutscene
                 ? DirectorWrapMode.Hold
                 : DirectorWrapMode.None;
+            cutsceneDirector.timeUpdateMode = DirectorUpdateMode.UnscaledGameTime;
             cutsceneDirector.stopped += OnCutsceneStopped;
             cutsceneDirector.time = 0d;
             cutsceneDirector.Play();
+
+            if (_cutsceneWatchdogRoutine != null)
+            {
+                StopCoroutine(_cutsceneWatchdogRoutine);
+            }
+
+            _cutsceneWatchdogRoutine = StartCoroutine(CutsceneWatchdogRoutine());
         }
         else
         {
@@ -72,7 +83,52 @@ public class BossRoomTrigger : MonoBehaviour
         if (!_triggered)
             return;
 
+        CompleteCutscene(director);
+    }
+
+    private System.Collections.IEnumerator CutsceneWatchdogRoutine()
+    {
+        if (cutsceneDirector == null)
+            yield break;
+
+        var timeout = Mathf.Max((float)cutsceneDirector.duration + 1f, 5f);
+        var elapsed = 0f;
+
+        while (!_cutsceneCompletionHandled && elapsed < timeout)
+        {
+            if (cutsceneDirector.state != PlayState.Playing && cutsceneDirector.time > 0d)
+            {
+                CompleteCutscene(cutsceneDirector);
+                yield break;
+            }
+
+            elapsed += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        if (!_cutsceneCompletionHandled)
+        {
+            CompleteCutscene(cutsceneDirector);
+        }
+    }
+
+    private void CompleteCutscene(PlayableDirector director)
+    {
+        if (_cutsceneCompletionHandled || director == null)
+            return;
+
+        _cutsceneCompletionHandled = true;
+
+        if (_cutsceneWatchdogRoutine != null)
+        {
+            StopCoroutine(_cutsceneWatchdogRoutine);
+            _cutsceneWatchdogRoutine = null;
+        }
+
         director.stopped -= OnCutsceneStopped;
+
+        if (director.state == PlayState.Playing)
+            director.Stop();
 
         if (keepFinalStateAfterCutscene)
         {
@@ -107,6 +163,12 @@ public class BossRoomTrigger : MonoBehaviour
 
     private void OnDisable()
     {
+        if (_cutsceneWatchdogRoutine != null)
+        {
+            StopCoroutine(_cutsceneWatchdogRoutine);
+            _cutsceneWatchdogRoutine = null;
+        }
+
         if (cutsceneDirector != null)
             cutsceneDirector.stopped -= OnCutsceneStopped;
     }
