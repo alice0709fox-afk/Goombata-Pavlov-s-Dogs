@@ -122,6 +122,8 @@ public class DeathScreenManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
         _isTransitioning = false;
         RefreshSceneBindings(scene);
         CleanupDeadPlayerReferences();
@@ -170,6 +172,10 @@ public class DeathScreenManager : MonoBehaviour
         {
             return;
         }
+
+        // Make sure death UI is never blocked by a stale pause/cutscene state.
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
 
         _restartSceneName = ResolveRestartSceneName();
         AudioController.Instance?.PlayGameOverExclusive();
@@ -222,6 +228,9 @@ public class DeathScreenManager : MonoBehaviour
         {
             return;
         }
+
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
 
         _isTransitioning = true;
         ClearEditorSelectionForScenePanel();

@@ -11,6 +11,7 @@ public class BossRoomTrigger : MonoBehaviour
 {
     [Header("Timeline")]
     [SerializeField] private PlayableDirector cutsceneDirector;
+    [SerializeField] private bool keepFinalStateAfterCutscene = true;
 
     [Header("Boss")]
     [SerializeField] private BossController bossController;
@@ -33,6 +34,10 @@ public class BossRoomTrigger : MonoBehaviour
         if (cutsceneDirector != null)
         {
             cutsceneDirector.playOnAwake = false;
+            cutsceneDirector.Stop();
+            cutsceneDirector.stopped -= OnCutsceneStopped;
+            cutsceneDirector.time = 0d;
+            cutsceneDirector.Evaluate();
         }
     }
 
@@ -49,7 +54,9 @@ public class BossRoomTrigger : MonoBehaviour
 
         if (cutsceneDirector != null)
         {
-            cutsceneDirector.extrapolationMode = DirectorWrapMode.None;
+            cutsceneDirector.extrapolationMode = keepFinalStateAfterCutscene
+                ? DirectorWrapMode.Hold
+                : DirectorWrapMode.None;
             cutsceneDirector.stopped += OnCutsceneStopped;
             cutsceneDirector.time = 0d;
             cutsceneDirector.Play();
@@ -66,6 +73,18 @@ public class BossRoomTrigger : MonoBehaviour
             return;
 
         director.stopped -= OnCutsceneStopped;
+
+        if (keepFinalStateAfterCutscene)
+        {
+            director.time = director.duration;
+            director.Evaluate();
+        }
+
+        if (Mathf.Approximately(Time.timeScale, 0f))
+            Time.timeScale = 1f;
+
+        AudioListener.pause = false;
+
         StartBossFight();
     }
 

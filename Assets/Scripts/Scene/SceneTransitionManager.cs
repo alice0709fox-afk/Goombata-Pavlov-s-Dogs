@@ -185,6 +185,9 @@ public class SceneTransitionManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+
         _isLoading = false;
 
         if (!string.IsNullOrWhiteSpace(_pendingTargetSceneName))
