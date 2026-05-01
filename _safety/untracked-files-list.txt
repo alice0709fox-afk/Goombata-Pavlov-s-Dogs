@@ -1,0 +1,38 @@
+﻿Assets/Animation/Animals/Fox_Idle.anim
+Assets/Animation/Animals/Fox_Idle.anim.meta
+Assets/Animation/Animals/Fpx_Run.anim
+Assets/Animation/Animals/Fpx_Run.anim.meta
+Assets/Animation/Animals/GameObject.controller
+Assets/Animation/Animals/GameObject.controller.meta
+Assets/Animation/Enemy/Boss_2.meta
+Assets/Animation/Enemy/Boss_2/
+"Assets/Audio/\320\262\320\265\320\275\321\202\320\270\320\273\321\214.mp3"
+"Assets/Audio/\320\262\320\265\320\275\321\202\320\270\320\273\321\214.mp3.meta"
+"Assets/Audio/\320\272\321\200\320\260\320\275.mp3"
+"Assets/Audio/\320\272\321\200\320\260\320\275.mp3.meta"
+"Assets/Audio/\320\276\320\261\320\262\320\260\320\273.mp3"
+"Assets/Audio/\320\276\320\261\320\262\320\260\320\273.mp3.meta"
+"Assets/Audio/\321\201\320\274\320\265\321\205 \320\267\320\273\320\276\320\271.mp3"
+"Assets/Audio/\321\201\320\274\320\265\321\205 \320\267\320\273\320\276\320\271.mp3.meta"
+Assets/Cainos.meta
+Assets/Cainos/
+Assets/Scripts/Level/TimelineTriggerZone2D.cs
+Assets/Scripts/Level/TimelineTriggerZone2D.cs.meta
+"Assets/Sprites 1/Enemy/EnemyBoss.meta"
+"Assets/Sprites 1/Enemy/EnemyBoss/"
+"Assets/Sprites 1/Levels/Chain.png"
+"Assets/Sprites 1/Levels/Chain.png.meta"
+"Assets/Sprites 1/Levels/Dog/GandalfHardcore fox.png"
+"Assets/Sprites 1/Levels/Dog/GandalfHardcore fox.png.meta"
+"Assets/Sprites 1/Levels/Untitled (20) (1).png"
+"Assets/Sprites 1/Levels/Untitled (20) (1).png.meta"
+"Assets/Sprites 1/Levels/Untitled (21) (1).png"
+"Assets/Sprites 1/Levels/Untitled (21) (1).png.meta"
+"Assets/Sprites 1/Levels/traverse.png"
+"Assets/Sprites 1/Levels/traverse.png.meta"
+Assets/TimeLine/TimeLine_Boss2Timeline.playable
+Assets/TimeLine/TimeLine_Boss2Timeline.playable.meta
+_safety/Level_2.broken.after-agent.unity
+_safety/Level_2.only.patch
+_safety/pre-restore-20260501-210910/
+_safety/working-tree-backup.utf8.patch
