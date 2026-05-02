@@ -253,6 +253,10 @@ MonoBehaviour:
   hideWhenPlayerMissing: 0
   fillColor: {r: 0.1496978, g: 0.9622642, b: 0.031772893, a: 1}
   sliderObjectName: HpPlayer
+  resizeByMaxHealth: 1
+  baseMaxHealthForSize: 100
+  widthPerHealthPoint: 1.2
+  maxWidthMultiplier: 3
 --- !u!1 &2546624974250345268
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,7 +554,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -560.10956, y: 450.6065}
+  m_AnchoredPosition: {x: -483.9, y: 450.6065}
   m_SizeDelta: {x: 202.9808, y: 56.4335}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7673258016704979085
