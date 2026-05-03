@@ -10,9 +10,11 @@ public class OneWayPlatformPassThrough : MonoBehaviour
     [SerializeField] private float restoreIfStuckAfter = 1.25f;
     [SerializeField] private float restoreClearance = 0.03f;
     [SerializeField] private float dropDownInputThreshold = 0.5f;
+    [SerializeField] private float upwardPassThroughScanDistance = 2.4f;
+    [SerializeField] private float upwardPassThroughVelocityLookahead = 0.28f;
 
     private readonly Dictionary<Collider2D, float> _ignoredPlatforms = new Dictionary<Collider2D, float>();
-    private readonly Collider2D[] _platformScanBuffer = new Collider2D[32];
+    private readonly Collider2D[] _platformScanBuffer = new Collider2D[128];
 
     private Rigidbody2D _rigidbody2D;
     private Collider2D[] _playerColliders;
@@ -169,8 +171,13 @@ public class OneWayPlatformPassThrough : MonoBehaviour
         }
 
         var playerBounds = GetPlayerBounds();
-        var center = playerBounds.center;
-        var size = playerBounds.size + new Vector3(0.08f, 0.12f, 0f);
+        var upwardVelocity = _rigidbody2D != null ? Mathf.Max(0f, _rigidbody2D.linearVelocity.y) : 0f;
+        var scanDistance = Mathf.Max(0.2f, upwardPassThroughScanDistance) + upwardVelocity * Mathf.Max(0f, upwardPassThroughVelocityLookahead);
+
+        var center = new Vector2(playerBounds.center.x, playerBounds.center.y + scanDistance * 0.5f);
+        var size = new Vector2(
+            playerBounds.size.x + 0.12f,
+            playerBounds.size.y + scanDistance);
         var filter = new ContactFilter2D
         {
             useLayerMask = true,
@@ -184,6 +191,14 @@ public class OneWayPlatformPassThrough : MonoBehaviour
             var platformCollider = _platformScanBuffer[i];
             if (platformCollider == null)
             {
+                continue;
+            }
+
+            var platformBounds = platformCollider.bounds;
+            var isClearlyBelowPlayer = platformBounds.max.y < playerBounds.min.y - 0.08f;
+            if (isClearlyBelowPlayer)
+            {
+                _platformScanBuffer[i] = null;
                 continue;
             }
 
