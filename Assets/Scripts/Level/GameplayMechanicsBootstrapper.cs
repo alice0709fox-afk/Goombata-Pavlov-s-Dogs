@@ -62,6 +62,7 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
 
         EnsurePlayerComponents();
         EnsurePickupComponents(scene);
+        EnsureEnemyComponents(scene);
     }
 
     private void EnsurePlayerComponents()
@@ -119,6 +120,32 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
         }
     }
 
+    private void EnsureEnemyComponents(Scene scene)
+    {
+        var roots = scene.GetRootGameObjects();
+        for (var rootIndex = 0; rootIndex < roots.Length; rootIndex++)
+        {
+            var root = roots[rootIndex];
+            if (root == null)
+                continue;
+
+            var transforms = root.GetComponentsInChildren<Transform>(true);
+            for (var transformIndex = 0; transformIndex < transforms.Length; transformIndex++)
+            {
+                var current = transforms[transformIndex];
+                if (current == null)
+                    continue;
+
+                var isRaider3 = HasEnemyName(current.name, "Raider3");
+                var isRaider2 = HasEnemyName(current.name, "Raider2");
+                if (!isRaider3 && !isRaider2)
+                    continue;
+
+                EnsureEnemySetup(current.gameObject, isRaider2);
+            }
+        }
+    }
+
     private static bool HasPickupName(string objectName, string baseName)
     {
         if (string.IsNullOrEmpty(objectName) || string.IsNullOrEmpty(baseName))
@@ -134,6 +161,17 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
         return objectName.StartsWith(baseName + " (", System.StringComparison.Ordinal);
     }
 
+    private static bool HasEnemyName(string objectName, string baseName)
+    {
+        if (string.IsNullOrEmpty(objectName) || string.IsNullOrEmpty(baseName))
+            return false;
+
+        if (string.Equals(objectName, baseName, System.StringComparison.Ordinal))
+            return true;
+
+        return objectName.StartsWith(baseName + " (", System.StringComparison.Ordinal);
+    }
+
     private static void EnsurePickupSetup<T>(GameObject pickupObject) where T : Component
     {
         if (pickupObject == null)
@@ -145,5 +183,32 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
         {
             pickupObject.AddComponent<T>();
         }
+    }
+
+    private static void EnsureEnemySetup(GameObject enemyObject, bool includeRangedShooter)
+    {
+        if (enemyObject == null)
+            return;
+
+        if (enemyObject.GetComponent<Rigidbody2D>() == null)
+            enemyObject.AddComponent<Rigidbody2D>();
+
+        if (enemyObject.GetComponent<Collider2D>() == null)
+        {
+            var capsule = enemyObject.AddComponent<CapsuleCollider2D>();
+            capsule.isTrigger = true;
+        }
+
+        if (enemyObject.GetComponent<EnemyController>() == null)
+            enemyObject.AddComponent<EnemyController>();
+
+        if (enemyObject.GetComponent<EnemyDamageDealer>() == null)
+            enemyObject.AddComponent<EnemyDamageDealer>();
+
+        if (enemyObject.GetComponent<EnemyPatrolChase2D>() == null)
+            enemyObject.AddComponent<EnemyPatrolChase2D>();
+
+        if (includeRangedShooter && enemyObject.GetComponent<EnemyRangedShooter2D>() == null)
+            enemyObject.AddComponent<EnemyRangedShooter2D>();
     }
 }

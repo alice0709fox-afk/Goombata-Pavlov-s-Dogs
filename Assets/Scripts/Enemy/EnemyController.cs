@@ -26,8 +26,10 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private string hurtTriggerName = "Hurt";
+    [SerializeField] private string hurtStateName;
     [SerializeField] private string deadBoolName = "Dead";
     [SerializeField] private string deadStateName = "EnemyMen_Dead";
+    [SerializeField] private bool autoResolveAnimationStateNames = true;
     [SerializeField] private float deadAnimationSpeed = 0.35f;
     [SerializeField] private float destroyDelay = 0.1f;
 
@@ -70,6 +72,8 @@ public class EnemyController : MonoBehaviour
     private Color _defaultSpriteColor = Color.white;
     private SpriteRenderer[] _flashSpriteRenderers = System.Array.Empty<SpriteRenderer>();
     private Color[] _defaultFlashColors = System.Array.Empty<Color>();
+    private bool _hasHurtTrigger;
+    private int _hurtTriggerHash;
 
     private void Awake()
     {
@@ -94,6 +98,8 @@ public class EnemyController : MonoBehaviour
 
         if (animator != null)
             _defaultAnimatorSpeed = animator.speed;
+
+        ResolveAnimationBindings();
 
         if (autoRaiseHealthBar && _collider2D != null)
         {
@@ -186,12 +192,12 @@ public class EnemyController : MonoBehaviour
 
         if (animator != null)
         {
-            if (!string.IsNullOrWhiteSpace(hurtTriggerName))
-                animator.ResetTrigger(hurtTriggerName);
+            if (_hasHurtTrigger)
+                animator.ResetTrigger(_hurtTriggerHash);
 
             animator.speed = Mathf.Max(0.01f, deadAnimationSpeed);
 
-            if (!string.IsNullOrWhiteSpace(deadBoolName))
+            if (HasBoolParameter(animator, deadBoolName))
                 animator.SetBool(deadBoolName, true);
 
             if (!string.IsNullOrWhiteSpace(deadStateName))
@@ -301,11 +307,101 @@ public class EnemyController : MonoBehaviour
 
     private void TriggerHurtAnimation()
     {
-        if (_isDead || animator == null || string.IsNullOrWhiteSpace(hurtTriggerName))
+        if (_isDead || animator == null)
             return;
 
-        animator.ResetTrigger(hurtTriggerName);
-        animator.SetTrigger(hurtTriggerName);
+        if (_hasHurtTrigger)
+        {
+            animator.ResetTrigger(_hurtTriggerHash);
+            animator.SetTrigger(_hurtTriggerHash);
+            return;
+        }
+
+        if (!string.IsNullOrWhiteSpace(hurtStateName))
+        {
+            animator.Play(hurtStateName, 0, 0f);
+            animator.Update(0f);
+        }
+    }
+
+    private void ResolveAnimationBindings()
+    {
+        _hurtTriggerHash = Animator.StringToHash(hurtTriggerName);
+        _hasHurtTrigger = HasTriggerParameter(animator, hurtTriggerName);
+
+        if (!autoResolveAnimationStateNames || animator == null || animator.runtimeAnimatorController == null)
+            return;
+
+        if (!_hasHurtTrigger && string.IsNullOrWhiteSpace(hurtStateName))
+            hurtStateName = FindAnimationStateName("hurt");
+
+        if (string.IsNullOrWhiteSpace(deadStateName) || !HasAnimationClip(deadStateName))
+            deadStateName = FindAnimationStateName("dead") ?? deadStateName;
+    }
+
+    private bool HasAnimationClip(string clipName)
+    {
+        if (animator == null || animator.runtimeAnimatorController == null || string.IsNullOrWhiteSpace(clipName))
+            return false;
+
+        var clips = animator.runtimeAnimatorController.animationClips;
+        for (int i = 0; i < clips.Length; i++)
+        {
+            var clip = clips[i];
+            if (clip != null && clip.name == clipName)
+                return true;
+        }
+
+        return false;
+    }
+
+    private string FindAnimationStateName(string keyword)
+    {
+        if (animator == null || animator.runtimeAnimatorController == null || string.IsNullOrWhiteSpace(keyword))
+            return null;
+
+        var clips = animator.runtimeAnimatorController.animationClips;
+        for (int i = 0; i < clips.Length; i++)
+        {
+            var clip = clips[i];
+            if (clip == null)
+                continue;
+
+            if (clip.name.IndexOf(keyword, System.StringComparison.OrdinalIgnoreCase) >= 0)
+                return clip.name;
+        }
+
+        return null;
+    }
+
+    private static bool HasBoolParameter(Animator targetAnimator, string paramName)
+    {
+        if (targetAnimator == null || string.IsNullOrWhiteSpace(paramName))
+            return false;
+
+        var parameters = targetAnimator.parameters;
+        for (int i = 0; i < parameters.Length; i++)
+        {
+            if (parameters[i].type == AnimatorControllerParameterType.Bool && parameters[i].name == paramName)
+                return true;
+        }
+
+        return false;
+    }
+
+    private static bool HasTriggerParameter(Animator targetAnimator, string paramName)
+    {
+        if (targetAnimator == null || string.IsNullOrWhiteSpace(paramName))
+            return false;
+
+        var parameters = targetAnimator.parameters;
+        for (int i = 0; i < parameters.Length; i++)
+        {
+            if (parameters[i].type == AnimatorControllerParameterType.Trigger && parameters[i].name == paramName)
+                return true;
+        }
+
+        return false;
     }
 
     private void TriggerHurtFlash()

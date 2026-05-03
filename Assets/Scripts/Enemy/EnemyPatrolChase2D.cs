@@ -19,12 +19,18 @@ public class EnemyPatrolChase2D : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private Animator animator;
     [SerializeField] private string walkBoolName = "Walk";
+    [SerializeField] private string walkStateName;
+    [SerializeField] private string idleStateName;
+
+    [Header("Movement")]
+    [SerializeField] private bool moveWithRigidbody2D = true;
 
     [Header("Fallback Route")]
     [SerializeField, Min(0.1f)] private float fallbackHalfDistance = 2f;
 
     private EnemyController _enemyController;
     private EnemyDamageDealer _damageDealer;
+    private EnemyRangedShooter2D _rangedShooter;
     private Rigidbody2D _rigidbody2D;
     private Transform _currentTarget;
     private Vector2 _patrolPointA;
@@ -32,23 +38,48 @@ public class EnemyPatrolChase2D : MonoBehaviour
     private bool _moveToB = true;
     private int _walkHash;
     private bool _canDriveWalkAnimation;
+    private int _walkStateHash;
+    private int _idleStateHash;
+    private bool _lastWalkAnimationState;
+    private bool _hasLastWalkAnimationState;
 
     private void Awake()
     {
         _enemyController = GetComponent<EnemyController>();
         _damageDealer = GetComponent<EnemyDamageDealer>();
+        _rangedShooter = GetComponent<EnemyRangedShooter2D>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
+
+        if (_rigidbody2D != null)
+        {
+            // Prevent scene overrides from freezing movement axes and causing "walk in place".
+            _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
+            _rigidbody2D.gravityScale = 0f;
+            _rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
         animator = animator != null ? animator : GetComponent<Animator>();
+        if (animator != null)
+            animator.applyRootMotion = true;
 
         _walkHash = Animator.StringToHash(walkBoolName);
         _canDriveWalkAnimation = animator != null && HasBoolParameter(animator, walkBoolName);
+        ResolveMovementStates();
 
         InitializePatrolPoints();
     }
 
     private void FixedUpdate()
     {
+        TryResolveRuntimeReferences();
+
         if (_enemyController != null && _enemyController.IsDead)
+        {
+            SetWalkAnimation(false);
+            return;
+        }
+
+        if (_rangedShooter != null && _rangedShooter.LockMovementWhileShooting)
         {
             SetWalkAnimation(false);
             return;
@@ -70,18 +101,21 @@ public class EnemyPatrolChase2D : MonoBehaviour
         else if (_currentTarget != null)
             FaceDirection(_currentTarget.position.x - transform.position.x);
 
-        if (isPatrolling && Vector2.Distance(nextPosition, targetPosition) <= arriveDistance)
+        if (isPatrolling && Mathf.Abs(nextPosition.x - targetPosition.x) <= arriveDistance)
             _moveToB = !_moveToB;
     }
 
     private Vector2 GetPosition()
     {
-        return _rigidbody2D != null ? _rigidbody2D.position : (Vector2)transform.position;
+        if (_rigidbody2D != null && _rigidbody2D.simulated && moveWithRigidbody2D)
+            return _rigidbody2D.position;
+
+        return transform.position;
     }
 
     private void MoveTo(Vector2 nextPosition)
     {
-        if (_rigidbody2D != null)
+        if (_rigidbody2D != null && _rigidbody2D.simulated && moveWithRigidbody2D)
         {
             _rigidbody2D.MovePosition(nextPosition);
             return;
@@ -98,6 +132,11 @@ public class EnemyPatrolChase2D : MonoBehaviour
             moveSpeed = chaseSpeed;
 
             var targetX = _currentTarget.position.x;
+
+            // Ranged enemies should hold ground while the player is not in melee distance.
+            if (_rangedShooter != null && Mathf.Abs(targetX - currentPosition.x) > _rangedShooter.MeleeDistanceThreshold)
+                return currentPosition;
+
             var stopDistance = GetStopDistance();
             if (Mathf.Abs(targetX - currentPosition.x) <= stopDistance)
                 return currentPosition;
@@ -107,7 +146,9 @@ public class EnemyPatrolChase2D : MonoBehaviour
 
         isPatrolling = true;
         moveSpeed = patrolSpeed;
-        return _moveToB ? GetPointBPosition() : GetPointAPosition();
+        // Patrol should move only along X; Y can be constrained by physics in scenes.
+        var patrolPoint = _moveToB ? GetPointBPosition() : GetPointAPosition();
+        return new Vector2(patrolPoint.x, currentPosition.y);
     }
 
     private void RefreshTarget()
@@ -138,6 +179,18 @@ public class EnemyPatrolChase2D : MonoBehaviour
             closestDistance = distance;
             _currentTarget = player.transform;
         }
+    }
+
+    private void TryResolveRuntimeReferences()
+    {
+        if (_enemyController == null)
+            _enemyController = GetComponent<EnemyController>();
+
+        if (_damageDealer == null)
+            _damageDealer = GetComponent<EnemyDamageDealer>();
+
+        if (_rangedShooter == null)
+            _rangedShooter = GetComponent<EnemyRangedShooter2D>();
     }
 
     private Vector2 GetPointAPosition()
@@ -182,10 +235,73 @@ public class EnemyPatrolChase2D : MonoBehaviour
 
     private void SetWalkAnimation(bool isWalking)
     {
-        if (!_canDriveWalkAnimation)
+        if (animator == null)
             return;
 
-        animator.SetBool(_walkHash, isWalking);
+        // Keep combat/hurt clips in control while they are playing.
+        if ((_damageDealer != null && _damageDealer.IsAttacking)
+            || (_rangedShooter != null && _rangedShooter.IsShooting)
+            || (_enemyController != null && !_enemyController.CanDealDamage))
+            return;
+
+        if (_canDriveWalkAnimation)
+        {
+            animator.SetBool(_walkHash, isWalking);
+            return;
+        }
+
+        var stateHash = isWalking ? _walkStateHash : _idleStateHash;
+        if (stateHash == 0)
+            return;
+
+        var currentState = animator.GetCurrentAnimatorStateInfo(0);
+        var isAlreadyInDesiredState = currentState.shortNameHash == stateHash || currentState.fullPathHash == stateHash;
+
+        if (_hasLastWalkAnimationState && _lastWalkAnimationState == isWalking && isAlreadyInDesiredState)
+            return;
+
+        animator.Play(stateHash, 0, 0f);
+        animator.Update(0f);
+
+        _lastWalkAnimationState = isWalking;
+        _hasLastWalkAnimationState = true;
+    }
+
+    private void ResolveMovementStates()
+    {
+        if (_canDriveWalkAnimation || animator == null || animator.runtimeAnimatorController == null)
+            return;
+
+        if (string.IsNullOrWhiteSpace(walkStateName))
+            walkStateName = FindAnimationStateName("walk") ?? FindAnimationStateName("run");
+
+        if (string.IsNullOrWhiteSpace(idleStateName))
+            idleStateName = FindAnimationStateName("idle");
+
+        if (!string.IsNullOrWhiteSpace(walkStateName))
+            _walkStateHash = Animator.StringToHash(walkStateName);
+
+        if (!string.IsNullOrWhiteSpace(idleStateName))
+            _idleStateHash = Animator.StringToHash(idleStateName);
+    }
+
+    private string FindAnimationStateName(string keyword)
+    {
+        if (animator == null || animator.runtimeAnimatorController == null || string.IsNullOrWhiteSpace(keyword))
+            return null;
+
+        var clips = animator.runtimeAnimatorController.animationClips;
+        for (int i = 0; i < clips.Length; i++)
+        {
+            var clip = clips[i];
+            if (clip == null)
+                continue;
+
+            if (clip.name.IndexOf(keyword, System.StringComparison.OrdinalIgnoreCase) >= 0)
+                return clip.name;
+        }
+
+        return null;
     }
 
     private static bool HasBoolParameter(Animator targetAnimator, string paramName)
