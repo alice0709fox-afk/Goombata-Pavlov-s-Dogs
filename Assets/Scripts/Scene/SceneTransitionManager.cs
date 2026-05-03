@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.Playables;
 using Unity.Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ using UnityEditor;
 
 public class SceneTransitionManager : MonoBehaviour
 {
-    private const string Level2SceneName = "Level_2";
+    private const string GameplayScenePrefix = "Level_";
 
     private static SceneTransitionManager _instance;
     private static float _loadingProgress;
@@ -24,6 +25,7 @@ public class SceneTransitionManager : MonoBehaviour
     private bool _isLoading;
     private Coroutine _applySpawnRoutine;
     private Coroutine _attachCameraRoutine;
+    private Coroutine _enforceCameraBindingRoutine;
     private bool _initialSceneHandled;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
@@ -92,6 +94,12 @@ public class SceneTransitionManager : MonoBehaviour
             {
                 StopCoroutine(_attachCameraRoutine);
                 _attachCameraRoutine = null;
+            }
+
+            if (_enforceCameraBindingRoutine != null)
+            {
+                StopCoroutine(_enforceCameraBindingRoutine);
+                _enforceCameraBindingRoutine = null;
             }
 
             _instance = null;
@@ -203,10 +211,17 @@ public class SceneTransitionManager : MonoBehaviour
 
         if (string.IsNullOrWhiteSpace(_pendingSpawnPointName))
         {
-            if (!string.Equals(scene.name, Level2SceneName))
+            if (!ShouldAutoBindSceneCameras(scene))
             {
                 return;
             }
+
+            if (_enforceCameraBindingRoutine != null)
+            {
+                StopCoroutine(_enforceCameraBindingRoutine);
+            }
+
+            _enforceCameraBindingRoutine = StartCoroutine(EnforceSceneCameraBinding(scene));
 
             var fallbackTarget = GetFirstPlayerTarget();
             if (fallbackTarget != null)
@@ -232,6 +247,84 @@ public class SceneTransitionManager : MonoBehaviour
         }
 
         _applySpawnRoutine = StartCoroutine(ApplyPendingSpawnWhenReady(scene, _pendingSpawnPointName));
+    }
+
+    private IEnumerator EnforceSceneCameraBinding(Scene scene)
+    {
+        var forcedPlayerCamera = FindPreferredPlayerCamera(scene);
+        while (scene.IsValid() && scene.isLoaded && SceneManager.GetActiveScene() == scene)
+        {
+            if (IsAnyCutscenePlaying(scene))
+            {
+                CinemachineCore.SoloCamera = null;
+                yield return null;
+                continue;
+            }
+
+            var target = GetFirstPlayerTarget();
+            if (target != null)
+            {
+                AttachSceneCamerasToTarget(scene, target);
+
+                if (forcedPlayerCamera == null)
+                    forcedPlayerCamera = FindPreferredPlayerCamera(scene);
+
+                if (forcedPlayerCamera != null)
+                {
+                    forcedPlayerCamera.gameObject.SetActive(true);
+                    forcedPlayerCamera.Priority = 100;
+                    forcedPlayerCamera.Follow = target;
+                    forcedPlayerCamera.LookAt = target;
+                    CinemachineCore.SoloCamera = forcedPlayerCamera;
+                }
+            }
+
+            yield return null;
+        }
+
+        CinemachineCore.SoloCamera = null;
+        _enforceCameraBindingRoutine = null;
+    }
+
+    private static bool IsAnyCutscenePlaying(Scene scene)
+    {
+        var directors = FindObjectsByType<PlayableDirector>(FindObjectsSortMode.None);
+        for (var i = 0; i < directors.Length; i++)
+        {
+            var director = directors[i];
+            if (director == null || director.gameObject.scene != scene)
+                continue;
+
+            if (director.state == PlayState.Playing)
+                return true;
+        }
+
+        return false;
+    }
+
+    private static CinemachineVirtualCameraBase FindPreferredPlayerCamera(Scene scene)
+    {
+        var virtualCameras = FindObjectsByType<CinemachineVirtualCameraBase>(FindObjectsSortMode.None);
+        for (var i = 0; i < virtualCameras.Length; i++)
+        {
+            var virtualCamera = virtualCameras[i];
+            if (virtualCamera == null || virtualCamera.gameObject.scene != scene)
+                continue;
+
+            if (virtualCamera.gameObject.name.IndexOf("CinemachineCameraPlayer", System.StringComparison.OrdinalIgnoreCase) >= 0)
+                return virtualCamera;
+        }
+
+        return null;
+    }
+
+    private static bool ShouldAutoBindSceneCameras(Scene scene)
+    {
+        if (!scene.IsValid() || string.IsNullOrWhiteSpace(scene.name))
+            return false;
+
+        // Gameplay scenes can be loaded without explicit spawn transitions, so rebind cameras to player.
+        return scene.name.StartsWith(GameplayScenePrefix, System.StringComparison.OrdinalIgnoreCase);
     }
 
     private IEnumerator AttachSceneCamerasWhenReady(Scene scene)
@@ -448,20 +541,20 @@ public class SceneTransitionManager : MonoBehaviour
                 continue;
             }
 
+            // Keep cutscene setup intact: rebind active cameras and player-designated cameras.
+            var shouldBind = virtualCamera.gameObject.activeInHierarchy
+                             || virtualCamera.gameObject.name.IndexOf("player", System.StringComparison.OrdinalIgnoreCase) >= 0;
+            if (!shouldBind)
+                continue;
+
             virtualCamera.Follow = target;
-            if (virtualCamera.LookAt == null)
-            {
-                virtualCamera.LookAt = target;
-            }
+            virtualCamera.LookAt = target;
 
             if (virtualCamera is CinemachineCamera cinemachineCamera)
             {
                 var cameraTarget = cinemachineCamera.Target;
                 cameraTarget.TrackingTarget = target;
-                if (cameraTarget.LookAtTarget == null)
-                {
-                    cameraTarget.LookAtTarget = target;
-                }
+                cameraTarget.LookAtTarget = target;
 
                 cinemachineCamera.Target = cameraTarget;
             }

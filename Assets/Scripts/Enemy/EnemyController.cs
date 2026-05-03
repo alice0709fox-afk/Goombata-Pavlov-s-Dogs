@@ -54,6 +54,21 @@ public class EnemyController : MonoBehaviour
 
     public event System.Action Died;
 
+    public void SetRuntimeMaxHealth(float newMaxHealth)
+    {
+        newMaxHealth = Mathf.Max(1f, newMaxHealth);
+        if (Mathf.Approximately(maxHealth, newMaxHealth))
+            return;
+
+        var healthRatio = maxHealth > 0f ? Mathf.Clamp01(_currentHealth / maxHealth) : 1f;
+        maxHealth = newMaxHealth;
+
+        if (!_isDead)
+            _currentHealth = Mathf.Clamp(newMaxHealth * healthRatio, 1f, newMaxHealth);
+
+        UpdateHealthBar();
+    }
+
     private float _currentHealth;
     private Transform _healthBarRoot;
     private SpriteRenderer _healthBarBackground;

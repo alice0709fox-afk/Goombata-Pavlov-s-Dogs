@@ -33,6 +33,11 @@ public class EnemyRangedShooter2D : MonoBehaviour
     public bool LockMovementWhileShooting => lockMovementWhileShooting && _isShooting;
     public float MeleeDistanceThreshold => Mathf.Max(0.1f, meleeDistanceThreshold);
 
+    public void SetRuntimeProjectileDamage(float newDamage)
+    {
+        projectileDamage = Mathf.Max(0f, newDamage);
+    }
+
     private EnemyController _enemyController;
     private EnemyDamageDealer _meleeDealer;
     private bool _isShooting;
@@ -175,6 +180,10 @@ public class EnemyRangedShooter2D : MonoBehaviour
 
             if (templateClone.GetComponent<EnemyProjectile2D>() == null)
                 templateClone.AddComponent<EnemyProjectile2D>();
+
+            var trails = templateClone.GetComponentsInChildren<TrailRenderer>(true);
+            for (int i = 0; i < trails.Length; i++)
+                Destroy(trails[i]);
 
             return templateClone;
         }

@@ -6,6 +6,9 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
 {
     private static GameplayMechanicsBootstrapper _instance;
 
+    private const float UnifiedEnemyMaxHealth = 120f;
+    private const float UnifiedEnemyDamage = 20f;
+
     private float _nextRefreshTime;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
@@ -141,8 +144,31 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
                 if (!isRaider3 && !isRaider2)
                     continue;
 
-                EnsureEnemySetup(current.gameObject, isRaider2);
+                EnsureEnemySetup(current.gameObject, isRaider2, isRaider3);
             }
+        }
+
+        ApplyUnifiedEnemyStats(scene);
+    }
+
+    private static void ApplyUnifiedEnemyStats(Scene scene)
+    {
+        var enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            var enemy = enemies[i];
+            if (enemy == null || enemy.gameObject.scene != scene)
+                continue;
+
+            enemy.SetRuntimeMaxHealth(UnifiedEnemyMaxHealth);
+
+            var damageDealer = enemy.GetComponent<EnemyDamageDealer>();
+            if (damageDealer != null)
+                damageDealer.SetRuntimeDamage(UnifiedEnemyDamage);
+
+            var rangedShooter = enemy.GetComponent<EnemyRangedShooter2D>();
+            if (rangedShooter != null)
+                rangedShooter.SetRuntimeProjectileDamage(UnifiedEnemyDamage);
         }
     }
 
@@ -185,7 +211,7 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
         }
     }
 
-    private static void EnsureEnemySetup(GameObject enemyObject, bool includeRangedShooter)
+    private static void EnsureEnemySetup(GameObject enemyObject, bool includeRangedShooter, bool isRaider3)
     {
         if (enemyObject == null)
             return;
@@ -210,5 +236,11 @@ public class GameplayMechanicsBootstrapper : MonoBehaviour
 
         if (includeRangedShooter && enemyObject.GetComponent<EnemyRangedShooter2D>() == null)
             enemyObject.AddComponent<EnemyRangedShooter2D>();
+
+        if (isRaider3)
+            return;
+
+        if (includeRangedShooter)
+            return;
     }
 }

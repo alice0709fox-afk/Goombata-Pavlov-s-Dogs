@@ -7,6 +7,9 @@ public class EnemyPatrolChase2D : MonoBehaviour
     [Header("Route")]
     [SerializeField] private Transform pointA;
     [SerializeField] private Transform pointB;
+    [SerializeField] private bool useLocalPatrolPoints = true;
+    [SerializeField] private Vector2 localPointA = new Vector2(-2f, 0f);
+    [SerializeField] private Vector2 localPointB = new Vector2(2f, 0f);
     [SerializeField, Min(0.05f)] private float patrolSpeed = 1.5f;
     [SerializeField, Min(0.05f)] private float chaseSpeed = 2.25f;
     [SerializeField, Min(0.01f)] private float arriveDistance = 0.05f;
@@ -212,6 +215,14 @@ public class EnemyPatrolChase2D : MonoBehaviour
             return;
         }
 
+        if (useLocalPatrolPoints)
+        {
+            var origin = (Vector2)transform.position;
+            _patrolPointA = origin + localPointA;
+            _patrolPointB = origin + localPointB;
+            return;
+        }
+
         var start = (Vector2)transform.position;
         _patrolPointA = start + Vector2.left * fallbackHalfDistance;
         _patrolPointB = start + Vector2.right * fallbackHalfDistance;
@@ -322,8 +333,24 @@ public class EnemyPatrolChase2D : MonoBehaviour
     {
         Gizmos.color = Color.red;
 
-        var a = pointA != null ? (Vector2)pointA.position : (Vector2)transform.position + Vector2.left * fallbackHalfDistance;
-        var b = pointB != null ? (Vector2)pointB.position : (Vector2)transform.position + Vector2.right * fallbackHalfDistance;
+        Vector2 a;
+        Vector2 b;
+
+        if (pointA != null && pointB != null)
+        {
+            a = pointA.position;
+            b = pointB.position;
+        }
+        else if (useLocalPatrolPoints)
+        {
+            a = (Vector2)transform.position + localPointA;
+            b = (Vector2)transform.position + localPointB;
+        }
+        else
+        {
+            a = (Vector2)transform.position + Vector2.left * fallbackHalfDistance;
+            b = (Vector2)transform.position + Vector2.right * fallbackHalfDistance;
+        }
 
         Gizmos.DrawSphere(a, 0.08f);
         Gizmos.DrawSphere(b, 0.08f);

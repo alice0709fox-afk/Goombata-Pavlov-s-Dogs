@@ -291,8 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0cd72594e31234f98cc275b0751571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
-  maxHealth: 100
-  soulReward: 10
+  maxHealth: 200
+  soulReward: 20
   healthBarOffset: {x: 0, y: 2, z: 0}
   healthBarSize: {x: 1.2, y: 0.18}
   healthBarBackgroundColor: {r: 0, g: 0, b: 0, a: 0.75}

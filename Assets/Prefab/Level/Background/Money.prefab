@@ -218,6 +218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6661863272a4e4695c9501feefc0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoneyPickup
-  amount: 1000
+  amount: 100
   collectRadius: 0.6
   collectCooldown: 0.12

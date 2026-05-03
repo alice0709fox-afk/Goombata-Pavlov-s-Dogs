@@ -29,7 +29,7 @@ public class EnemyProjectile2D : MonoBehaviour
         {
             _rigidbody2D.simulated = true;
             _rigidbody2D.gravityScale = 0f;
-            _rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
+            _rigidbody2D.bodyType = RigidbodyType2D.Kinematic;
             _rigidbody2D.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
             _rigidbody2D.interpolation = RigidbodyInterpolation2D.Interpolate;
         }
@@ -60,8 +60,6 @@ public class EnemyProjectile2D : MonoBehaviour
             }
         }
 
-        if (_rigidbody2D != null && _rigidbody2D.simulated)
-            _rigidbody2D.linearVelocity = _direction * _speed;
     }
 
     private void FixedUpdate()
@@ -74,7 +72,6 @@ public class EnemyProjectile2D : MonoBehaviour
         if (_rigidbody2D != null && _rigidbody2D.simulated)
         {
             _rigidbody2D.MovePosition(_rigidbody2D.position + step);
-            _rigidbody2D.linearVelocity = _direction * _speed;
             return;
         }
 

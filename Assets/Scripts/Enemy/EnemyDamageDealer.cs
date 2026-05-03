@@ -22,6 +22,11 @@ public class EnemyDamageDealer : MonoBehaviour
     public float AttackRange => attackRange;
     public bool IsAttacking => _isAttacking;
 
+    public void SetRuntimeDamage(float newDamage)
+    {
+        damage = Mathf.Max(0f, newDamage);
+    }
+
     private float _nextDamageTime;
     private EnemyController _enemyController;
     private bool _isAttacking;
