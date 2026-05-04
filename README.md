@@ -38,42 +38,63 @@
 | Бег | Button East (B / Circle) |
 | Атака | Right Trigger |
 
-## Архитектура и иерархия проекта
-
-### Основная структура
+## Структура проекта
 
 ```text
 Goombata-Pavlov-s-Dogs/
-  Assets/
-    Inputs/
-    Scripts/
-      Enemy/
-      Player/
-      Scene/
-      UI/
-      Weapons/
-      Level/
-      Audio/
-      Shop/
-      NPC/
-    Prefab/
-    _Scenes/
-    Resources/
-  Packages/
-  ProjectSettings/
+├── Assets/
+│   ├── Audio/
+│   ├── Configs/
+│   ├── Dialogue/
+│   ├── Enemy/
+│   ├── Inputs/
+│   ├── Level/
+│   ├── Menu/
+│   ├── NPC/
+│   ├── Player/
+│   ├── Scene/
+│   ├── Shop/
+│   ├── UI/
+│   └── Weapons/
+│       ├── Bullet/
+│       ├── Handlers/
+│       └── ScriptableObject/
+├── Packages/
+├── ProjectSettings/
+├── README.md
+└── .gitignore
 ```
 
-### Ключевые скрипты
+## Архитектура кода
 
-- Assets/Scripts/Inputs/PlayerInputHandler.cs - обработка и трансляция команд ввода
-- Assets/Scripts/Player/PlayerMovement.cs - движение, прыжок, базовая кинематика игрока
-- Assets/Scripts/Player/PlayerAttackHandler.cs - запуск атак через систему оружия
-- Assets/Scripts/Player/PlayerHealth.cs - здоровье игрока, урон, смерть
-- Assets/Scripts/Enemy/EnemyPatrolChase2D.cs - патруль и преследование игрока
-- Assets/Scripts/Enemy/EnemyDamageDealer.cs - зона атаки врага и нанесение урона
-- Assets/Scripts/Enemy/EnemyController.cs - общее состояние врага, смерть, награда
-- Assets/Scripts/Scene/SceneTransitionManager.cs - переходы сцен, спавн, привязка камер
-- Assets/Scripts/Level/GameplayMechanicsBootstrapper.cs - инициализация игровых механик
+```text
+Assets/Scripts/
+├── Audio/
+├── Configs/
+├── Dialogue/
+├── Enemy/
+├── Inputs/
+├── Level/
+├── Menu/
+├── NPC/
+├── Player/
+├── Scene/
+├── Shop/
+├── UI/
+└── Weapons/
+```
+
+## Ключевые скрипты
+
+- [Assets/Scripts/Inputs/PlayerInputHandler.cs](Assets/Scripts/Inputs/PlayerInputHandler.cs) - обработка и трансляция команд ввода
+- [Assets/Scripts/Player/PlayerMovement.cs](Assets/Scripts/Player/PlayerMovement.cs) - движение, прыжок, базовая кинематика игрока
+- [Assets/Scripts/Player/PlayerAttackHandler.cs](Assets/Scripts/Player/PlayerAttackHandler.cs) - запуск атак через систему оружия
+- [Assets/Scripts/Player/PlayerHealth.cs](Assets/Scripts/Player/PlayerHealth.cs) - здоровье игрока, урон, смерть
+- [Assets/Scripts/Enemy/EnemyPatrolChase2D.cs](Assets/Scripts/Enemy/EnemyPatrolChase2D.cs) - патруль и преследование игрока
+- [Assets/Scripts/Enemy/EnemyDamageDealer.cs](Assets/Scripts/Enemy/EnemyDamageDealer.cs) - зона атаки врага и нанесение урона
+- [Assets/Scripts/Enemy/EnemyController.cs](Assets/Scripts/Enemy/EnemyController.cs) - общее состояние врага, смерть, награда
+- [Assets/Scripts/Scene/SceneTransitionManager.cs](Assets/Scripts/Scene/SceneTransitionManager.cs) - переходы сцен, спавн, привязка камер
+- [Assets/Scripts/Level/GameplayMechanicsBootstrapper.cs](Assets/Scripts/Level/GameplayMechanicsBootstrapper.cs) - инициализация игровых механик
 
 ## Как запустить
 
