@@ -7,6 +7,8 @@ using UnityEditor;
 [DisallowMultipleComponent]
 public class EnemyController : MonoBehaviour
 {
+    private const int NonBossHitsToDie = 2;
+
     public static event System.Action<EnemyController> AnyEnemyDied;
 
     [Header("Health")]
@@ -64,7 +66,12 @@ public class EnemyController : MonoBehaviour
         maxHealth = newMaxHealth;
 
         if (!_isDead)
-            _currentHealth = Mathf.Clamp(newMaxHealth * healthRatio, 1f, newMaxHealth);
+        {
+            if (!_isBoss && _receivedHitCount > 0)
+                _currentHealth = GetNonBossHealthAfterHits(_receivedHitCount);
+            else
+                _currentHealth = Mathf.Clamp(newMaxHealth * healthRatio, 1f, newMaxHealth);
+        }
 
         UpdateHealthBar();
     }
@@ -89,6 +96,8 @@ public class EnemyController : MonoBehaviour
     private Color[] _defaultFlashColors = System.Array.Empty<Color>();
     private bool _hasHurtTrigger;
     private int _hurtTriggerHash;
+    private bool _isBoss;
+    private int _receivedHitCount;
 
     private void Awake()
     {
@@ -106,9 +115,11 @@ public class EnemyController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _damageDealer = GetComponent<EnemyDamageDealer>();
         _patrolChase = GetComponent<EnemyPatrolChase2D>();
+        _isBoss = GetComponent<BossController>() != null;
+        _receivedHitCount = 0;
 
         // Для босса важно не отключать коллайдер на смерти, иначе объект провалится в пол.
-        if (!keepColliderOnDeath && GetComponent<BossController>() != null)
+        if (!keepColliderOnDeath && _isBoss)
             keepColliderOnDeath = true;
 
         if (animator != null)
@@ -154,7 +165,16 @@ public class EnemyController : MonoBehaviour
         if (Time.time < _nextAllowedDamageTime)
             return;
 
-        _currentHealth = Mathf.Max(0f, _currentHealth - damage);
+        if (_isBoss)
+        {
+            _currentHealth = Mathf.Max(0f, _currentHealth - damage);
+        }
+        else
+        {
+            _receivedHitCount = Mathf.Min(NonBossHitsToDie, _receivedHitCount + 1);
+            _currentHealth = GetNonBossHealthAfterHits(_receivedHitCount);
+        }
+
         _nextAllowedDamageTime = Time.time + hurtInvulnerabilityDuration;
         _hurtLockedUntilTime = Mathf.Max(_hurtLockedUntilTime, Time.time + hurtAttackLockDuration);
 
@@ -165,6 +185,15 @@ public class EnemyController : MonoBehaviour
 
         if (_currentHealth <= 0f)
             Die();
+    }
+
+    private float GetNonBossHealthAfterHits(int hitCount)
+    {
+        if (hitCount >= NonBossHitsToDie)
+            return 0f;
+
+        var healthFraction = 1f - (float)hitCount / NonBossHitsToDie;
+        return Mathf.Clamp(maxHealth * healthFraction, 0f, maxHealth);
     }
 
     private void Die()

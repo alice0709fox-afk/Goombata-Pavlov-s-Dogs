@@ -38,6 +38,8 @@ public class DeathScreenManager : MonoBehaviour
     private float _nextRegistrationTime;
     private int _selectionIndex;
 
+    public static bool IsDeathFlowActive => _instance != null && (_instance._isVisible || _instance._isTransitioning);
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Bootstrap()
     {

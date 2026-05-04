@@ -6,6 +6,7 @@ public class PlayerConsumables : MonoBehaviour
 {
     [SerializeField] private int maxKolaCount = 2;
     [SerializeField] private int startKolaCount;
+    [SerializeField] private bool kolaHealsToFull = true;
     [SerializeField] private float kolaHealAmount = 25f;
 
     public event System.Action<int, int> KolaCountChanged;
@@ -60,7 +61,11 @@ public class PlayerConsumables : MonoBehaviour
         }
 
         CurrentKolaCount--;
-        _playerHealth.Heal(kolaHealAmount);
+        if (kolaHealsToFull)
+            _playerHealth.Heal(_playerHealth.MaxHealth);
+        else
+            _playerHealth.Heal(kolaHealAmount);
+
         AudioController.Instance?.PlayKolaUse();
         NotifyKolaChanged();
         return true;

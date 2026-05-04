@@ -11,6 +11,9 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyController))]
 public class BossController : MonoBehaviour
 {
+    [Header("Activation")]
+    [SerializeField] private bool waitForCutsceneActivation = true;
+
     [Header("Patrol")]
     [SerializeField] private Transform[] platformPoints;
     [SerializeField, Min(0.1f)] private float walkSpeed = 2f;
@@ -21,6 +24,7 @@ public class BossController : MonoBehaviour
     [SerializeField, Min(0.1f)] private float detectionRange = 9f;
     [SerializeField, Min(0.1f)] private float loseTargetRange = 12f;
     [SerializeField, Min(0f)] private float stoppingDistance = 1.2f;
+    [SerializeField, Min(0.2f)] private float maxChaseStoppingDistance = 1.5f;
 
     [Header("Jump")]
     [SerializeField, Min(1f)] private float jumpForceX = 4f;
@@ -29,6 +33,8 @@ public class BossController : MonoBehaviour
     [SerializeField, Min(0f)] private float minJumpXDistance = 1.5f;
     [SerializeField, Min(0f)] private float chaseJumpDistance = 4f;
     [SerializeField, Min(0f)] private float minJumpTargetHeight = 0.35f;
+    [SerializeField, Min(0f)] private float gapCheckForwardDistance = 0.75f;
+    [SerializeField, Min(0.1f)] private float gapCheckDownDistance = 0.9f;
     [SerializeField, Min(0.1f)] private float groundCheckDistance = 0.15f;
     [SerializeField, Min(0f)] private float groundSnapDistance = 0.2f;
     [SerializeField, Min(0f)] private float maxGroundSnapLift = 0.08f;
@@ -36,6 +42,7 @@ public class BossController : MonoBehaviour
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
+    [SerializeField] private bool forceApplyRootMotionOnEnable = true;
     [SerializeField] private string walkBoolName = "Walk";
     [SerializeField] private string jumpBoolName = "Jump";
     [SerializeField] private string attackTriggerName = "Attack";
@@ -43,7 +50,9 @@ public class BossController : MonoBehaviour
 
     [Header("Built-in Attack Fallback")]
     [SerializeField] private bool enableBuiltInAttack = true;
+    [SerializeField] private bool allowFallbackAttackWhenDamageDealerExists = true;
     [SerializeField, Min(0.1f)] private float attackRange = 1.6f;
+    [SerializeField, Min(0.8f)] private float dealerFallbackAttackRangeMultiplier = 1.1f;
     [SerializeField] private Vector2 attackOffset = new Vector2(0.9f, 0.2f);
     [SerializeField, Min(0.05f)] private float attackRadius = 0.5f;
     [SerializeField, Min(0f)] private float attackWindup = 0.1f;
@@ -66,6 +75,7 @@ public class BossController : MonoBehaviour
     private bool _canDriveWalkAnimation;
     private bool _canDriveJumpAnimation;
     private bool _canDriveAttackAnimation;
+    private bool _isActivatedByCutscene;
 
     private void Awake()
     {
@@ -73,6 +83,7 @@ public class BossController : MonoBehaviour
         _collider2D = GetComponent<Collider2D>();
         if (_rb.bodyType != RigidbodyType2D.Dynamic)
             _rb.bodyType = RigidbodyType2D.Dynamic;
+        _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
 
         _enemyController = GetComponent<EnemyController>();
         _damageDealer = GetComponent<EnemyDamageDealer>();
@@ -93,15 +104,56 @@ public class BossController : MonoBehaviour
 
         if (platformPoints == null || platformPoints.Length == 0)
             Debug.LogWarning("[BossController] platformPoints не назначены. Босс не будет двигаться.");
+
+        if (waitForCutsceneActivation)
+            enabled = false;
     }
 
     private void OnEnable()
     {
+        if (DeathScreenManager.IsDeathFlowActive)
+        {
+            enabled = false;
+            return;
+        }
+
+        if (waitForCutsceneActivation && !_isActivatedByCutscene)
+        {
+            enabled = false;
+            return;
+        }
+
+        EnsureRuntimeMotionSetup();
+
         _patrolTargetIndex = 0;
         _currentTarget = null;
         _nextJumpTime = Time.time + 0.25f;
         _nextAttackTime = Time.time + 0.2f;
         _isAttacking = false;
+    }
+
+    public void ActivateAfterCutscene()
+    {
+        if (DeathScreenManager.IsDeathFlowActive)
+            return;
+
+        _isActivatedByCutscene = true;
+        enabled = true;
+    }
+
+    private void EnsureRuntimeMotionSetup()
+    {
+        if (animator != null && forceApplyRootMotionOnEnable)
+            animator.applyRootMotion = true;
+
+        if (_rb == null)
+            return;
+
+        if (_rb.bodyType != RigidbodyType2D.Dynamic)
+            _rb.bodyType = RigidbodyType2D.Dynamic;
+
+        // Scene/prefab overrides can freeze movement axes after Timeline playback.
+        _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
     private void FixedUpdate()
@@ -141,7 +193,9 @@ public class BossController : MonoBehaviour
         var direction = absX > 0.01f ? Mathf.Sign(delta.x) : 0f;
 
         var moveSpeed = _currentTarget != null ? chaseSpeed : walkSpeed;
-        var minStopDistance = _currentTarget != null ? Mathf.Min(GetStopDistance(), 0.2f) : arriveDistance;
+        var minStopDistance = _currentTarget != null
+            ? Mathf.Min(GetStopDistance(), maxChaseStoppingDistance)
+            : arriveDistance;
         var shouldMove = absX > minStopDistance;
 
         if (ShouldStartBuiltInAttack())
@@ -163,7 +217,7 @@ public class BossController : MonoBehaviour
 
         SetWalk(Mathf.Abs(horizontalSpeed) > 0.01f);
 
-        if (grounded && Time.time >= _nextJumpTime && ShouldJump(delta, absX))
+        if (grounded && Time.time >= _nextJumpTime && ShouldJump(delta, absX, direction))
             Jump(direction);
     }
 
@@ -313,7 +367,7 @@ public class BossController : MonoBehaviour
         return fromIndex;
     }
 
-    private bool ShouldJump(Vector2 delta, float absX)
+    private bool ShouldJump(Vector2 delta, float absX, float direction)
     {
         if (absX < minJumpXDistance)
             return false;
@@ -321,7 +375,26 @@ public class BossController : MonoBehaviour
         if (_currentTarget != null)
             return delta.y > minJumpTargetHeight || absX >= chaseJumpDistance;
 
-        return Mathf.Abs(delta.y) > minJumpTargetHeight;
+        if (Mathf.Abs(delta.y) > minJumpTargetHeight)
+            return true;
+
+        return IsGroundMissingAhead(direction);
+    }
+
+    private bool IsGroundMissingAhead(float direction)
+    {
+        if (direction == 0f || _collider2D == null)
+            return false;
+
+        var bounds = _collider2D.bounds;
+        var originX = _rb.position.x + direction * Mathf.Max(0.05f, gapCheckForwardDistance);
+        var originY = bounds.min.y + 0.05f;
+        var origin = new Vector2(originX, originY);
+        var distance = Mathf.Max(0.1f, gapCheckDownDistance);
+        var mask = groundLayer.value != 0 ? groundLayer.value : Physics2D.AllLayers;
+        var hit = Physics2D.Raycast(origin, Vector2.down, distance, mask);
+
+        return hit.collider == null || hit.collider.gameObject == gameObject || hit.collider.isTrigger;
     }
 
     private void Jump(float direction)
@@ -336,7 +409,7 @@ public class BossController : MonoBehaviour
 
     private bool ShouldStartBuiltInAttack()
     {
-        if (!enableBuiltInAttack || _damageDealer != null || _isAttacking || _currentTarget == null)
+        if (!enableBuiltInAttack || _isAttacking || _currentTarget == null)
             return false;
 
         if (Time.time < _nextAttackTime)
@@ -347,7 +420,14 @@ public class BossController : MonoBehaviour
             return false;
 
         var distance = Vector2.Distance(transform.position, _currentTarget.position);
-        return distance <= attackRange;
+        if (_damageDealer == null)
+            return distance <= attackRange;
+
+        if (!allowFallbackAttackWhenDamageDealerExists || _damageDealer.IsAttacking)
+            return false;
+
+        var fallbackRange = Mathf.Max(attackRange, _damageDealer.AttackRange * dealerFallbackAttackRangeMultiplier);
+        return distance <= fallbackRange;
     }
 
     private IEnumerator BuiltInAttackRoutine()
@@ -418,7 +498,9 @@ public class BossController : MonoBehaviour
         if (_damageDealer == null)
             return stoppingDistance;
 
-        return Mathf.Max(stoppingDistance, _damageDealer.AttackRange * 0.85f);
+        // Clamp to avoid freezing too far from melee range if inspector overrides are large.
+        var chaseStopDistance = Mathf.Max(stoppingDistance, _damageDealer.AttackRange * 0.85f);
+        return Mathf.Min(chaseStopDistance, maxChaseStoppingDistance);
     }
 
     private static bool HasBoolParameter(Animator targetAnimator, string paramName)
@@ -495,11 +577,14 @@ public class BossController : MonoBehaviour
 
     private bool IsInAttackAnimation()
     {
+        if (_isAttacking || (_damageDealer != null && _damageDealer.IsAttacking))
+            return true;
+
         if (animator == null)
             return false;
 
         var state = animator.GetCurrentAnimatorStateInfo(0);
-        return state.IsName("Men3_Attack") || state.IsTag("Attack");
+        return state.IsName("Men3_Attack");
     }
 
     private void OnDrawGizmosSelected()

@@ -195,6 +195,7 @@ public class SceneTransitionManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         AudioListener.pause = false;
+        CinemachineCore.SoloCamera = null;
 
         _isLoading = false;
 
@@ -359,6 +360,9 @@ public class SceneTransitionManager : MonoBehaviour
             }
 
             var body = player.GetComponent<Rigidbody2D>();
+            if (body == null)
+                body = player.GetComponentInChildren<Rigidbody2D>(true);
+
             return body != null ? body.transform : player.transform;
         }
 
@@ -372,6 +376,9 @@ public class SceneTransitionManager : MonoBehaviour
             }
 
             var body = health.GetComponent<Rigidbody2D>();
+            if (body == null)
+                body = health.GetComponentInChildren<Rigidbody2D>(true);
+
             return body != null ? body.transform : health.transform;
         }
 
@@ -385,6 +392,9 @@ public class SceneTransitionManager : MonoBehaviour
             }
 
             var body = movement.GetComponent<Rigidbody2D>();
+            if (body == null)
+                body = movement.GetComponentInChildren<Rigidbody2D>(true);
+
             return body != null ? body.transform : movement.transform;
         }
 
@@ -394,6 +404,9 @@ public class SceneTransitionManager : MonoBehaviour
             if (taggedPlayer != null)
             {
                 var body = taggedPlayer.GetComponent<Rigidbody2D>();
+                if (body == null)
+                    body = taggedPlayer.GetComponentInChildren<Rigidbody2D>(true);
+
                 return body != null ? body.transform : taggedPlayer.transform;
             }
         }
@@ -433,21 +446,30 @@ public class SceneTransitionManager : MonoBehaviour
                         continue;
                     }
 
+                    var playerRoot = player.transform;
                     var body = player.GetComponent<Rigidbody2D>();
-                    var spawnTarget = body != null ? body.transform : player.transform;
-                    spawnTarget.position = basePosition + new Vector3(index * 1.25f, 0f, 0f);
+                    if (body == null)
+                        body = player.GetComponentInChildren<Rigidbody2D>();
+
+                    var desiredPosition = basePosition + new Vector3(index * 1.25f, 0f, 0f);
 
                     if (body != null)
                     {
-                        body.position = spawnTarget.position;
+                        var bodyDelta = desiredPosition - body.transform.position;
+                        playerRoot.position += bodyDelta;
+                        body.position = desiredPosition;
+                    }
+                    else
+                    {
+                        playerRoot.position = desiredPosition;
                     }
 
-                    PlayerSpawnHelper.RestoreAfterSceneTransition(spawnTarget);
-                    PlayerSpawnHelper.StabilizeAfterSpawn(spawnTarget);
+                    PlayerSpawnHelper.RestoreAfterSceneTransition(playerRoot);
+                    PlayerSpawnHelper.StabilizeAfterSpawn(playerRoot);
 
                     if (cameraTarget == null)
                     {
-                        cameraTarget = spawnTarget;
+                        cameraTarget = body != null ? body.transform : playerRoot;
                     }
                 }
 

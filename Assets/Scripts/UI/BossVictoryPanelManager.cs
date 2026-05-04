@@ -198,7 +198,8 @@ public class BossVictoryPanelManager : MonoBehaviour
         if (enemy.GetComponentInChildren<BossController>(true) != null)
             return true;
 
-        if (enemy.CompareTag("Boss"))
+        // CompareTag throws if a tag is missing in Tag Manager. Use plain tag string check safely.
+        if (string.Equals(enemy.tag, "Boss", System.StringComparison.Ordinal))
             return true;
 
         if (enemy.name.ToLowerInvariant().Contains("boss"))

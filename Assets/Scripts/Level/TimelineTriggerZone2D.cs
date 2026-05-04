@@ -70,6 +70,13 @@ public class TimelineTriggerZone2D : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (DeathScreenManager.IsDeathFlowActive)
+        {
+            _forcePlayerCameraUntilUnscaledTime = 0f;
+            CinemachineCore.SoloCamera = null;
+            return;
+        }
+
         if (Time.unscaledTime > _forcePlayerCameraUntilUnscaledTime)
         {
             return;
@@ -115,7 +122,12 @@ public class TimelineTriggerZone2D : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!IsPlayer(other) || !_armed || timelineDirector == null)
+        if (DeathScreenManager.IsDeathFlowActive || !_armed || timelineDirector == null)
+        {
+            return;
+        }
+
+        if (!TryResolveAlivePlayer(other))
         {
             return;
         }
@@ -195,6 +207,12 @@ public class TimelineTriggerZone2D : MonoBehaviour
     {
         if (_cutsceneCompletionHandled || director == null)
         {
+            return;
+        }
+
+        if (DeathScreenManager.IsDeathFlowActive)
+        {
+            AbortCutsceneFlow();
             return;
         }
 
@@ -670,6 +688,17 @@ public class TimelineTriggerZone2D : MonoBehaviour
         return other.GetComponentInParent<PlayerMovement>() != null || other.GetComponentInParent<PlayerHealth>() != null;
     }
 
+    private bool TryResolveAlivePlayer(Collider2D other)
+    {
+        if (!IsPlayer(other))
+        {
+            return false;
+        }
+
+        var health = other.GetComponentInParent<PlayerHealth>();
+        return health == null || !health.IsDead;
+    }
+
     private bool IsAnyPlayerInsideTrigger()
     {
         if (_triggerCollider == null)
@@ -695,5 +724,50 @@ public class TimelineTriggerZone2D : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void AbortCutsceneFlow()
+    {
+        if (_cutsceneWatchdogRoutine != null)
+        {
+            StopCoroutine(_cutsceneWatchdogRoutine);
+            _cutsceneWatchdogRoutine = null;
+        }
+
+        if (_cameraRebindRoutine != null)
+        {
+            StopCoroutine(_cameraRebindRoutine);
+            _cameraRebindRoutine = null;
+        }
+
+        if (_mainCameraRefreshRoutine != null)
+        {
+            StopCoroutine(_mainCameraRefreshRoutine);
+            _mainCameraRefreshRoutine = null;
+        }
+
+        _forcePlayerCameraUntilUnscaledTime = 0f;
+        CinemachineCore.SoloCamera = null;
+
+        if (timelineDirector != null)
+        {
+            timelineDirector.stopped -= OnTimelineStopped;
+            if (timelineDirector.state == PlayState.Playing)
+            {
+                timelineDirector.Stop();
+            }
+
+            if (restartFromBeginning)
+            {
+                timelineDirector.time = 0d;
+                timelineDirector.Evaluate();
+            }
+
+            timelineDirector.enabled = false;
+        }
+
+        SetPlayerVisible(true);
+        SetPlayerControlEnabled(true);
+        _cutsceneCompletionHandled = false;
     }
 }
