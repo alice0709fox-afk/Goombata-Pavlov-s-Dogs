@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: 39e878851b959774891fff1c4b690f3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5848767743861482321
+    second: Policeman sheet 2_0
+  - first:
+      213: 2296595607312631065
+    second: Policeman sheet 2_1
+  - first:
+      213: -8073570930973815464
+    second: Policeman sheet 2_2
+  - first:
+      213: 4835322847043432195
+    second: Policeman sheet 2_3
+  - first:
+      213: -8641586275353641029
+    second: Policeman sheet 2_4
+  - first:
+      213: 4196609784724026363
+    second: Policeman sheet 2_5
+  - first:
+      213: -2262764653197176163
+    second: Policeman sheet 2_6
+  - first:
+      213: -6671206120953292055
+    second: Policeman sheet 2_7
+  - first:
+      213: -9113651226391589376
+    second: Policeman sheet 2_8
+  - first:
+      213: 9062998382955373776
+    second: Policeman sheet 2_9
+  - first:
+      213: -8069425547526108224
+    second: Policeman sheet 2_10
+  - first:
+      213: -9212548881158328182
+    second: Policeman sheet 2_11
+  - first:
+      213: 7411371627040993912
+    second: Policeman sheet 2_12
+  - first:
+      213: 6132086925548401657
+    second: Policeman sheet 2_13
+  - first:
+      213: -6118083490416976896
+    second: Policeman sheet 2_14
+  - first:
+      213: 7795337616104739837
+    second: Policeman sheet 2_15
+  - first:
+      213: 2299002819901058786
+    second: Policeman sheet 2_16
+  - first:
+      213: -3617113859007853309
+    second: Policeman sheet 2_17
+  - first:
+      213: 7469568578044300193
+    second: Policeman sheet 2_18
+  - first:
+      213: -5824568635992345786
+    second: Policeman sheet 2_19
+  - first:
+      213: -3154269921365171668
+    second: Policeman sheet 2_20
+  - first:
+      213: -2231793726488895102
+    second: Policeman sheet 2_21
+  - first:
+      213: 3320734372912346065
+    second: Policeman sheet 2_22
+  - first:
+      213: -4364252469633384935
+    second: Policeman sheet 2_23
+  - first:
+      213: 2116111031071375495
+    second: Policeman sheet 2_24
+  - first:
+      213: 623654333923343029
+    second: Policeman sheet 2_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Policeman sheet 2_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 191
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac9f5d99b005dea0800000000000000
+      internalID: -5848767743861482321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 127
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 915879679852fdf10800000000000000
+      internalID: 2296595607312631065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 191
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85dc26e830ae4ff80800000000000000
+      internalID: -8073570930973815464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 177
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30faa50c2848a1340800000000000000
+      internalID: 4835322847043432195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 179
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfb7a1511be21880800000000000000
+      internalID: -8641586275353641029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 182
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf377675d5a5d3a30800000000000000
+      internalID: 4196609784724026363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d925fdb598b0990e0800000000000000
+      internalID: -2262764653197176163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_7
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 127
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eada29e06d1b63a0800000000000000
+      internalID: -6671206120953292055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 127
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e402cee7ec58180800000000000000
+      internalID: -9113651226391589376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_9
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 127
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4aeffe20d36cd70800000000000000
+      internalID: 9062998382955373776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 63
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb8e3ad734a30090800000000000000
+      internalID: -8069425547526108224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 63
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80b2ae4a93762080800000000000000
+      internalID: -9212548881158328182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 63
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872ff284a3b7ad660800000000000000
+      internalID: 7411371627040993912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 63
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f33121d19c891550800000000000000
+      internalID: 6132086925548401657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 63
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c938ffa73381ba0800000000000000
+      internalID: -6118083490416976896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_15
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 63
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3d928a24a9e2c60800000000000000
+      internalID: 7795337616104739837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_16
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 63
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eee2d152e2b7ef10800000000000000
+      internalID: 2299002819901058786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_17
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 64
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dc1b90c1e6dcdc0800000000000000
+      internalID: -3617113859007853309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab00c7db0d39a760800000000000000
+      internalID: 7469568578044300193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_19
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6437bc97fa9fa2fa0800000000000000
+      internalID: -5824568635992345786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_20
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c226453f738c934d0800000000000000
+      internalID: -3154269921365171668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2812fa82e631701e0800000000000000
+      internalID: -2231793726488895102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_22
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d3bed2715e951e20800000000000000
+      internalID: 3320734372912346065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_23
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e716d608f0f63c0800000000000000
+      internalID: -4364252469633384935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_24
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 48
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7808b4865cfed5d10800000000000000
+      internalID: 2116111031071375495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman sheet 2_25
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba322cff4aa7a800800000000000000
+      internalID: 623654333923343029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Policeman sheet 2_0: -5848767743861482321
+      Policeman sheet 2_1: 2296595607312631065
+      Policeman sheet 2_10: -8069425547526108224
+      Policeman sheet 2_11: -9212548881158328182
+      Policeman sheet 2_12: 7411371627040993912
+      Policeman sheet 2_13: 6132086925548401657
+      Policeman sheet 2_14: -6118083490416976896
+      Policeman sheet 2_15: 7795337616104739837
+      Policeman sheet 2_16: 2299002819901058786
+      Policeman sheet 2_17: -3617113859007853309
+      Policeman sheet 2_18: 7469568578044300193
+      Policeman sheet 2_19: -5824568635992345786
+      Policeman sheet 2_2: -8073570930973815464
+      Policeman sheet 2_20: -3154269921365171668
+      Policeman sheet 2_21: -2231793726488895102
+      Policeman sheet 2_22: 3320734372912346065
+      Policeman sheet 2_23: -4364252469633384935
+      Policeman sheet 2_24: 2116111031071375495
+      Policeman sheet 2_25: 623654333923343029
+      Policeman sheet 2_3: 4835322847043432195
+      Policeman sheet 2_4: -8641586275353641029
+      Policeman sheet 2_5: 4196609784724026363
+      Policeman sheet 2_6: -2262764653197176163
+      Policeman sheet 2_7: -6671206120953292055
+      Policeman sheet 2_8: -9113651226391589376
+      Policeman sheet 2_9: 9062998382955373776
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

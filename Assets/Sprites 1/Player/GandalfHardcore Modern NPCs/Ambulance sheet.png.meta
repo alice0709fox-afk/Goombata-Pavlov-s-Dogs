@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: c9fc546eb3b85364b862f4b2cc9e5e99
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5907932588049819608
+    second: Ambulance sheet_0
+  - first:
+      213: -8094724300278877100
+    second: Ambulance sheet_1
+  - first:
+      213: 8989421531503430776
+    second: Ambulance sheet_2
+  - first:
+      213: 5927326924036828103
+    second: Ambulance sheet_3
+  - first:
+      213: 9143839140282069112
+    second: Ambulance sheet_4
+  - first:
+      213: 2255120610137276188
+    second: Ambulance sheet_5
+  - first:
+      213: 3578777484216703278
+    second: Ambulance sheet_6
+  - first:
+      213: -9451239039315889
+    second: Ambulance sheet_7
+  - first:
+      213: 5830043507225824771
+    second: Ambulance sheet_8
+  - first:
+      213: 8787066333043843132
+    second: Ambulance sheet_9
+  - first:
+      213: 8804125387663223387
+    second: Ambulance sheet_10
+  - first:
+      213: 8106076359026912383
+    second: Ambulance sheet_11
+  - first:
+      213: 3526234962689941530
+    second: Ambulance sheet_12
+  - first:
+      213: -1110138370690657134
+    second: Ambulance sheet_13
+  - first:
+      213: 4507312259865094698
+    second: Ambulance sheet_14
+  - first:
+      213: 1966885739395797225
+    second: Ambulance sheet_15
+  - first:
+      213: -6979457047819529062
+    second: Ambulance sheet_16
+  - first:
+      213: -909632092358187452
+    second: Ambulance sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ambulance sheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 127
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828165cdc9ec20ea0800000000000000
+      internalID: -5907932588049819608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 127
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454b727f223c9af80800000000000000
+      internalID: -8094724300278877100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 127
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c82814147d0cc70800000000000000
+      internalID: 8989421531503430776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 127
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cbe2dede68124250800000000000000
+      internalID: 5927326924036828103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 127
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87073df704175ee70800000000000000
+      internalID: 9143839140282069112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 63
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ff4ec2f3ccb4f10800000000000000
+      internalID: 2255120610137276188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 63
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2917e4292f5aa130800000000000000
+      internalID: 3578777484216703278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_7
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 63
+        width: 16
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40df5ee52c6edff0800000000000000
+      internalID: -9451239039315889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 63
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e84415ea978e050800000000000000
+      internalID: 5830043507225824771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_9
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 63
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c306fd6264ee1f970800000000000000
+      internalID: 8787066333043843132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_10
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 63
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a2aa1d4698e2a70800000000000000
+      internalID: 8804125387663223387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_11
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 63
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cadfd20819e7070800000000000000
+      internalID: 8106076359026912383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_12
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 64
+        width: 22
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1062b90404bfe030800000000000000
+      internalID: 3526234962689941530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_13
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294d37b980ff790f0800000000000000
+      internalID: -1110138370690657134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2aa50d9e903d8e30800000000000000
+      internalID: 4507312259865094698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0d772b828cb4b10800000000000000
+      internalID: 1966885739395797225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_16
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94de933bccf32f90800000000000000
+      internalID: -6979457047819529062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ambulance sheet_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 0
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446e1b27e665063f0800000000000000
+      internalID: -909632092358187452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ambulance sheet_0: -5907932588049819608
+      Ambulance sheet_1: -8094724300278877100
+      Ambulance sheet_10: 8804125387663223387
+      Ambulance sheet_11: 8106076359026912383
+      Ambulance sheet_12: 3526234962689941530
+      Ambulance sheet_13: -1110138370690657134
+      Ambulance sheet_14: 4507312259865094698
+      Ambulance sheet_15: 1966885739395797225
+      Ambulance sheet_16: -6979457047819529062
+      Ambulance sheet_17: -909632092358187452
+      Ambulance sheet_2: 8989421531503430776
+      Ambulance sheet_3: 5927326924036828103
+      Ambulance sheet_4: 9143839140282069112
+      Ambulance sheet_5: 2255120610137276188
+      Ambulance sheet_6: 3578777484216703278
+      Ambulance sheet_7: -9451239039315889
+      Ambulance sheet_8: 5830043507225824771
+      Ambulance sheet_9: 8787066333043843132
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

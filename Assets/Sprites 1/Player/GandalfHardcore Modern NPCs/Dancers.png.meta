@@ -1,0 +1,2262 @@
+fileFormatVersion: 2
+guid: ed55826378e91bc4e95e85cf7e817e59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6137120675065714282
+    second: Dancers_0
+  - first:
+      213: 1249722631932686756
+    second: Dancers_1
+  - first:
+      213: -3183168355214069
+    second: Dancers_2
+  - first:
+      213: 8877448634223722818
+    second: Dancers_3
+  - first:
+      213: 6596249160731122652
+    second: Dancers_4
+  - first:
+      213: 711855659887186259
+    second: Dancers_5
+  - first:
+      213: 5156183794085688383
+    second: Dancers_6
+  - first:
+      213: -4496939561856357419
+    second: Dancers_7
+  - first:
+      213: -4619661541170069093
+    second: Dancers_8
+  - first:
+      213: 8693318443007118350
+    second: Dancers_9
+  - first:
+      213: 6308921965997622076
+    second: Dancers_10
+  - first:
+      213: -4527364518210265626
+    second: Dancers_11
+  - first:
+      213: 7462460565225054021
+    second: Dancers_12
+  - first:
+      213: 2177153894859947327
+    second: Dancers_13
+  - first:
+      213: -5953735499163601763
+    second: Dancers_14
+  - first:
+      213: 955295896606433998
+    second: Dancers_15
+  - first:
+      213: -5830579272611329544
+    second: Dancers_16
+  - first:
+      213: -1421661014668956888
+    second: Dancers_17
+  - first:
+      213: -4123410964833221606
+    second: Dancers_18
+  - first:
+      213: -1138188006338667861
+    second: Dancers_19
+  - first:
+      213: 4103451090878851965
+    second: Dancers_20
+  - first:
+      213: -5093633620507715428
+    second: Dancers_21
+  - first:
+      213: -1655192282132068690
+    second: Dancers_22
+  - first:
+      213: 4353102052273503158
+    second: Dancers_23
+  - first:
+      213: -7806089461782989682
+    second: Dancers_24
+  - first:
+      213: -4719447430132382281
+    second: Dancers_25
+  - first:
+      213: 111714245518935414
+    second: Dancers_26
+  - first:
+      213: -5205937390227871262
+    second: Dancers_27
+  - first:
+      213: -8736246986642434426
+    second: Dancers_28
+  - first:
+      213: -4472812409135888129
+    second: Dancers_29
+  - first:
+      213: 9173816947302280567
+    second: Dancers_30
+  - first:
+      213: 4588200904000908666
+    second: Dancers_31
+  - first:
+      213: 105104526638386141
+    second: Dancers_32
+  - first:
+      213: -809874699805289931
+    second: Dancers_33
+  - first:
+      213: -2576470457990613722
+    second: Dancers_34
+  - first:
+      213: 5105137414886838205
+    second: Dancers_35
+  - first:
+      213: -4422272518810266497
+    second: Dancers_36
+  - first:
+      213: 3801514338155046211
+    second: Dancers_37
+  - first:
+      213: 7178733815427229682
+    second: Dancers_38
+  - first:
+      213: 7090188363557783150
+    second: Dancers_39
+  - first:
+      213: -7737517590165456506
+    second: Dancers_40
+  - first:
+      213: -823157041522355391
+    second: Dancers_41
+  - first:
+      213: -884957771935631213
+    second: Dancers_42
+  - first:
+      213: 304797610495547166
+    second: Dancers_43
+  - first:
+      213: 4595523462813716834
+    second: Dancers_44
+  - first:
+      213: -790375181897694010
+    second: Dancers_45
+  - first:
+      213: -3914966270736428707
+    second: Dancers_46
+  - first:
+      213: 3244282385347245919
+    second: Dancers_47
+  - first:
+      213: -4842277607025310027
+    second: Dancers_48
+  - first:
+      213: 7345792817015072581
+    second: Dancers_49
+  - first:
+      213: 721718128465013770
+    second: Dancers_50
+  - first:
+      213: 4656291288996962712
+    second: Dancers_51
+  - first:
+      213: 4662645229001627775
+    second: Dancers_52
+  - first:
+      213: 4483866247236551648
+    second: Dancers_53
+  - first:
+      213: -7643316826077130685
+    second: Dancers_54
+  - first:
+      213: 3471851426898669891
+    second: Dancers_55
+  - first:
+      213: 8418737144113655251
+    second: Dancers_56
+  - first:
+      213: -8949269764541483319
+    second: Dancers_57
+  - first:
+      213: -8862992003535533099
+    second: Dancers_58
+  - first:
+      213: -2611221035433376262
+    second: Dancers_59
+  - first:
+      213: -6859004690068953224
+    second: Dancers_60
+  - first:
+      213: 5905235886201496877
+    second: Dancers_61
+  - first:
+      213: -1818216291599026511
+    second: Dancers_62
+  - first:
+      213: 44929474606640088
+    second: Dancers_63
+  - first:
+      213: -6991222226908895314
+    second: Dancers_64
+  - first:
+      213: 1975255976893799418
+    second: Dancers_65
+  - first:
+      213: -6942779646516882548
+    second: Dancers_66
+  - first:
+      213: 763128211114788365
+    second: Dancers_67
+  - first:
+      213: -6399728330233955713
+    second: Dancers_68
+  - first:
+      213: -4920497335024922059
+    second: Dancers_69
+  - first:
+      213: -1754526979622073395
+    second: Dancers_70
+  - first:
+      213: -6762789582909286721
+    second: Dancers_71
+  - first:
+      213: -5416099193380181548
+    second: Dancers_72
+  - first:
+      213: 5785884058234129862
+    second: Dancers_73
+  - first:
+      213: -5127771699224650326
+    second: Dancers_74
+  - first:
+      213: 8321354517236434149
+    second: Dancers_75
+  - first:
+      213: -6640280552302254943
+    second: Dancers_76
+  - first:
+      213: 7041303250986334990
+    second: Dancers_77
+  - first:
+      213: -7436292003080091705
+    second: Dancers_78
+  - first:
+      213: -2771190453233039693
+    second: Dancers_79
+  - first:
+      213: 8096502392994241734
+    second: Dancers_80
+  - first:
+      213: 4651928709854018781
+    second: Dancers_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dancers_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699a00b034194daa0800000000000000
+      internalID: -6137120675065714282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a13d18cc18e75110800000000000000
+      internalID: 1249722631932686756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0d5decdce0b4fff0800000000000000
+      internalID: -3183168355214069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2418ea28f78033b70800000000000000
+      internalID: 8877448634223722818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbd85bc9a59a8b50800000000000000
+      internalID: 6596249160731122652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3515dea73f401e900800000000000000
+      internalID: 711855659887186259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f347a1397d17e8740800000000000000
+      internalID: 5156183794085688383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_7
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dba6275b49a791c0800000000000000
+      internalID: -4496939561856357419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_8
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b914608ed4aa3efb0800000000000000
+      internalID: -4619661541170069093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 191
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c8ac2901fd4a870800000000000000
+      internalID: 8693318443007118350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 191
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3382fa1a1bcd8750800000000000000
+      internalID: 6308921965997622076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 191
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed9e5b25f19b21c0800000000000000
+      internalID: -4527364518210265626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_12
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f9994a85cff8760800000000000000
+      internalID: 7462460565225054021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_13
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d3c7caeedc63e10800000000000000
+      internalID: 2177153894859947327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_14
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9478b59b15106da0800000000000000
+      internalID: -5953735499163601763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_15
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec26d9c7e84e14d00800000000000000
+      internalID: 955295896606433998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_16
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f90f351b0f951fa0800000000000000
+      internalID: -5830579272611329544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_17
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ba2a5e6de354ce0800000000000000
+      internalID: -1421661014668956888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_18
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a144a220393b6c6c0800000000000000
+      internalID: -4123410964833221606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_19
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baad292e9085430f0800000000000000
+      internalID: -1138188006338667861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_20
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7be501b60362f830800000000000000
+      internalID: 4103451090878851965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_21
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9896a99537cf49b0800000000000000
+      internalID: -5093633620507715428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_22
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6cc8493639709e0800000000000000
+      internalID: -1655192282132068690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_23
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb39c8b043596c30800000000000000
+      internalID: 4353102052273503158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_24
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 191
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8431813ef23ba390800000000000000
+      internalID: -7806089461782989682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_25
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 191
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b544d62197218eb0800000000000000
+      internalID: -4719447430132382281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_26
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 191
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675c180b383ec8100800000000000000
+      internalID: 111714245518935414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_27
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 191
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e92b8c968bc0c7b0800000000000000
+      internalID: -5205937390227871262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_28
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 191
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686d91bf6ad92c680800000000000000
+      internalID: -8736246986642434426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_29
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff80f76dfc06de1c0800000000000000
+      internalID: -4472812409135888129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_30
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d296a98e1ff4f70800000000000000
+      internalID: 9173816947302280567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_31
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7da911b9609caf30800000000000000
+      internalID: 4588200904000908666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_32
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 191
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb01969208657100800000000000000
+      internalID: 105104526638386141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_33
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532978d504fb2c4f0800000000000000
+      internalID: -809874699805289931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_34
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6257e29e4c98e3cd0800000000000000
+      internalID: -2576470457990613722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfc2ef3e6719d640800000000000000
+      internalID: 5105137414886838205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_36
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f749758039ee0a2c0800000000000000
+      internalID: -4422272518810266497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_37
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34529463621b1c430800000000000000
+      internalID: 3801514338155046211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_38
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f7ef9dde5cff9360800000000000000
+      internalID: 7178733815427229682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_39
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66487050c8656260800000000000000
+      internalID: 7090188363557783150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_40
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689f9d23fb0de9490800000000000000
+      internalID: -7737517590165456506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_41
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143d2b1380f8394f0800000000000000
+      internalID: -823157041522355391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_42
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3983e8a589ff7b3f0800000000000000
+      internalID: -884957771935631213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_43
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1799f5dfcbda3400800000000000000
+      internalID: 304797610495547166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_44
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2611cf5cd3496cf30800000000000000
+      internalID: 4595523462813716834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_45
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c404bba5f50805f0800000000000000
+      internalID: -790375181897694010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_46
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d519e1d4bee3ba9c0800000000000000
+      internalID: -3914966270736428707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_47
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57fda9f3a1060d20800000000000000
+      internalID: 3244282385347245919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_48
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 127
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b68d610c26ccccb0800000000000000
+      internalID: -4842277607025310027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_49
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547accbb5af71f560800000000000000
+      internalID: 7345792817015072581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_50
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ced1360de040a00800000000000000
+      internalID: 721718128465013770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_51
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891e86bd1487e9040800000000000000
+      internalID: 4656291288996962712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_52
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78df4cc12b05b040800000000000000
+      internalID: 4662645229001627775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_53
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e306e66894e93e30800000000000000
+      internalID: 4483866247236551648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_54
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34018ebb7db7de590800000000000000
+      internalID: -7643316826077130685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_55
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3417a356a7e7e2030800000000000000
+      internalID: 3471851426898669891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_56
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dde74404dc55d470800000000000000
+      internalID: 8418737144113655251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_57
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c67c5d709ecdc380800000000000000
+      internalID: -8949269764541483319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_58
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db032e1bb3500580800000000000000
+      internalID: -8862992003535533099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_59
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af547f89d4413cbd0800000000000000
+      internalID: -2611221035433376262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_60
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877a3bf239befc0a0800000000000000
+      internalID: -6859004690068953224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_61
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 127
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25edef40cc93f150800000000000000
+      internalID: 5905235886201496877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_62
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b679668ae564c6e0800000000000000
+      internalID: -1818216291599026511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_63
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dbafdd7e1f9f9000800000000000000
+      internalID: 44929474606640088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_64
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7a74bfc603afe90800000000000000
+      internalID: -6991222226908895314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_65
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbd83b78d4896b10800000000000000
+      internalID: 1975255976893799418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_66
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c839c8722ba46af90800000000000000
+      internalID: -6942779646516882548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_67
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d068395901d279a00800000000000000
+      internalID: 763128211114788365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_68
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ab669adf89f27a0800000000000000
+      internalID: -6399728330233955713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_69
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 63
+        width: 45
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53255936eb1e6bbb0800000000000000
+      internalID: -4920497335024922059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_70
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb89c6020ba6a7e0800000000000000
+      internalID: -1754526979622073395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_71
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6daf384beb522a0800000000000000
+      internalID: -6762789582909286721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_72
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d96b46ba7626d4b0800000000000000
+      internalID: -5416099193380181548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_73
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd04a265e69b4050800000000000000
+      internalID: 5785884058234129862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_74
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadd962cece76d8b0800000000000000
+      internalID: -5127771699224650326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_75
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e448f158d36b7370800000000000000
+      internalID: 8321354517236434149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_76
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4e617f40cf8d3a0800000000000000
+      internalID: -6640280552302254943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_77
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bf7d6100cb7b160800000000000000
+      internalID: 7041303250986334990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_78
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 0
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7455682dbfcc890800000000000000
+      internalID: -7436292003080091705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_79
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6471617f0ca89d0800000000000000
+      internalID: -2771190453233039693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_80
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc9581870e8c5070800000000000000
+      internalID: 8096502392994241734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_81
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc3a4fb388fe8040800000000000000
+      internalID: 4651928709854018781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dancers_0: -6137120675065714282
+      Dancers_1: 1249722631932686756
+      Dancers_10: 6308921965997622076
+      Dancers_11: -4527364518210265626
+      Dancers_12: 7462460565225054021
+      Dancers_13: 2177153894859947327
+      Dancers_14: -5953735499163601763
+      Dancers_15: 955295896606433998
+      Dancers_16: -5830579272611329544
+      Dancers_17: -1421661014668956888
+      Dancers_18: -4123410964833221606
+      Dancers_19: -1138188006338667861
+      Dancers_2: -3183168355214069
+      Dancers_20: 4103451090878851965
+      Dancers_21: -5093633620507715428
+      Dancers_22: -1655192282132068690
+      Dancers_23: 4353102052273503158
+      Dancers_24: -7806089461782989682
+      Dancers_25: -4719447430132382281
+      Dancers_26: 111714245518935414
+      Dancers_27: -5205937390227871262
+      Dancers_28: -8736246986642434426
+      Dancers_29: -4472812409135888129
+      Dancers_3: 8877448634223722818
+      Dancers_30: 9173816947302280567
+      Dancers_31: 4588200904000908666
+      Dancers_32: 105104526638386141
+      Dancers_33: -809874699805289931
+      Dancers_34: -2576470457990613722
+      Dancers_35: 5105137414886838205
+      Dancers_36: -4422272518810266497
+      Dancers_37: 3801514338155046211
+      Dancers_38: 7178733815427229682
+      Dancers_39: 7090188363557783150
+      Dancers_4: 6596249160731122652
+      Dancers_40: -7737517590165456506
+      Dancers_41: -823157041522355391
+      Dancers_42: -884957771935631213
+      Dancers_43: 304797610495547166
+      Dancers_44: 4595523462813716834
+      Dancers_45: -790375181897694010
+      Dancers_46: -3914966270736428707
+      Dancers_47: 3244282385347245919
+      Dancers_48: -4842277607025310027
+      Dancers_49: 7345792817015072581
+      Dancers_5: 711855659887186259
+      Dancers_50: 721718128465013770
+      Dancers_51: 4656291288996962712
+      Dancers_52: 4662645229001627775
+      Dancers_53: 4483866247236551648
+      Dancers_54: -7643316826077130685
+      Dancers_55: 3471851426898669891
+      Dancers_56: 8418737144113655251
+      Dancers_57: -8949269764541483319
+      Dancers_58: -8862992003535533099
+      Dancers_59: -2611221035433376262
+      Dancers_6: 5156183794085688383
+      Dancers_60: -6859004690068953224
+      Dancers_61: 5905235886201496877
+      Dancers_62: -1818216291599026511
+      Dancers_63: 44929474606640088
+      Dancers_64: -6991222226908895314
+      Dancers_65: 1975255976893799418
+      Dancers_66: -6942779646516882548
+      Dancers_67: 763128211114788365
+      Dancers_68: -6399728330233955713
+      Dancers_69: -4920497335024922059
+      Dancers_7: -4496939561856357419
+      Dancers_70: -1754526979622073395
+      Dancers_71: -6762789582909286721
+      Dancers_72: -5416099193380181548
+      Dancers_73: 5785884058234129862
+      Dancers_74: -5127771699224650326
+      Dancers_75: 8321354517236434149
+      Dancers_76: -6640280552302254943
+      Dancers_77: 7041303250986334990
+      Dancers_78: -7436292003080091705
+      Dancers_79: -2771190453233039693
+      Dancers_8: -4619661541170069093
+      Dancers_80: 8096502392994241734
+      Dancers_81: 4651928709854018781
+      Dancers_9: 8693318443007118350
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

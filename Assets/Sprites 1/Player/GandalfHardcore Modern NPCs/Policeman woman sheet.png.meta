@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 5a1889049fc062e42aeca2ad084d638b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7983525995064985780
+    second: Policeman woman sheet_0
+  - first:
+      213: -1327749586092776215
+    second: Policeman woman sheet_1
+  - first:
+      213: 196353749676057950
+    second: Policeman woman sheet_2
+  - first:
+      213: -1000858071072801662
+    second: Policeman woman sheet_3
+  - first:
+      213: 2480742053061887618
+    second: Policeman woman sheet_4
+  - first:
+      213: -8004291628827283361
+    second: Policeman woman sheet_5
+  - first:
+      213: 4787685030307578881
+    second: Policeman woman sheet_6
+  - first:
+      213: -4913230088186895152
+    second: Policeman woman sheet_7
+  - first:
+      213: -5849865630369994403
+    second: Policeman woman sheet_8
+  - first:
+      213: 3095780580095805942
+    second: Policeman woman sheet_9
+  - first:
+      213: 8678831762746471378
+    second: Policeman woman sheet_10
+  - first:
+      213: -1245362625934941803
+    second: Policeman woman sheet_11
+  - first:
+      213: 8681741615379170969
+    second: Policeman woman sheet_12
+  - first:
+      213: -3063766635377202193
+    second: Policeman woman sheet_13
+  - first:
+      213: -7216843022829261857
+    second: Policeman woman sheet_14
+  - first:
+      213: -3513720598700771227
+    second: Policeman woman sheet_15
+  - first:
+      213: 3143704834735154757
+    second: Policeman woman sheet_16
+  - first:
+      213: -1621930938067413147
+    second: Policeman woman sheet_17
+  - first:
+      213: -5494901306229655003
+    second: Policeman woman sheet_18
+  - first:
+      213: 7195826284868770100
+    second: Policeman woman sheet_19
+  - first:
+      213: -4572462616518996446
+    second: Policeman woman sheet_20
+  - first:
+      213: -8058048947414083104
+    second: Policeman woman sheet_21
+  - first:
+      213: 4310605179612250952
+    second: Policeman woman sheet_22
+  - first:
+      213: 2923811021877010140
+    second: Policeman woman sheet_23
+  - first:
+      213: -5198846957698797053
+    second: Policeman woman sheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Policeman woman sheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 191
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b802fe089e2bce60800000000000000
+      internalID: 7983525995064985780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 127
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4a44249c2e29de0800000000000000
+      internalID: -1327749586092776215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 191
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55e1cbe1b699b200800000000000000
+      internalID: 196353749676057950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 176
+        width: 29
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c7f1b13ec3c12f0800000000000000
+      internalID: -1000858071072801662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 127
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2868024f0cd5d6220800000000000000
+      internalID: 2480742053061887618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 177
+        width: 29
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50fd111c2b0be090800000000000000
+      internalID: -8004291628827283361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_6
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 127
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10440f73b26417240800000000000000
+      internalID: 4787685030307578881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 176
+        width: 29
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4ebd52443b0dbb0800000000000000
+      internalID: -4913230088186895152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59a70ef33a11dea0800000000000000
+      internalID: -5849865630369994403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9c923190c66fa20800000000000000
+      internalID: 3095780580095805942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 63
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d371eb7187617870800000000000000
+      internalID: 8678831762746471378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 63
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 591a9983a4597bee0800000000000000
+      internalID: -1245362625934941803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_12
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 63
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996c668500ebb7870800000000000000
+      internalID: 8681741615379170969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_13
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 63
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febe5a74a705b75d0800000000000000
+      internalID: -3063766635377202193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_14
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 63
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb6188d18f98db90800000000000000
+      internalID: -7216843022829261857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_15
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 63
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568b7726bb1cc3fc0800000000000000
+      internalID: -3513720598700771227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_16
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 63
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546211124eea0ab20800000000000000
+      internalID: 3143704834735154757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_17
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 63
+        width: 29
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567964ab76ebd79e0800000000000000
+      internalID: -1621930938067413147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52af95e00603eb3b0800000000000000
+      internalID: -5494901306229655003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_19
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439950781e5bcd360800000000000000
+      internalID: 7195826284868770100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_20
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ec1a9e9795b80c0800000000000000
+      internalID: -4572462616518996446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_21
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e95caafc2f0c2090800000000000000
+      internalID: -8058048947414083104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8434fb1829852db30800000000000000
+      internalID: 4310605179612250952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 46
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cded95522a6739820800000000000000
+      internalID: 2923811021877010140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Policeman woman sheet_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 46
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3023eb49c3cf9d7b0800000000000000
+      internalID: -5198846957698797053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Policeman woman sheet_0: 7983525995064985780
+      Policeman woman sheet_1: -1327749586092776215
+      Policeman woman sheet_10: 8678831762746471378
+      Policeman woman sheet_11: -1245362625934941803
+      Policeman woman sheet_12: 8681741615379170969
+      Policeman woman sheet_13: -3063766635377202193
+      Policeman woman sheet_14: -7216843022829261857
+      Policeman woman sheet_15: -3513720598700771227
+      Policeman woman sheet_16: 3143704834735154757
+      Policeman woman sheet_17: -1621930938067413147
+      Policeman woman sheet_18: -5494901306229655003
+      Policeman woman sheet_19: 7195826284868770100
+      Policeman woman sheet_2: 196353749676057950
+      Policeman woman sheet_20: -4572462616518996446
+      Policeman woman sheet_21: -8058048947414083104
+      Policeman woman sheet_22: 4310605179612250952
+      Policeman woman sheet_23: 2923811021877010140
+      Policeman woman sheet_24: -5198846957698797053
+      Policeman woman sheet_3: -1000858071072801662
+      Policeman woman sheet_4: 2480742053061887618
+      Policeman woman sheet_5: -8004291628827283361
+      Policeman woman sheet_6: 4787685030307578881
+      Policeman woman sheet_7: -4913230088186895152
+      Policeman woman sheet_8: -5849865630369994403
+      Policeman woman sheet_9: 3095780580095805942
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

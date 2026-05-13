@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: d18fbb2772d2a394b823fd55f4ba2699
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -448351182251229499
+    second: Pole Dancers sheet_0
+  - first:
+      213: 608532738231065183
+    second: Pole Dancers sheet_1
+  - first:
+      213: 6613764095442078244
+    second: Pole Dancers sheet_2
+  - first:
+      213: 3511104561943729336
+    second: Pole Dancers sheet_3
+  - first:
+      213: 2160845821690802520
+    second: Pole Dancers sheet_4
+  - first:
+      213: 632145909815999081
+    second: Pole Dancers sheet_5
+  - first:
+      213: -1004733516354610054
+    second: Pole Dancers sheet_6
+  - first:
+      213: 6974250144063511076
+    second: Pole Dancers sheet_7
+  - first:
+      213: 7435122435887453304
+    second: Pole Dancers sheet_8
+  - first:
+      213: -584920252033161193
+    second: Pole Dancers sheet_9
+  - first:
+      213: -6040191100176719672
+    second: Pole Dancers sheet_10
+  - first:
+      213: -6689088664060379142
+    second: Pole Dancers sheet_11
+  - first:
+      213: 2513753956948528665
+    second: Pole Dancers sheet_12
+  - first:
+      213: 434546139203000813
+    second: Pole Dancers sheet_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pole Dancers sheet_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 63
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cef947a9f227c9f0800000000000000
+      internalID: -448351182251229499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 7
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a55702d41f17800800000000000000
+      internalID: 608532738231065183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 63
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ace01576fc8cb50800000000000000
+      internalID: 6613764095442078244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_3
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 63
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4d8e71ff2f9b030800000000000000
+      internalID: 3511104561943729336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 63
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851744083dddcfd10800000000000000
+      internalID: 2160845821690802520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 63
+        width: 40
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a7cc01b55d5c800800000000000000
+      internalID: 632145909815999081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_6
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 63
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c11cfa0387e02f0800000000000000
+      internalID: -1004733516354610054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_7
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 63
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a5f9b0e8389c060800000000000000
+      internalID: 6974250144063511076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_8
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 63
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874db94667cde2760800000000000000
+      internalID: 7435122435887453304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_9
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 63
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718a1ab3122f1e7f0800000000000000
+      internalID: -584920252033161193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_10
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 63
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0ad7a523eec2ca0800000000000000
+      internalID: -6040191100176719672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 63
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affb693ec459b23a0800000000000000
+      internalID: -6689088664060379142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_12
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 63
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e46a8c7e5a2e220800000000000000
+      internalID: 2513753956948528665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole Dancers sheet_13
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 63
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de956b94961d70600800000000000000
+      internalID: 434546139203000813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pole Dancers sheet_0: -448351182251229499
+      Pole Dancers sheet_1: 608532738231065183
+      Pole Dancers sheet_10: -6040191100176719672
+      Pole Dancers sheet_11: -6689088664060379142
+      Pole Dancers sheet_12: 2513753956948528665
+      Pole Dancers sheet_13: 434546139203000813
+      Pole Dancers sheet_2: 6613764095442078244
+      Pole Dancers sheet_3: 3511104561943729336
+      Pole Dancers sheet_4: 2160845821690802520
+      Pole Dancers sheet_5: 632145909815999081
+      Pole Dancers sheet_6: -1004733516354610054
+      Pole Dancers sheet_7: 6974250144063511076
+      Pole Dancers sheet_8: 7435122435887453304
+      Pole Dancers sheet_9: -584920252033161193
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

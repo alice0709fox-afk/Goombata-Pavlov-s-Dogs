@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: b9b214f23a1744448a9741827e641fd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2566208429082732998
+    second: Lady in Glass altered sheet_0
+  - first:
+      213: -1100795655628270820
+    second: Lady in Glass altered sheet_1
+  - first:
+      213: 1989778816134847560
+    second: Lady in Glass altered sheet_2
+  - first:
+      213: 1692228517938958488
+    second: Lady in Glass altered sheet_3
+  - first:
+      213: 2291587003721905461
+    second: Lady in Glass altered sheet_4
+  - first:
+      213: 5545894100347752733
+    second: Lady in Glass altered sheet_5
+  - first:
+      213: -9140653915803401215
+    second: Lady in Glass altered sheet_6
+  - first:
+      213: -5540118888041712819
+    second: Lady in Glass altered sheet_7
+  - first:
+      213: 1395355539901532300
+    second: Lady in Glass altered sheet_8
+  - first:
+      213: 4475337434902343472
+    second: Lady in Glass altered sheet_9
+  - first:
+      213: 16012358746058739
+    second: Lady in Glass altered sheet_10
+  - first:
+      213: 7554900767111656726
+    second: Lady in Glass altered sheet_11
+  - first:
+      213: 2092952935461979881
+    second: Lady in Glass altered sheet_12
+  - first:
+      213: 8456914749105428292
+    second: Lady in Glass altered sheet_13
+  - first:
+      213: 5128570838586010627
+    second: Lady in Glass altered sheet_14
+  - first:
+      213: 8956082560965298882
+    second: Lady in Glass altered sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3619e4b70ff26cd0800000000000000
+      internalID: -2566208429082732998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13dbf7fe2039b0f0800000000000000
+      internalID: -1100795655628270820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c905d7a4d1d9b10800000000000000
+      internalID: 1989778816134847560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890998a0fd00c7710800000000000000
+      internalID: 1692228517938958488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535feb01d3a5dcf10800000000000000
+      internalID: 2291587003721905461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1199250d49f6fc40800000000000000
+      internalID: 5545894100347752733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 0
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10441cd51bfd52180800000000000000
+      internalID: -9140653915803401215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 0
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4377d0693b8d13b0800000000000000
+      internalID: -5540118888041712819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_8
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88443b787c4d5310800000000000000
+      internalID: 1395355539901532300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_9
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 0
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03fac598fa79b1e30800000000000000
+      internalID: 4475337434902343472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_10
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 0
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff231bc723e83000800000000000000
+      internalID: 16012358746058739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_11
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 0
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6153409583668d860800000000000000
+      internalID: 7554900767111656726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_12
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e682d91b99ab0d10800000000000000
+      internalID: 2092952935461979881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_13
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 0
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447d03c582ffc5570800000000000000
+      internalID: 8456914749105428292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_14
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 0
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ca85f51085c2740800000000000000
+      internalID: 5128570838586010627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lady in Glass altered sheet_15
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 0
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca486943a56a4c70800000000000000
+      internalID: 8956082560965298882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Lady in Glass altered sheet_0: -2566208429082732998
+      Lady in Glass altered sheet_1: -1100795655628270820
+      Lady in Glass altered sheet_10: 16012358746058739
+      Lady in Glass altered sheet_11: 7554900767111656726
+      Lady in Glass altered sheet_12: 2092952935461979881
+      Lady in Glass altered sheet_13: 8456914749105428292
+      Lady in Glass altered sheet_14: 5128570838586010627
+      Lady in Glass altered sheet_15: 8956082560965298882
+      Lady in Glass altered sheet_2: 1989778816134847560
+      Lady in Glass altered sheet_3: 1692228517938958488
+      Lady in Glass altered sheet_4: 2291587003721905461
+      Lady in Glass altered sheet_5: 5545894100347752733
+      Lady in Glass altered sheet_6: -9140653915803401215
+      Lady in Glass altered sheet_7: -5540118888041712819
+      Lady in Glass altered sheet_8: 1395355539901532300
+      Lady in Glass altered sheet_9: 4475337434902343472
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

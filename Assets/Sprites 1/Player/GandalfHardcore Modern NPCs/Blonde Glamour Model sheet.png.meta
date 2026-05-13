@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: b994bd7555ce3ad47b1996d2e2ab87db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8253177642729832585
+    second: Blonde Glamour Model sheet_0
+  - first:
+      213: 4705980023827062781
+    second: Blonde Glamour Model sheet_1
+  - first:
+      213: -3853064545388460896
+    second: Blonde Glamour Model sheet_2
+  - first:
+      213: -6533262940785446373
+    second: Blonde Glamour Model sheet_3
+  - first:
+      213: -3981139484598392319
+    second: Blonde Glamour Model sheet_4
+  - first:
+      213: -7776205823864452680
+    second: Blonde Glamour Model sheet_5
+  - first:
+      213: -714731609197739345
+    second: Blonde Glamour Model sheet_6
+  - first:
+      213: -1785190426006275194
+    second: Blonde Glamour Model sheet_7
+  - first:
+      213: -8860265538541173137
+    second: Blonde Glamour Model sheet_8
+  - first:
+      213: -3461335458317827349
+    second: Blonde Glamour Model sheet_9
+  - first:
+      213: -5015899910694855129
+    second: Blonde Glamour Model sheet_10
+  - first:
+      213: -2745570933158834413
+    second: Blonde Glamour Model sheet_11
+  - first:
+      213: 8338065378392653521
+    second: Blonde Glamour Model sheet_12
+  - first:
+      213: 2169731905122113285
+    second: Blonde Glamour Model sheet_13
+  - first:
+      213: -6720228628761489676
+    second: Blonde Glamour Model sheet_14
+  - first:
+      213: 3382717854051898237
+    second: Blonde Glamour Model sheet_15
+  - first:
+      213: 6077473040227712799
+    second: Blonde Glamour Model sheet_16
+  - first:
+      213: 6852409552075682471
+    second: Blonde Glamour Model sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 127
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f74e049a2d67d80800000000000000
+      internalID: -8253177642729832585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 127
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dffdb48f5effe4140800000000000000
+      internalID: 4705980023827062781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 127
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4087bd53a278ac0800000000000000
+      internalID: -3853064545388460896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 127
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12724658ff2555a0800000000000000
+      internalID: -6533262940785446373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 127
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a2b335bb620c8c0800000000000000
+      internalID: -3981139484598392319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 63
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b94c38d00e551490800000000000000
+      internalID: -7776205823864452680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 63
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa286046363c416f0800000000000000
+      internalID: -714731609197739345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 63
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bb77114cab937e0800000000000000
+      internalID: -1785190426006275194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 63
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f664e97bf630a0580800000000000000
+      internalID: -8860265538541173137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_9
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 63
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be280865dbdd6ffc0800000000000000
+      internalID: -3461335458317827349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_10
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 63
+        width: 18
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e9e1a4b91f36ab0800000000000000
+      internalID: -5015899910694855129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_11
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 63
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f0e6f68c5c5e9d0800000000000000
+      internalID: -2745570933158834413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_12
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 63
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1deb311e842c6b370800000000000000
+      internalID: 8338065378392653521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50792a60caf6c1e10800000000000000
+      internalID: 2169731905122113285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_14
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fec24ddaa3fcb2a0800000000000000
+      internalID: -6720228628761489676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_15
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d73922247f3d1fe20800000000000000
+      internalID: 3382717854051898237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_16
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f39ceb785875450800000000000000
+      internalID: 6077473040227712799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blonde Glamour Model sheet_17
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2f6f69e26a81f50800000000000000
+      internalID: 6852409552075682471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Blonde Glamour Model sheet_0: -8253177642729832585
+      Blonde Glamour Model sheet_1: 4705980023827062781
+      Blonde Glamour Model sheet_10: -5015899910694855129
+      Blonde Glamour Model sheet_11: -2745570933158834413
+      Blonde Glamour Model sheet_12: 8338065378392653521
+      Blonde Glamour Model sheet_13: 2169731905122113285
+      Blonde Glamour Model sheet_14: -6720228628761489676
+      Blonde Glamour Model sheet_15: 3382717854051898237
+      Blonde Glamour Model sheet_16: 6077473040227712799
+      Blonde Glamour Model sheet_17: 6852409552075682471
+      Blonde Glamour Model sheet_2: -3853064545388460896
+      Blonde Glamour Model sheet_3: -6533262940785446373
+      Blonde Glamour Model sheet_4: -3981139484598392319
+      Blonde Glamour Model sheet_5: -7776205823864452680
+      Blonde Glamour Model sheet_6: -714731609197739345
+      Blonde Glamour Model sheet_7: -1785190426006275194
+      Blonde Glamour Model sheet_8: -8860265538541173137
+      Blonde Glamour Model sheet_9: -3461335458317827349
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

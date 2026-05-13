@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 5d53cdc06d3c6a642b353f83a2f26b5a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2007284128893575795
+    second: Dealer sheet_0
+  - first:
+      213: 2354493480673296321
+    second: Dealer sheet_1
+  - first:
+      213: -6393586273366968200
+    second: Dealer sheet_2
+  - first:
+      213: -5504762742351798458
+    second: Dealer sheet_3
+  - first:
+      213: -8689182007089357995
+    second: Dealer sheet_4
+  - first:
+      213: -8284011691527669493
+    second: Dealer sheet_5
+  - first:
+      213: -6997081196519776957
+    second: Dealer sheet_6
+  - first:
+      213: 8439929790218978703
+    second: Dealer sheet_7
+  - first:
+      213: 8718668382229322202
+    second: Dealer sheet_8
+  - first:
+      213: -3395349355701301209
+    second: Dealer sheet_9
+  - first:
+      213: 7537185935285441101
+    second: Dealer sheet_10
+  - first:
+      213: -4194648689887137507
+    second: Dealer sheet_11
+  - first:
+      213: 5009774831619102951
+    second: Dealer sheet_12
+  - first:
+      213: 7449032465209081289
+    second: Dealer sheet_13
+  - first:
+      213: 5239681096703904235
+    second: Dealer sheet_14
+  - first:
+      213: -4836017920702107969
+    second: Dealer sheet_15
+  - first:
+      213: 83198036769338851
+    second: Dealer sheet_16
+  - first:
+      213: 6961461462461859885
+    second: Dealer sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dealer sheet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 127
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3722bf9b74e4bdb10800000000000000
+      internalID: 2007284128893575795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 127
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf31859857dca020800000000000000
+      internalID: 2354493480673296321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 127
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878f527b82b6547a0800000000000000
+      internalID: -6393586273366968200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 127
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fd05983772b93b0800000000000000
+      internalID: -5504762742351798458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 127
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b19b67003d96780800000000000000
+      internalID: -8689182007089357995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 63
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b097f43d147490d80800000000000000
+      internalID: -8284011691527669493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 63
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d9fd059bf55ee90800000000000000
+      internalID: -6997081196519776957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 63
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f854d337d67a02570800000000000000
+      internalID: 8439929790218978703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 63
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9553d33beeef870800000000000000
+      internalID: 8718668382229322202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 63
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720921510cb41e0d0800000000000000
+      internalID: -3395349355701301209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 63
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4252c6aca6799860800000000000000
+      internalID: 7537185935285441101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_11
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 63
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1138b1ad3d99c5c0800000000000000
+      internalID: -4194648689887137507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_12
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 63
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8595b9aab468540800000000000000
+      internalID: 5009774831619102951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_13
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdb3297f87406760800000000000000
+      internalID: 7449032465209081289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_14
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be98d59423617b840800000000000000
+      internalID: 5239681096703904235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_15
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbea02dc25303ecb0800000000000000
+      internalID: -4836017920702107969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_16
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 44
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e575a37c24972100800000000000000
+      internalID: 83198036769338851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dealer sheet_17
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 44
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d284c9311541c9060800000000000000
+      internalID: 6961461462461859885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dealer sheet_0: 2007284128893575795
+      Dealer sheet_1: 2354493480673296321
+      Dealer sheet_10: 7537185935285441101
+      Dealer sheet_11: -4194648689887137507
+      Dealer sheet_12: 5009774831619102951
+      Dealer sheet_13: 7449032465209081289
+      Dealer sheet_14: 5239681096703904235
+      Dealer sheet_15: -4836017920702107969
+      Dealer sheet_16: 83198036769338851
+      Dealer sheet_17: 6961461462461859885
+      Dealer sheet_2: -6393586273366968200
+      Dealer sheet_3: -5504762742351798458
+      Dealer sheet_4: -8689182007089357995
+      Dealer sheet_5: -8284011691527669493
+      Dealer sheet_6: -6997081196519776957
+      Dealer sheet_7: 8439929790218978703
+      Dealer sheet_8: 8718668382229322202
+      Dealer sheet_9: -3395349355701301209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

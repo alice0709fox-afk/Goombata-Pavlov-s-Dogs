@@ -1,0 +1,2522 @@
+fileFormatVersion: 2
+guid: 0b4f27285a692a44f90757f0dd721304
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2939884051336774739
+    second: Car wash altered sheet_0
+  - first:
+      213: -7774828765223197548
+    second: Car wash altered sheet_1
+  - first:
+      213: 1054324860085600949
+    second: Car wash altered sheet_2
+  - first:
+      213: -8812992002979135273
+    second: Car wash altered sheet_3
+  - first:
+      213: 861293498024745162
+    second: Car wash altered sheet_4
+  - first:
+      213: 6570604448483087532
+    second: Car wash altered sheet_5
+  - first:
+      213: 7954093403248623124
+    second: Car wash altered sheet_6
+  - first:
+      213: -3785165712253405557
+    second: Car wash altered sheet_7
+  - first:
+      213: 6281017913320140116
+    second: Car wash altered sheet_8
+  - first:
+      213: -3485786867919244115
+    second: Car wash altered sheet_9
+  - first:
+      213: 728057406947976245
+    second: Car wash altered sheet_10
+  - first:
+      213: -6058568779074955696
+    second: Car wash altered sheet_11
+  - first:
+      213: 8760365147188939370
+    second: Car wash altered sheet_12
+  - first:
+      213: -6968931854415266088
+    second: Car wash altered sheet_13
+  - first:
+      213: 6233970742902372616
+    second: Car wash altered sheet_14
+  - first:
+      213: -2850324173864468432
+    second: Car wash altered sheet_15
+  - first:
+      213: 2408450307956507304
+    second: Car wash altered sheet_16
+  - first:
+      213: -4526153927108886400
+    second: Car wash altered sheet_17
+  - first:
+      213: 5464493621818844088
+    second: Car wash altered sheet_18
+  - first:
+      213: -7980916688981164465
+    second: Car wash altered sheet_19
+  - first:
+      213: 5412046128768128414
+    second: Car wash altered sheet_20
+  - first:
+      213: 2641652619851749701
+    second: Car wash altered sheet_21
+  - first:
+      213: 7476862707448116856
+    second: Car wash altered sheet_22
+  - first:
+      213: -7629280928890040736
+    second: Car wash altered sheet_23
+  - first:
+      213: 5261085698426172257
+    second: Car wash altered sheet_24
+  - first:
+      213: 8633671819818665072
+    second: Car wash altered sheet_25
+  - first:
+      213: -3160206790661721448
+    second: Car wash altered sheet_26
+  - first:
+      213: -6086018926247552548
+    second: Car wash altered sheet_27
+  - first:
+      213: -4830390879546917545
+    second: Car wash altered sheet_28
+  - first:
+      213: 3851881404727642846
+    second: Car wash altered sheet_29
+  - first:
+      213: 8021581876116159071
+    second: Car wash altered sheet_30
+  - first:
+      213: 7311471131826943262
+    second: Car wash altered sheet_31
+  - first:
+      213: 1696934588584840726
+    second: Car wash altered sheet_32
+  - first:
+      213: -1632261866513139594
+    second: Car wash altered sheet_33
+  - first:
+      213: 3400721922945959591
+    second: Car wash altered sheet_34
+  - first:
+      213: -5478010560535979516
+    second: Car wash altered sheet_35
+  - first:
+      213: -8165930535693475429
+    second: Car wash altered sheet_36
+  - first:
+      213: -6871749265010911573
+    second: Car wash altered sheet_37
+  - first:
+      213: 568809548078282516
+    second: Car wash altered sheet_38
+  - first:
+      213: -8092410992159066542
+    second: Car wash altered sheet_39
+  - first:
+      213: 4778059214102129715
+    second: Car wash altered sheet_40
+  - first:
+      213: 66483265370337760
+    second: Car wash altered sheet_41
+  - first:
+      213: 1204400506868001075
+    second: Car wash altered sheet_42
+  - first:
+      213: -973125210467723849
+    second: Car wash altered sheet_43
+  - first:
+      213: -764924436840924585
+    second: Car wash altered sheet_44
+  - first:
+      213: -6055101190728905501
+    second: Car wash altered sheet_45
+  - first:
+      213: -6631741853131701319
+    second: Car wash altered sheet_46
+  - first:
+      213: -7899901770115343713
+    second: Car wash altered sheet_47
+  - first:
+      213: -795777064226674629
+    second: Car wash altered sheet_48
+  - first:
+      213: -2227855152244877751
+    second: Car wash altered sheet_49
+  - first:
+      213: -9215494381361090516
+    second: Car wash altered sheet_50
+  - first:
+      213: -8373079239494145437
+    second: Car wash altered sheet_51
+  - first:
+      213: 445327133120995636
+    second: Car wash altered sheet_52
+  - first:
+      213: 421651673588331986
+    second: Car wash altered sheet_53
+  - first:
+      213: -5265378142743623011
+    second: Car wash altered sheet_54
+  - first:
+      213: 5280371626797674714
+    second: Car wash altered sheet_55
+  - first:
+      213: -7276561564992636896
+    second: Car wash altered sheet_56
+  - first:
+      213: -2653398399863673465
+    second: Car wash altered sheet_57
+  - first:
+      213: -7468470762351544683
+    second: Car wash altered sheet_58
+  - first:
+      213: 6657088693224652795
+    second: Car wash altered sheet_59
+  - first:
+      213: 6371005317213417719
+    second: Car wash altered sheet_60
+  - first:
+      213: 8828383165381991276
+    second: Car wash altered sheet_61
+  - first:
+      213: 4073257937080541763
+    second: Car wash altered sheet_62
+  - first:
+      213: 4817482597237971494
+    second: Car wash altered sheet_63
+  - first:
+      213: -4237616635100097084
+    second: Car wash altered sheet_64
+  - first:
+      213: 3672427064297432161
+    second: Car wash altered sheet_65
+  - first:
+      213: 7226733200543884547
+    second: Car wash altered sheet_66
+  - first:
+      213: 8956418939148314606
+    second: Car wash altered sheet_67
+  - first:
+      213: 1920169935518638033
+    second: Car wash altered sheet_68
+  - first:
+      213: 3472470142458425744
+    second: Car wash altered sheet_69
+  - first:
+      213: 6149952138269881194
+    second: Car wash altered sheet_70
+  - first:
+      213: -1384208224938329184
+    second: Car wash altered sheet_71
+  - first:
+      213: 6398007598490900092
+    second: Car wash altered sheet_72
+  - first:
+      213: -2915842525563367507
+    second: Car wash altered sheet_73
+  - first:
+      213: -5248399599985314015
+    second: Car wash altered sheet_74
+  - first:
+      213: 6412153137036938729
+    second: Car wash altered sheet_75
+  - first:
+      213: 2560362506864837593
+    second: Car wash altered sheet_76
+  - first:
+      213: 7885386823758986589
+    second: Car wash altered sheet_77
+  - first:
+      213: -6566745641160130245
+    second: Car wash altered sheet_78
+  - first:
+      213: 5329494664068785984
+    second: Car wash altered sheet_79
+  - first:
+      213: 7534567764210973724
+    second: Car wash altered sheet_80
+  - first:
+      213: -1427237419342768077
+    second: Car wash altered sheet_81
+  - first:
+      213: 5744946423971983916
+    second: Car wash altered sheet_82
+  - first:
+      213: 6480388057948309547
+    second: Car wash altered sheet_83
+  - first:
+      213: -3505538213766871434
+    second: Car wash altered sheet_84
+  - first:
+      213: -1403318832221524129
+    second: Car wash altered sheet_85
+  - first:
+      213: -799307260798127699
+    second: Car wash altered sheet_86
+  - first:
+      213: -8263869767928963702
+    second: Car wash altered sheet_87
+  - first:
+      213: -1517210988258117639
+    second: Car wash altered sheet_88
+  - first:
+      213: 3931031340184980618
+    second: Car wash altered sheet_89
+  - first:
+      213: 846964792234856487
+    second: Car wash altered sheet_90
+  - first:
+      213: 4341626590215543954
+    second: Car wash altered sheet_91
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Car wash altered sheet_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 399
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 354c3c0f7f09cc820800000000000000
+      internalID: 2939884051336774739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 399
+        width: 88
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494e16b4e624a1490800000000000000
+      internalID: -7774828765223197548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_2
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 399
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2044bcfd6b1ae00800000000000000
+      internalID: 1054324860085600949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_3
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 399
+        width: 94
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0021e6776f1b580800000000000000
+      internalID: -8812992002979135273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_4
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 399
+        width: 140
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac85e158fdde3fb00800000000000000
+      internalID: 861293498024745162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_5
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 399
+        width: 86
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca49f6feee97f2b50800000000000000
+      internalID: 6570604448483087532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_6
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 399
+        width: 139
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e79e2cecd926e60800000000000000
+      internalID: 7954093403248623124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_7
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 444
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86b521e6d3687bc0800000000000000
+      internalID: -3785165712253405557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_8
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 399
+        width: 89
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45def4f8388aa2750800000000000000
+      internalID: 6281017913320140116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_9
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 399
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4b3f6ef4fff9fc0800000000000000
+      internalID: -3485786867919244115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 438
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534e93daa549a1a00800000000000000
+      internalID: 728057406947976245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 399
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05617fb8bc3abeba0800000000000000
+      internalID: -6058568779074955696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ac8ecdfa1139970800000000000000
+      internalID: 8760365147188939370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 399
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de7ca1c661694f90800000000000000
+      internalID: -6968931854415266088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_14
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 399
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809bfd69c53838650800000000000000
+      internalID: 6233970742902372616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_15
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 399
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 030891af34d9178d0800000000000000
+      internalID: -2850324173864468432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_16
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 399
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a28de86bc88c6120800000000000000
+      internalID: 2408450307956507304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_17
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 399
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0808fefdbfedf21c0800000000000000
+      internalID: -4526153927108886400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_18
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 319
+        width: 139
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b366e53ff7c5db40800000000000000
+      internalID: 5464493621818844088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 361
+        width: 59
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e7a4b5e861e3190800000000000000
+      internalID: -7980916688981164465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 319
+        width: 102
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e959045a7437b1b40800000000000000
+      internalID: 5412046128768128414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_21
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 319
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5495e3acf0909a420800000000000000
+      internalID: 2641652619851749701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_22
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 319
+        width: 88
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8767fcfa40723c760800000000000000
+      internalID: 7476862707448116856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_23
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 319
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ec8d5ba695f1690800000000000000
+      internalID: -7629280928890040736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_24
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 319
+        width: 91
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163749b7191230940800000000000000
+      internalID: 5261085698426172257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_25
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 319
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0748797e6c6f0d770800000000000000
+      internalID: 8633671819818665072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_26
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 319
+        width: 95
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 892b4d9daa0b424d0800000000000000
+      internalID: -3160206790661721448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_27
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 319
+        width: 175
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd9d5bc180e1a8ba0800000000000000
+      internalID: -6086018926247552548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75db15a661107fcb0800000000000000
+      internalID: -4830390879546917545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_29
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 319
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda49bdbab1a47530800000000000000
+      internalID: 3851881404727642846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_30
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 319
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a7d965732625f60800000000000000
+      internalID: 8021581876116159071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_31
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 319
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15711ea140977560800000000000000
+      internalID: 7311471131826943262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_32
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 319
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e4caf7409bc8710800000000000000
+      internalID: 1696934588584840726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_33
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 319
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67871120b7a0959e0800000000000000
+      internalID: -1632261866513139594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_34
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 239
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6c315329ac13f20800000000000000
+      internalID: 3400721922945959591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_35
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 239
+        width: 233
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a1a6f3b623af3b0800000000000000
+      internalID: -5478010560535979516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_36
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 239
+        width: 240
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91a9775179ccae80800000000000000
+      internalID: -8165930535693475429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_37
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 239
+        width: 231
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba619799374a2a0a0800000000000000
+      internalID: -6871749265010911573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_38
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 284
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4177e023541d4e700800000000000000
+      internalID: 568809548078282516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_39
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 239
+        width: 234
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25674ebf31bf1bf80800000000000000
+      internalID: -8092410992159066542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 278
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ce65c3a831f4240800000000000000
+      internalID: 4778059214102129715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 239
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e138e77d223ce000800000000000000
+      internalID: 66483265370337760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339ea2b31e3e6b010800000000000000
+      internalID: 1204400506868001075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_43
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 239
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b51814e6c3ce72f0800000000000000
+      internalID: -973125210467723849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 188
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ab41607417265f0800000000000000
+      internalID: -764924436840924585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_45
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 201
+        width: 59
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec0f8f5c85f7fba0800000000000000
+      internalID: -6055101190728905501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_46
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 159
+        width: 102
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b38ef9cbe157f3a0800000000000000
+      internalID: -6631741853131701319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_47
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 159
+        width: 146
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a9bcf0239ed5290800000000000000
+      internalID: -7899901770115343713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_48
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 159
+        width: 88
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38ad5ee9f4d4f4f0800000000000000
+      internalID: -795777064226674629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_49
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 159
+        width: 145
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9469b6fea811511e0800000000000000
+      internalID: -2227855152244877751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_50
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 159
+        width: 95
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c203d599facfb1080800000000000000
+      internalID: -9215494381361090516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_51
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 159
+        width: 141
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ae0cd4bc8dccb80800000000000000
+      internalID: -8373079239494145437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_52
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 159
+        width: 99
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431258a0bae1e2600800000000000000
+      internalID: 445327133120995636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_53
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 159
+        width: 177
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d57e2f86f10ad500800000000000000
+      internalID: 421651673588331986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_54
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 159
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a09a1f97e9de6b0800000000000000
+      internalID: -5265378142743623011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_55
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 159
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0b3599406a74940800000000000000
+      internalID: 5280371626797674714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_56
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 159
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0287a5c3fc5740b90800000000000000
+      internalID: -7276561564992636896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_57
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 159
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d2980b63c3d2bd0800000000000000
+      internalID: -2653398399863673465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_58
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 79
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59635aa4969aa5890800000000000000
+      internalID: -7468470762351544683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_59
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 79
+        width: 88
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bffbced45eab26c50800000000000000
+      internalID: 6657088693224652795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_60
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 79
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f071aab49b5a6850800000000000000
+      internalID: 6371005317213417719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_61
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 79
+        width: 94
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bd1a1d6b7b48a70800000000000000
+      internalID: 8828383165381991276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_62
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 79
+        width: 140
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342e932438e178830800000000000000
+      internalID: 4073257937080541763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_63
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 79
+        width: 86
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62adef7e5e22bd240800000000000000
+      internalID: 4817482597237971494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_64
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 79
+        width: 139
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5929a4f16f035c0800000000000000
+      internalID: -4237616635100097084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_65
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 124
+        width: 34
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164aaf625f417f230800000000000000
+      internalID: 3672427064297432161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_66
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 79
+        width: 89
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305a0f89e838a4460800000000000000
+      internalID: 7226733200543884547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_67
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 79
+        width: 139
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7248f62979b4c70800000000000000
+      internalID: 8956418939148314606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 118
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1df19f20260d5aa10800000000000000
+      internalID: 1920169935518638033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 79
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09172665231b03030800000000000000
+      internalID: 3472470142458425744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63fa3bc2e4095550800000000000000
+      internalID: 6149952138269881194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_71
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 79
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab706904fd4acce0800000000000000
+      internalID: -1384208224938329184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_72
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 79
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76dc42430a4ac850800000000000000
+      internalID: 6398007598490900092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_73
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 79
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daf41dafba8d887d0800000000000000
+      internalID: -2915842525563367507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_74
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 79
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127b29bfe50f927b0800000000000000
+      internalID: -5248399599985314015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_75
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 79
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed4e7a1e4b8cf850800000000000000
+      internalID: 6412153137036938729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_76
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 139
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d348e5722c388320800000000000000
+      internalID: 2560362506864837593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_77
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 41
+        width: 59
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d33b2a9858e6d60800000000000000
+      internalID: 7885386823758986589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_78
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 102
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b314e48a1ab3ed4a0800000000000000
+      internalID: -6566745641160130245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_79
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 139
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047e82cf82b26f940800000000000000
+      internalID: 5329494664068785984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_80
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 0
+        width: 88
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1c77e13679209860800000000000000
+      internalID: 7534567764210973724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_81
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 139
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338dde1012f613ce0800000000000000
+      internalID: -1427237419342768077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_82
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 0
+        width: 91
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c223086a5562abf40800000000000000
+      internalID: 5744946423971983916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_83
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 0
+        width: 139
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2841b8aa96fee950800000000000000
+      internalID: 6480388057948309547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_84
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 0
+        width: 95
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6764ed55193d95fc0800000000000000
+      internalID: -3505538213766871434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_85
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 175
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fe1da05f8668ce0800000000000000
+      internalID: -1403318832221524129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1bcbdf74a48e4f0800000000000000
+      internalID: -799307260798127699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_87
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d118cda36d05d80800000000000000
+      internalID: -8263869767928963702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_88
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f73e8b05a8c1fae0800000000000000
+      internalID: -1517210988258117639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_89
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 0
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c47a82d24dd8630800000000000000
+      internalID: 3931031340184980618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_90
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 0
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720db6abdf501cb00800000000000000
+      internalID: 846964792234856487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Car wash altered sheet_91
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 0
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c1031816e804c30800000000000000
+      internalID: 4341626590215543954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Car wash altered sheet_0: 2939884051336774739
+      Car wash altered sheet_1: -7774828765223197548
+      Car wash altered sheet_10: 728057406947976245
+      Car wash altered sheet_11: -6058568779074955696
+      Car wash altered sheet_12: 8760365147188939370
+      Car wash altered sheet_13: -6968931854415266088
+      Car wash altered sheet_14: 6233970742902372616
+      Car wash altered sheet_15: -2850324173864468432
+      Car wash altered sheet_16: 2408450307956507304
+      Car wash altered sheet_17: -4526153927108886400
+      Car wash altered sheet_18: 5464493621818844088
+      Car wash altered sheet_19: -7980916688981164465
+      Car wash altered sheet_2: 1054324860085600949
+      Car wash altered sheet_20: 5412046128768128414
+      Car wash altered sheet_21: 2641652619851749701
+      Car wash altered sheet_22: 7476862707448116856
+      Car wash altered sheet_23: -7629280928890040736
+      Car wash altered sheet_24: 5261085698426172257
+      Car wash altered sheet_25: 8633671819818665072
+      Car wash altered sheet_26: -3160206790661721448
+      Car wash altered sheet_27: -6086018926247552548
+      Car wash altered sheet_28: -4830390879546917545
+      Car wash altered sheet_29: 3851881404727642846
+      Car wash altered sheet_3: -8812992002979135273
+      Car wash altered sheet_30: 8021581876116159071
+      Car wash altered sheet_31: 7311471131826943262
+      Car wash altered sheet_32: 1696934588584840726
+      Car wash altered sheet_33: -1632261866513139594
+      Car wash altered sheet_34: 3400721922945959591
+      Car wash altered sheet_35: -5478010560535979516
+      Car wash altered sheet_36: -8165930535693475429
+      Car wash altered sheet_37: -6871749265010911573
+      Car wash altered sheet_38: 568809548078282516
+      Car wash altered sheet_39: -8092410992159066542
+      Car wash altered sheet_4: 861293498024745162
+      Car wash altered sheet_40: 4778059214102129715
+      Car wash altered sheet_41: 66483265370337760
+      Car wash altered sheet_42: 1204400506868001075
+      Car wash altered sheet_43: -973125210467723849
+      Car wash altered sheet_44: -764924436840924585
+      Car wash altered sheet_45: -6055101190728905501
+      Car wash altered sheet_46: -6631741853131701319
+      Car wash altered sheet_47: -7899901770115343713
+      Car wash altered sheet_48: -795777064226674629
+      Car wash altered sheet_49: -2227855152244877751
+      Car wash altered sheet_5: 6570604448483087532
+      Car wash altered sheet_50: -9215494381361090516
+      Car wash altered sheet_51: -8373079239494145437
+      Car wash altered sheet_52: 445327133120995636
+      Car wash altered sheet_53: 421651673588331986
+      Car wash altered sheet_54: -5265378142743623011
+      Car wash altered sheet_55: 5280371626797674714
+      Car wash altered sheet_56: -7276561564992636896
+      Car wash altered sheet_57: -2653398399863673465
+      Car wash altered sheet_58: -7468470762351544683
+      Car wash altered sheet_59: 6657088693224652795
+      Car wash altered sheet_6: 7954093403248623124
+      Car wash altered sheet_60: 6371005317213417719
+      Car wash altered sheet_61: 8828383165381991276
+      Car wash altered sheet_62: 4073257937080541763
+      Car wash altered sheet_63: 4817482597237971494
+      Car wash altered sheet_64: -4237616635100097084
+      Car wash altered sheet_65: 3672427064297432161
+      Car wash altered sheet_66: 7226733200543884547
+      Car wash altered sheet_67: 8956418939148314606
+      Car wash altered sheet_68: 1920169935518638033
+      Car wash altered sheet_69: 3472470142458425744
+      Car wash altered sheet_7: -3785165712253405557
+      Car wash altered sheet_70: 6149952138269881194
+      Car wash altered sheet_71: -1384208224938329184
+      Car wash altered sheet_72: 6398007598490900092
+      Car wash altered sheet_73: -2915842525563367507
+      Car wash altered sheet_74: -5248399599985314015
+      Car wash altered sheet_75: 6412153137036938729
+      Car wash altered sheet_76: 2560362506864837593
+      Car wash altered sheet_77: 7885386823758986589
+      Car wash altered sheet_78: -6566745641160130245
+      Car wash altered sheet_79: 5329494664068785984
+      Car wash altered sheet_8: 6281017913320140116
+      Car wash altered sheet_80: 7534567764210973724
+      Car wash altered sheet_81: -1427237419342768077
+      Car wash altered sheet_82: 5744946423971983916
+      Car wash altered sheet_83: 6480388057948309547
+      Car wash altered sheet_84: -3505538213766871434
+      Car wash altered sheet_85: -1403318832221524129
+      Car wash altered sheet_86: -799307260798127699
+      Car wash altered sheet_87: -8263869767928963702
+      Car wash altered sheet_88: -1517210988258117639
+      Car wash altered sheet_89: 3931031340184980618
+      Car wash altered sheet_9: -3485786867919244115
+      Car wash altered sheet_90: 846964792234856487
+      Car wash altered sheet_91: 4341626590215543954
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

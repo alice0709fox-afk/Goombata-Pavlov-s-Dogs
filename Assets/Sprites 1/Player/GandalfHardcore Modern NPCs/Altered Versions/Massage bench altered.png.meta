@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: b12816e3c6c01244c82700035e489dea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1679852082036360798
+    second: Massage bench altered_0
+  - first:
+      213: -3940476510202526796
+    second: Massage bench altered_1
+  - first:
+      213: -8805941254510694065
+    second: Massage bench altered_2
+  - first:
+      213: 1051555301431506710
+    second: Massage bench altered_3
+  - first:
+      213: -6696568539539575801
+    second: Massage bench altered_4
+  - first:
+      213: -684425040964274539
+    second: Massage bench altered_5
+  - first:
+      213: 5403751897225577557
+    second: Massage bench altered_6
+  - first:
+      213: 1122610910561929163
+    second: Massage bench altered_7
+  - first:
+      213: -6359924855656305516
+    second: Massage bench altered_8
+  - first:
+      213: -3330280067359476481
+    second: Massage bench altered_9
+  - first:
+      213: 946071108692803858
+    second: Massage bench altered_10
+  - first:
+      213: 1839807049331548014
+    second: Massage bench altered_11
+  - first:
+      213: 2101611251237642814
+    second: Massage bench altered_12
+  - first:
+      213: 1364357838918226619
+    second: Massage bench altered_13
+  - first:
+      213: -272144967859269840
+    second: Massage bench altered_14
+  - first:
+      213: -7728987785628742518
+    second: Massage bench altered_15
+  - first:
+      213: -8379466932014741894
+    second: Massage bench altered_16
+  - first:
+      213: 4662541683603391283
+    second: Massage bench altered_17
+  - first:
+      213: -2477309312276792034
+    second: Massage bench altered_18
+  - first:
+      213: -7120356167973739412
+    second: Massage bench altered_19
+  - first:
+      213: 708329960933380032
+    second: Massage bench altered_20
+  - first:
+      213: 8731724434275554280
+    second: Massage bench altered_21
+  - first:
+      213: 831028749810302931
+    second: Massage bench altered_22
+  - first:
+      213: 5683372176379204129
+    second: Massage bench altered_23
+  - first:
+      213: -8597670073205586076
+    second: Massage bench altered_24
+  - first:
+      213: 6193002421911496438
+    second: Massage bench altered_25
+  - first:
+      213: -151689562275036847
+    second: Massage bench altered_26
+  - first:
+      213: 1544112752395793086
+    second: Massage bench altered_27
+  - first:
+      213: -1881738666136562952
+    second: Massage bench altered_28
+  - first:
+      213: 1537326292658912568
+    second: Massage bench altered_29
+  - first:
+      213: -7104675877154581408
+    second: Massage bench altered_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Massage bench altered_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e564af08198005710800000000000000
+      internalID: 1679852082036360798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b38b93dd7d9059c0800000000000000
+      internalID: -3940476510202526796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41beebb5130bc580800000000000000
+      internalID: -8805941254510694065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617f08ba9ffd79e00800000000000000
+      internalID: 1051555301431506710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70cefaaa4620113a0800000000000000
+      internalID: -6696568539539575801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59631fd2d0f6086f0800000000000000
+      internalID: -684425040964274539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_6
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554497068bbfdfa40800000000000000
+      internalID: 5403751897225577557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 191
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc78501eca0549f00800000000000000
+      internalID: 1122610910561929163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cad644a020db7a0800000000000000
+      internalID: -6359924855656305516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_9
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 127
+        width: 55
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4797e5ce778c1d0800000000000000
+      internalID: -3330280067359476481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_10
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 127
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21105ed29ae112d00800000000000000
+      internalID: 946071108692803858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_11
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 127
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f9aae73ce488910800000000000000
+      internalID: 1839807049331548014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_12
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 127
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32ebf55c4c6a2d10800000000000000
+      internalID: 2101611251237642814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 127
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb29d3fc93c2fe210800000000000000
+      internalID: 1364357838918226619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_14
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 127
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f8657f795293cf0800000000000000
+      internalID: -272144967859269840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 127
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c04441f8e1db490800000000000000
+      internalID: -7728987785628742518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 63
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76012eb83726bb80800000000000000
+      internalID: -8379466932014741894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_17
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 63
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 333c1a145fca4b040800000000000000
+      internalID: 4662541683603391283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 63
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d79fa4e44de9dd0800000000000000
+      internalID: -2477309312276792034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_19
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 63
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64e9ad5ac96f2d90800000000000000
+      internalID: -7120356167973739412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 63
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf4339b85e74d900800000000000000
+      internalID: 708329960933380032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_21
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 63
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3d79d3c115d2970800000000000000
+      internalID: 8731724434275554280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_22
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 63
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df7496be38688b00800000000000000
+      internalID: 831028749810302931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_23
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122db63f1e46fde40800000000000000
+      internalID: 5683372176379204129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_24
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 467039eee90fea880800000000000000
+      internalID: -8597670073205586076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_25
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f62b2b04e6f1f550800000000000000
+      internalID: 6193002421911496438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_26
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1514674952715edf0800000000000000
+      internalID: -151689562275036847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_27
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2b3b30e5acd6510800000000000000
+      internalID: 1544112752395793086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_28
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f210dc27a8b2e5e0800000000000000
+      internalID: -1881738666136562952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_29
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 0
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d7dc93e1ea55510800000000000000
+      internalID: 1537326292658912568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Massage bench altered_30
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 0
+        width: 55
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0641ae19eee176d90800000000000000
+      internalID: -7104675877154581408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Massage bench altered_0: 1679852082036360798
+      Massage bench altered_1: -3940476510202526796
+      Massage bench altered_10: 946071108692803858
+      Massage bench altered_11: 1839807049331548014
+      Massage bench altered_12: 2101611251237642814
+      Massage bench altered_13: 1364357838918226619
+      Massage bench altered_14: -272144967859269840
+      Massage bench altered_15: -7728987785628742518
+      Massage bench altered_16: -8379466932014741894
+      Massage bench altered_17: 4662541683603391283
+      Massage bench altered_18: -2477309312276792034
+      Massage bench altered_19: -7120356167973739412
+      Massage bench altered_2: -8805941254510694065
+      Massage bench altered_20: 708329960933380032
+      Massage bench altered_21: 8731724434275554280
+      Massage bench altered_22: 831028749810302931
+      Massage bench altered_23: 5683372176379204129
+      Massage bench altered_24: -8597670073205586076
+      Massage bench altered_25: 6193002421911496438
+      Massage bench altered_26: -151689562275036847
+      Massage bench altered_27: 1544112752395793086
+      Massage bench altered_28: -1881738666136562952
+      Massage bench altered_29: 1537326292658912568
+      Massage bench altered_3: 1051555301431506710
+      Massage bench altered_30: -7104675877154581408
+      Massage bench altered_4: -6696568539539575801
+      Massage bench altered_5: -684425040964274539
+      Massage bench altered_6: 5403751897225577557
+      Massage bench altered_7: 1122610910561929163
+      Massage bench altered_8: -6359924855656305516
+      Massage bench altered_9: -3330280067359476481
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

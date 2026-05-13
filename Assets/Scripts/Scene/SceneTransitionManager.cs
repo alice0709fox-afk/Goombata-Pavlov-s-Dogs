@@ -252,7 +252,6 @@ public class SceneTransitionManager : MonoBehaviour
 
     private IEnumerator EnforceSceneCameraBinding(Scene scene)
     {
-        var forcedPlayerCamera = FindPreferredPlayerCamera(scene);
         while (scene.IsValid() && scene.isLoaded && SceneManager.GetActiveScene() == scene)
         {
             if (IsAnyCutscenePlaying(scene))
@@ -267,17 +266,9 @@ public class SceneTransitionManager : MonoBehaviour
             {
                 AttachSceneCamerasToTarget(scene, target);
 
-                if (forcedPlayerCamera == null)
-                    forcedPlayerCamera = FindPreferredPlayerCamera(scene);
-
-                if (forcedPlayerCamera != null)
-                {
-                    forcedPlayerCamera.gameObject.SetActive(true);
-                    forcedPlayerCamera.Priority = 100;
-                    forcedPlayerCamera.Follow = target;
-                    forcedPlayerCamera.LookAt = target;
-                    CinemachineCore.SoloCamera = forcedPlayerCamera;
-                }
+                // Do not force a single player camera in gameplay.
+                // Camera selection should be controlled by priorities/triggers.
+                CinemachineCore.SoloCamera = null;
             }
 
             yield return null;
@@ -301,22 +292,6 @@ public class SceneTransitionManager : MonoBehaviour
         }
 
         return false;
-    }
-
-    private static CinemachineVirtualCameraBase FindPreferredPlayerCamera(Scene scene)
-    {
-        var virtualCameras = FindObjectsByType<CinemachineVirtualCameraBase>(FindObjectsSortMode.None);
-        for (var i = 0; i < virtualCameras.Length; i++)
-        {
-            var virtualCamera = virtualCameras[i];
-            if (virtualCamera == null || virtualCamera.gameObject.scene != scene)
-                continue;
-
-            if (virtualCamera.gameObject.name.IndexOf("CinemachineCameraPlayer", System.StringComparison.OrdinalIgnoreCase) >= 0)
-                return virtualCamera;
-        }
-
-        return null;
     }
 
     private static bool ShouldAutoBindSceneCameras(Scene scene)

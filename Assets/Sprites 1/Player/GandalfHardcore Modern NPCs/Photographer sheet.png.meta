@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: e2a1587999bd35740b54f7a9305ef98d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6453712216845356715
+    second: Photographer sheet_0
+  - first:
+      213: 5080637493991963465
+    second: Photographer sheet_1
+  - first:
+      213: 38299446203900930
+    second: Photographer sheet_2
+  - first:
+      213: -5161594926859268636
+    second: Photographer sheet_3
+  - first:
+      213: 7584611174763001019
+    second: Photographer sheet_4
+  - first:
+      213: -6937066448470067134
+    second: Photographer sheet_5
+  - first:
+      213: 6166797495911434453
+    second: Photographer sheet_6
+  - first:
+      213: -4379043008491000497
+    second: Photographer sheet_7
+  - first:
+      213: 3548785939769939565
+    second: Photographer sheet_8
+  - first:
+      213: -9154701436130712464
+    second: Photographer sheet_9
+  - first:
+      213: -1824399013862811754
+    second: Photographer sheet_10
+  - first:
+      213: -1475785661561642914
+    second: Photographer sheet_11
+  - first:
+      213: 665267859020037027
+    second: Photographer sheet_12
+  - first:
+      213: 3099991482003909354
+    second: Photographer sheet_13
+  - first:
+      213: -7242606358279681974
+    second: Photographer sheet_14
+  - first:
+      213: -8236688240063069140
+    second: Photographer sheet_15
+  - first:
+      213: 8690815839773651634
+    second: Photographer sheet_16
+  - first:
+      213: -4674046057117448052
+    second: Photographer sheet_17
+  - first:
+      213: 5375026546045122491
+    second: Photographer sheet_18
+  - first:
+      213: 6304315393864138057
+    second: Photographer sheet_19
+  - first:
+      213: 8132055559162923190
+    second: Photographer sheet_20
+  - first:
+      213: -6135135469540206134
+    second: Photographer sheet_21
+  - first:
+      213: -664497576431746964
+    second: Photographer sheet_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Photographer sheet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 191
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55175589eeecf66a0800000000000000
+      internalID: -6453712216845356715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 191
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bfbe5e1ec028640800000000000000
+      internalID: 5080637493991963465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 191
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204e316b421188000800000000000000
+      internalID: 38299446203900930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 191
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed4816e2c45e58b0800000000000000
+      internalID: -5161594926859268636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 191
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb4f43fada3f14960800000000000000
+      internalID: 7584611174763001019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 127
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24839abb1d69abf90800000000000000
+      internalID: -6937066448470067134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_6
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 127
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8c19146add49550800000000000000
+      internalID: 6166797495911434453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 127
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d6cbeb5938a33c0800000000000000
+      internalID: -4379043008491000497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 127
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6653eb8202df3130800000000000000
+      internalID: 3548785939769939565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 127
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074abaa2c87f3f080800000000000000
+      internalID: -9154701436130712464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 127
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697522253ce6ea6e0800000000000000
+      internalID: -1824399013862811754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_11
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 127
+        width: 23
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50e00682c4f48be0800000000000000
+      internalID: -1475785661561642914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_12
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 127
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abbf51d7918b3900800000000000000
+      internalID: 665267859020037027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 63
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea649314d1650b20800000000000000
+      internalID: 3099991482003909354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_14
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 63
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4801ced3e71d7b90800000000000000
+      internalID: -7242606358279681974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 63
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24476d7fa761bd80800000000000000
+      internalID: -8236688240063069140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_16
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 63
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2fb0ad5fafb9870800000000000000
+      internalID: 8690815839773651634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_17
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 63
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8803bd00e3722fb0800000000000000
+      internalID: -4674046057117448052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_18
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7705f5a2ee79a40800000000000000
+      internalID: 5375026546045122491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_19
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d7c43f27d6d7750800000000000000
+      internalID: 6304315393864138057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_20
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b885a1127ddad070800000000000000
+      internalID: 8132055559162923190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_21
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac91829bbce9bdaa0800000000000000
+      internalID: -6135135469540206134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Photographer sheet_22
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c608da299fa37c6f0800000000000000
+      internalID: -664497576431746964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Photographer sheet_0: -6453712216845356715
+      Photographer sheet_1: 5080637493991963465
+      Photographer sheet_10: -1824399013862811754
+      Photographer sheet_11: -1475785661561642914
+      Photographer sheet_12: 665267859020037027
+      Photographer sheet_13: 3099991482003909354
+      Photographer sheet_14: -7242606358279681974
+      Photographer sheet_15: -8236688240063069140
+      Photographer sheet_16: 8690815839773651634
+      Photographer sheet_17: -4674046057117448052
+      Photographer sheet_18: 5375026546045122491
+      Photographer sheet_19: 6304315393864138057
+      Photographer sheet_2: 38299446203900930
+      Photographer sheet_20: 8132055559162923190
+      Photographer sheet_21: -6135135469540206134
+      Photographer sheet_22: -664497576431746964
+      Photographer sheet_3: -5161594926859268636
+      Photographer sheet_4: 7584611174763001019
+      Photographer sheet_5: -6937066448470067134
+      Photographer sheet_6: 6166797495911434453
+      Photographer sheet_7: -4379043008491000497
+      Photographer sheet_8: 3548785939769939565
+      Photographer sheet_9: -9154701436130712464
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

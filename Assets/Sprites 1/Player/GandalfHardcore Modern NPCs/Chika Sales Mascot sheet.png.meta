@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: f5c71bc6de7845a4e97d2694865d2f14
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3937718366477685538
+    second: Chika Sales Mascot sheet_0
+  - first:
+      213: 514346978672583077
+    second: Chika Sales Mascot sheet_1
+  - first:
+      213: 9060520012166942935
+    second: Chika Sales Mascot sheet_2
+  - first:
+      213: 5782931949658278175
+    second: Chika Sales Mascot sheet_3
+  - first:
+      213: -8440876453395903776
+    second: Chika Sales Mascot sheet_4
+  - first:
+      213: -5091401518130172981
+    second: Chika Sales Mascot sheet_5
+  - first:
+      213: -3228586333900376201
+    second: Chika Sales Mascot sheet_6
+  - first:
+      213: -1855127572527198729
+    second: Chika Sales Mascot sheet_7
+  - first:
+      213: 8284276431500673682
+    second: Chika Sales Mascot sheet_8
+  - first:
+      213: -2295943437051421767
+    second: Chika Sales Mascot sheet_9
+  - first:
+      213: -7640147834134873924
+    second: Chika Sales Mascot sheet_10
+  - first:
+      213: 2566139279075547298
+    second: Chika Sales Mascot sheet_11
+  - first:
+      213: -5179194416291367171
+    second: Chika Sales Mascot sheet_12
+  - first:
+      213: -1147652273862321909
+    second: Chika Sales Mascot sheet_13
+  - first:
+      213: -7766387857101518178
+    second: Chika Sales Mascot sheet_14
+  - first:
+      213: 4770996765344805454
+    second: Chika Sales Mascot sheet_15
+  - first:
+      213: -6986035976150298015
+    second: Chika Sales Mascot sheet_16
+  - first:
+      213: -2698240320791323226
+    second: Chika Sales Mascot sheet_17
+  - first:
+      213: 4448196608174064038
+    second: Chika Sales Mascot sheet_18
+  - first:
+      213: -2517341393988208285
+    second: Chika Sales Mascot sheet_19
+  - first:
+      213: 7437659804274299519
+    second: Chika Sales Mascot sheet_20
+  - first:
+      213: -4203713728819533630
+    second: Chika Sales Mascot sheet_21
+  - first:
+      213: -5374897045995041676
+    second: Chika Sales Mascot sheet_22
+  - first:
+      213: 4070907260839429392
+    second: Chika Sales Mascot sheet_23
+  - first:
+      213: 3083641813008683936
+    second: Chika Sales Mascot sheet_24
+  - first:
+      213: -2463388958927899991
+    second: Chika Sales Mascot sheet_25
+  - first:
+      213: -7150302307566304558
+    second: Chika Sales Mascot sheet_26
+  - first:
+      213: -213340307341519369
+    second: Chika Sales Mascot sheet_27
+  - first:
+      213: 6089585472473807689
+    second: Chika Sales Mascot sheet_28
+  - first:
+      213: -7061031460765600743
+    second: Chika Sales Mascot sheet_29
+  - first:
+      213: 2125117153886284537
+    second: Chika Sales Mascot sheet_30
+  - first:
+      213: 7982922855665711635
+    second: Chika Sales Mascot sheet_31
+  - first:
+      213: -1609731985139721946
+    second: Chika Sales Mascot sheet_32
+  - first:
+      213: -7935426051512788967
+    second: Chika Sales Mascot sheet_33
+  - first:
+      213: -5963184810516921447
+    second: Chika Sales Mascot sheet_34
+  - first:
+      213: -4859165281738472175
+    second: Chika Sales Mascot sheet_35
+  - first:
+      213: 3646248346547746242
+    second: Chika Sales Mascot sheet_36
+  - first:
+      213: 3568467826627582369
+    second: Chika Sales Mascot sheet_37
+  - first:
+      213: 3548355952613041041
+    second: Chika Sales Mascot sheet_38
+  - first:
+      213: 8317306599737594684
+    second: Chika Sales Mascot sheet_39
+  - first:
+      213: -7283180048746543611
+    second: Chika Sales Mascot sheet_40
+  - first:
+      213: 7586986144041195819
+    second: Chika Sales Mascot sheet_41
+  - first:
+      213: 3403328172397856505
+    second: Chika Sales Mascot sheet_42
+  - first:
+      213: -813518782690430627
+    second: Chika Sales Mascot sheet_43
+  - first:
+      213: 2498119644028363012
+    second: Chika Sales Mascot sheet_44
+  - first:
+      213: -3106614350480690620
+    second: Chika Sales Mascot sheet_45
+  - first:
+      213: -4108178309758997531
+    second: Chika Sales Mascot sheet_46
+  - first:
+      213: 1169477001180714200
+    second: Chika Sales Mascot sheet_47
+  - first:
+      213: 233818290782512464
+    second: Chika Sales Mascot sheet_48
+  - first:
+      213: -6573289479398310566
+    second: Chika Sales Mascot sheet_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edce094320a6a59c0800000000000000
+      internalID: -3937718366477685538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1231b1ad3532700800000000000000
+      internalID: 514346978672583077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0578542fe6dbd70800000000000000
+      internalID: 9060520012166942935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1983ab08f9114050800000000000000
+      internalID: 5782931949658278175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eac06a569bfbda80800000000000000
+      internalID: -8440876453395903776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_5
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 127
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb67fe6b45b759b0800000000000000
+      internalID: -5091401518130172981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777ff29c5d1c133d0800000000000000
+      internalID: -3228586333900376201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 127
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdcb7a3d434146e0800000000000000
+      internalID: -1855127572527198729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 127
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2920db0c589a7f270800000000000000
+      internalID: 8284276431500673682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_9
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 127
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bb1922cb9b2320e0800000000000000
+      internalID: -2295943437051421767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_10
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 127
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8bbea260eb8f590800000000000000
+      internalID: -7640147834134873924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_11
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 127
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8997d0412cc9320800000000000000
+      internalID: 2566139279075547298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_12
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 127
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df634427e1ecf18b0800000000000000
+      internalID: -5179194416291367171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_13
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 127
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0954c26658b210f0800000000000000
+      internalID: -1147652273862321909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_14
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 127
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a8e8d546f383490800000000000000
+      internalID: -7766387857101518178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_15
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e423aeeb74cf53240800000000000000
+      internalID: 4770996765344805454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 127
+        width: 23
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16256751b4d9c0f90800000000000000
+      internalID: -6986035976150298015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6add89069bced8ad0800000000000000
+      internalID: -2698240320791323226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a100516f3b2bbd30800000000000000
+      internalID: 4448196608174064038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36932f0f65b901dd0800000000000000
+      internalID: -2517341393988208285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 127
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7298f18f20e73760800000000000000
+      internalID: 7437659804274299519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_21
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 63
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c86748c2a869a5c0800000000000000
+      internalID: -4203713728819533630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_22
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 63
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c4b253d978865b0800000000000000
+      internalID: -5374897045995041676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_23
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 63
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01584ebc594ce7830800000000000000
+      internalID: 4070907260839429392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_24
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a39cee14eb4bca20800000000000000
+      internalID: 3083641813008683936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_25
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2bb7f1bc840ddd0800000000000000
+      internalID: -2463388958927899991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_26
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 63
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2cad86fe505cc90800000000000000
+      internalID: -7150302307566304558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_27
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 63
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5d2acee101a0df0800000000000000
+      internalID: -213340307341519369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_28
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 63
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b3e2429bd828450800000000000000
+      internalID: 6089585472473807689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_29
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91475312c4d220e90800000000000000
+      internalID: -7061031460765600743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_30
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa2b77caceed7d10800000000000000
+      internalID: 2125117153886284537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_31
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a3d49ba0a09ce60800000000000000
+      internalID: 7982922855665711635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_32
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629992ac94519a9e0800000000000000
+      internalID: -1609731985139721946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_33
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9181332cc04bfd190800000000000000
+      internalID: -7935426051512788967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_34
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993422752038e3da0800000000000000
+      internalID: -5963184810516921447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_35
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 63
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1154115dbe6c09cb0800000000000000
+      internalID: -4859165281738472175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_36
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 63
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c575d27d831a9230800000000000000
+      internalID: 3646248346547746242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 63
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a91c8ee49eb58130800000000000000
+      internalID: 3568467826627582369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 193a42c50fa4e3130800000000000000
+      internalID: 3548355952613041041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 63
+        width: 27
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c331f5519420d6370800000000000000
+      internalID: 8317306599737594684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 63
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50600476552fcea90800000000000000
+      internalID: -7283180048746543611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 63
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29d26f43b36a4960800000000000000
+      internalID: 7586986144041195819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_42
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 0
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f68ad1f0fc0b3f20800000000000000
+      internalID: 3403328172397856505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_43
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 0
+        width: 22
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51f0a33afcc5b4f0800000000000000
+      internalID: -813518782690430627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_44
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4016cb4a49a1ba220800000000000000
+      internalID: 2498119644028363012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_45
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 22
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442b77135b613e4d0800000000000000
+      internalID: -3106614350480690620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_46
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eba9d4e791dcf6c0800000000000000
+      internalID: -4108178309758997531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_47
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 0
+        width: 22
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d49d5ce221da3010800000000000000
+      internalID: 1169477001180714200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_48
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 0
+        width: 25
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055a4142f70be3300800000000000000
+      internalID: 233818290782512464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chika Sales Mascot sheet_49
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5db6a69b0cf6c4a0800000000000000
+      internalID: -6573289479398310566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chika Sales Mascot sheet_0: -3937718366477685538
+      Chika Sales Mascot sheet_1: 514346978672583077
+      Chika Sales Mascot sheet_10: -7640147834134873924
+      Chika Sales Mascot sheet_11: 2566139279075547298
+      Chika Sales Mascot sheet_12: -5179194416291367171
+      Chika Sales Mascot sheet_13: -1147652273862321909
+      Chika Sales Mascot sheet_14: -7766387857101518178
+      Chika Sales Mascot sheet_15: 4770996765344805454
+      Chika Sales Mascot sheet_16: -6986035976150298015
+      Chika Sales Mascot sheet_17: -2698240320791323226
+      Chika Sales Mascot sheet_18: 4448196608174064038
+      Chika Sales Mascot sheet_19: -2517341393988208285
+      Chika Sales Mascot sheet_2: 9060520012166942935
+      Chika Sales Mascot sheet_20: 7437659804274299519
+      Chika Sales Mascot sheet_21: -4203713728819533630
+      Chika Sales Mascot sheet_22: -5374897045995041676
+      Chika Sales Mascot sheet_23: 4070907260839429392
+      Chika Sales Mascot sheet_24: 3083641813008683936
+      Chika Sales Mascot sheet_25: -2463388958927899991
+      Chika Sales Mascot sheet_26: -7150302307566304558
+      Chika Sales Mascot sheet_27: -213340307341519369
+      Chika Sales Mascot sheet_28: 6089585472473807689
+      Chika Sales Mascot sheet_29: -7061031460765600743
+      Chika Sales Mascot sheet_3: 5782931949658278175
+      Chika Sales Mascot sheet_30: 2125117153886284537
+      Chika Sales Mascot sheet_31: 7982922855665711635
+      Chika Sales Mascot sheet_32: -1609731985139721946
+      Chika Sales Mascot sheet_33: -7935426051512788967
+      Chika Sales Mascot sheet_34: -5963184810516921447
+      Chika Sales Mascot sheet_35: -4859165281738472175
+      Chika Sales Mascot sheet_36: 3646248346547746242
+      Chika Sales Mascot sheet_37: 3568467826627582369
+      Chika Sales Mascot sheet_38: 3548355952613041041
+      Chika Sales Mascot sheet_39: 8317306599737594684
+      Chika Sales Mascot sheet_4: -8440876453395903776
+      Chika Sales Mascot sheet_40: -7283180048746543611
+      Chika Sales Mascot sheet_41: 7586986144041195819
+      Chika Sales Mascot sheet_42: 3403328172397856505
+      Chika Sales Mascot sheet_43: -813518782690430627
+      Chika Sales Mascot sheet_44: 2498119644028363012
+      Chika Sales Mascot sheet_45: -3106614350480690620
+      Chika Sales Mascot sheet_46: -4108178309758997531
+      Chika Sales Mascot sheet_47: 1169477001180714200
+      Chika Sales Mascot sheet_48: 233818290782512464
+      Chika Sales Mascot sheet_49: -6573289479398310566
+      Chika Sales Mascot sheet_5: -5091401518130172981
+      Chika Sales Mascot sheet_6: -3228586333900376201
+      Chika Sales Mascot sheet_7: -1855127572527198729
+      Chika Sales Mascot sheet_8: 8284276431500673682
+      Chika Sales Mascot sheet_9: -2295943437051421767
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 53b8d1de90386e34d823542d913b797f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1090005591307386374
+    second: Yoga Lady sheet_0
+  - first:
+      213: 5232444382206162250
+    second: Yoga Lady sheet_1
+  - first:
+      213: 3359637271336451541
+    second: Yoga Lady sheet_2
+  - first:
+      213: 3502488949388230326
+    second: Yoga Lady sheet_3
+  - first:
+      213: 6628828549101118001
+    second: Yoga Lady sheet_4
+  - first:
+      213: -249899405771866370
+    second: Yoga Lady sheet_5
+  - first:
+      213: 7888986313533580660
+    second: Yoga Lady sheet_6
+  - first:
+      213: 7065052798215945039
+    second: Yoga Lady sheet_7
+  - first:
+      213: -1736217248947545990
+    second: Yoga Lady sheet_8
+  - first:
+      213: -4530574909304260019
+    second: Yoga Lady sheet_9
+  - first:
+      213: 8050305253619722339
+    second: Yoga Lady sheet_10
+  - first:
+      213: 3399298202937583090
+    second: Yoga Lady sheet_11
+  - first:
+      213: -619513654355914363
+    second: Yoga Lady sheet_12
+  - first:
+      213: -8176136071137103752
+    second: Yoga Lady sheet_13
+  - first:
+      213: -2217103365223116363
+    second: Yoga Lady sheet_14
+  - first:
+      213: -7196334799390570546
+    second: Yoga Lady sheet_15
+  - first:
+      213: 8996104374974527219
+    second: Yoga Lady sheet_16
+  - first:
+      213: -4791157816911930597
+    second: Yoga Lady sheet_17
+  - first:
+      213: -7706603196465037881
+    second: Yoga Lady sheet_18
+  - first:
+      213: 1182645406277454313
+    second: Yoga Lady sheet_19
+  - first:
+      213: 1057756209616878904
+    second: Yoga Lady sheet_20
+  - first:
+      213: -6720893845878643855
+    second: Yoga Lady sheet_21
+  - first:
+      213: -7012470586864992173
+    second: Yoga Lady sheet_22
+  - first:
+      213: 8008473663492187737
+    second: Yoga Lady sheet_23
+  - first:
+      213: 7545951877383390403
+    second: Yoga Lady sheet_24
+  - first:
+      213: -223857307452734552
+    second: Yoga Lady sheet_25
+  - first:
+      213: 5004505924441743561
+    second: Yoga Lady sheet_26
+  - first:
+      213: -6970661774123732170
+    second: Yoga Lady sheet_27
+  - first:
+      213: -1981463548243167332
+    second: Yoga Lady sheet_28
+  - first:
+      213: -2858062985822287282
+    second: Yoga Lady sheet_29
+  - first:
+      213: -3630788072347964612
+    second: Yoga Lady sheet_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yoga Lady sheet_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 191
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ef0196f4a702f00800000000000000
+      internalID: 1090005591307386374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 191
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45f26461706d9840800000000000000
+      internalID: 5232444382206162250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 191
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ddfb245c44df9e20800000000000000
+      internalID: 3359637271336451541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 191
+        width: 37
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be340a74275b9030800000000000000
+      internalID: 3502488949388230326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 191
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132e322c1745efb50800000000000000
+      internalID: 6628828549101118001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 191
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efef26180dd288cf0800000000000000
+      internalID: -249899405771866370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 191
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4756618214f4b7d60800000000000000
+      internalID: 7888986313533580660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_7
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 191
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b7a05761c1c0260800000000000000
+      internalID: 7065052798215945039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 127
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7853976c97b7e7e0800000000000000
+      internalID: -1736217248947545990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 127
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a3f9ebf1a2021c0800000000000000
+      internalID: -4530574909304260019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_10
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 127
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368e67fc9fd68bf60800000000000000
+      internalID: 8050305253619722339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 127
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5e7bf84bbbc2f20800000000000000
+      internalID: 3399298202937583090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_12
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 127
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5819c9a1d9b0767f0800000000000000
+      internalID: -619513654355914363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_13
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 127
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8707d94ff87888e80800000000000000
+      internalID: -8176136071137103752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_14
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 127
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b19d8d6c344b31e0800000000000000
+      internalID: -2217103365223116363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 127
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec70b85b0ab712c90800000000000000
+      internalID: -7196334799390570546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 63
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6b1b0044598dc70800000000000000
+      internalID: 8996104374974527219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_17
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 63
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bd024a953628db0800000000000000
+      internalID: -4791157816911930597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_18
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 63
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdbfc16935ac0590800000000000000
+      internalID: -7706603196465037881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_19
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 63
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e94a682bb9996010800000000000000
+      internalID: 1182645406277454313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_20
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 63
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d7d2d1ba7edae00800000000000000
+      internalID: 1057756209616878904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_21
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 63
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1736b4fe7a69ab2a0800000000000000
+      internalID: -6720893845878643855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_22
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 63
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3508908a723beae90800000000000000
+      internalID: -7012470586864992173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_23
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 63
+        width: 37
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956e581cd50d32f60800000000000000
+      internalID: 8008473663492187737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_24
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c401a7904b98b860800000000000000
+      internalID: 7545951877383390403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a387e407f2b4ecf0800000000000000
+      internalID: -223857307452734552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_26
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c020be8f93937540800000000000000
+      internalID: 5004505924441743561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_27
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633f5ff6c0c334f90800000000000000
+      internalID: -6970661774123732170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_28
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97b49fa66d6084e0800000000000000
+      internalID: -1981463548243167332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_29
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ace586bde1658d0800000000000000
+      internalID: -2858062985822287282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yoga Lady sheet_30
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 0
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b69f42c79dc9dc0800000000000000
+      internalID: -3630788072347964612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Yoga Lady sheet_0: 1090005591307386374
+      Yoga Lady sheet_1: 5232444382206162250
+      Yoga Lady sheet_10: 8050305253619722339
+      Yoga Lady sheet_11: 3399298202937583090
+      Yoga Lady sheet_12: -619513654355914363
+      Yoga Lady sheet_13: -8176136071137103752
+      Yoga Lady sheet_14: -2217103365223116363
+      Yoga Lady sheet_15: -7196334799390570546
+      Yoga Lady sheet_16: 8996104374974527219
+      Yoga Lady sheet_17: -4791157816911930597
+      Yoga Lady sheet_18: -7706603196465037881
+      Yoga Lady sheet_19: 1182645406277454313
+      Yoga Lady sheet_2: 3359637271336451541
+      Yoga Lady sheet_20: 1057756209616878904
+      Yoga Lady sheet_21: -6720893845878643855
+      Yoga Lady sheet_22: -7012470586864992173
+      Yoga Lady sheet_23: 8008473663492187737
+      Yoga Lady sheet_24: 7545951877383390403
+      Yoga Lady sheet_25: -223857307452734552
+      Yoga Lady sheet_26: 5004505924441743561
+      Yoga Lady sheet_27: -6970661774123732170
+      Yoga Lady sheet_28: -1981463548243167332
+      Yoga Lady sheet_29: -2858062985822287282
+      Yoga Lady sheet_3: 3502488949388230326
+      Yoga Lady sheet_30: -3630788072347964612
+      Yoga Lady sheet_4: 6628828549101118001
+      Yoga Lady sheet_5: -249899405771866370
+      Yoga Lady sheet_6: 7888986313533580660
+      Yoga Lady sheet_7: 7065052798215945039
+      Yoga Lady sheet_8: -1736217248947545990
+      Yoga Lady sheet_9: -4530574909304260019
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

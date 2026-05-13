@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 2ab3b63996442414ca849b05f62e38f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5739741768448615732
+    second: SWAT sheet_0
+  - first:
+      213: 127301137674177977
+    second: SWAT sheet_1
+  - first:
+      213: -4595004044082835816
+    second: SWAT sheet_2
+  - first:
+      213: 3362737212671947377
+    second: SWAT sheet_3
+  - first:
+      213: -6532418333186587056
+    second: SWAT sheet_4
+  - first:
+      213: 2900901392041542834
+    second: SWAT sheet_5
+  - first:
+      213: -7421726157920580319
+    second: SWAT sheet_6
+  - first:
+      213: -4063414256736308259
+    second: SWAT sheet_7
+  - first:
+      213: -8714198238539469405
+    second: SWAT sheet_8
+  - first:
+      213: 3048929115013255825
+    second: SWAT sheet_9
+  - first:
+      213: -8861176942478623398
+    second: SWAT sheet_10
+  - first:
+      213: -5989910682740415871
+    second: SWAT sheet_11
+  - first:
+      213: 523846996545525176
+    second: SWAT sheet_12
+  - first:
+      213: -6696120246660481396
+    second: SWAT sheet_13
+  - first:
+      213: -2504831448840025730
+    second: SWAT sheet_14
+  - first:
+      213: 3199602273104358096
+    second: SWAT sheet_15
+  - first:
+      213: -8881875205985604159
+    second: SWAT sheet_16
+  - first:
+      213: -5827192278086643345
+    second: SWAT sheet_17
+  - first:
+      213: -1956545123611785428
+    second: SWAT sheet_18
+  - first:
+      213: -610800749217910090
+    second: SWAT sheet_19
+  - first:
+      213: 327357847972558071
+    second: SWAT sheet_20
+  - first:
+      213: 5723994898667428029
+    second: SWAT sheet_21
+  - first:
+      213: 7990878634588608926
+    second: SWAT sheet_22
+  - first:
+      213: -5981088561404112223
+    second: SWAT sheet_23
+  - first:
+      213: -8972537340687396984
+    second: SWAT sheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SWAT sheet_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 191
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4352ada5ab8a7af40800000000000000
+      internalID: 5739741768448615732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 191
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd8292d5b344c100800000000000000
+      internalID: 127301137674177977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 191
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89e85f2da244b30c0800000000000000
+      internalID: -4595004044082835816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 191
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1727c4aada7daae20800000000000000
+      internalID: 3362737212671947377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 191
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0560a2ed2203855a0800000000000000
+      internalID: -6532418333186587056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b482194272124820800000000000000
+      internalID: 2900901392041542834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_6
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 127
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d4be0a16bb00990800000000000000
+      internalID: -7421726157920580319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd379fb234adb97c0800000000000000
+      internalID: -4063414256736308259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 127
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad25813fd2f01780800000000000000
+      internalID: -8714198238539469405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_9
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 127
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19216bd40e8ff4a20800000000000000
+      internalID: 3048929115013255825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 63
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5dfda3f486c60580800000000000000
+      internalID: -8861176942478623398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 63
+        width: 39
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182a0fe48ff8fdca0800000000000000
+      internalID: -5989910682740415871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_12
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 63
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b550c16114154700800000000000000
+      internalID: 523846996545525176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_13
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 63
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e308cfc1a9213a0800000000000000
+      internalID: -6696120246660481396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_14
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 63
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79c9a5811d0d3dd0800000000000000
+      internalID: -2504831448840025730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 63
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0daeaeea055476c20800000000000000
+      internalID: 3199602273104358096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_16
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 63
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cde0efee8d3db480800000000000000
+      internalID: -8881875205985604159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_17
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 64
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f611fb23f77a12fa0800000000000000
+      internalID: -5827192278086643345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 37
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27c8188394f8d4e0800000000000000
+      internalID: -1956545123611785428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_19
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2f25a64fff587f0800000000000000
+      internalID: -610800749217910090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f437d27a320b8400800000000000000
+      internalID: 327357847972558071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_21
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db858378807bf6f40800000000000000
+      internalID: 5723994898667428029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9999e9d7cd45ee60800000000000000
+      internalID: 7990878634588608926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_23
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 48
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a21b5f74a7eefca0800000000000000
+      internalID: -5981088561404112223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SWAT sheet_24
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f4662c3d42b7380800000000000000
+      internalID: -8972537340687396984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SWAT sheet_0: 5739741768448615732
+      SWAT sheet_1: 127301137674177977
+      SWAT sheet_10: -8861176942478623398
+      SWAT sheet_11: -5989910682740415871
+      SWAT sheet_12: 523846996545525176
+      SWAT sheet_13: -6696120246660481396
+      SWAT sheet_14: -2504831448840025730
+      SWAT sheet_15: 3199602273104358096
+      SWAT sheet_16: -8881875205985604159
+      SWAT sheet_17: -5827192278086643345
+      SWAT sheet_18: -1956545123611785428
+      SWAT sheet_19: -610800749217910090
+      SWAT sheet_2: -4595004044082835816
+      SWAT sheet_20: 327357847972558071
+      SWAT sheet_21: 5723994898667428029
+      SWAT sheet_22: 7990878634588608926
+      SWAT sheet_23: -5981088561404112223
+      SWAT sheet_24: -8972537340687396984
+      SWAT sheet_3: 3362737212671947377
+      SWAT sheet_4: -6532418333186587056
+      SWAT sheet_5: 2900901392041542834
+      SWAT sheet_6: -7421726157920580319
+      SWAT sheet_7: -4063414256736308259
+      SWAT sheet_8: -8714198238539469405
+      SWAT sheet_9: 3048929115013255825
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

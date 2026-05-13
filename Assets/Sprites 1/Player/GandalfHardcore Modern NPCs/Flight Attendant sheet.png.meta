@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: c9729b8ebc867a447b438374b2640578
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6432078707985410651
+    second: Flight Attendant sheet_0
+  - first:
+      213: -5596483335677670966
+    second: Flight Attendant sheet_1
+  - first:
+      213: 9022887042775742331
+    second: Flight Attendant sheet_2
+  - first:
+      213: -2115430017850045364
+    second: Flight Attendant sheet_3
+  - first:
+      213: -948607914431014491
+    second: Flight Attendant sheet_4
+  - first:
+      213: 2005719138711896120
+    second: Flight Attendant sheet_5
+  - first:
+      213: 2505929455608652896
+    second: Flight Attendant sheet_6
+  - first:
+      213: 1231401724577396857
+    second: Flight Attendant sheet_7
+  - first:
+      213: -8626093340389147362
+    second: Flight Attendant sheet_8
+  - first:
+      213: 4466313952134585527
+    second: Flight Attendant sheet_9
+  - first:
+      213: 2919067276460538491
+    second: Flight Attendant sheet_10
+  - first:
+      213: 3567126513084372907
+    second: Flight Attendant sheet_11
+  - first:
+      213: 5409185460121726610
+    second: Flight Attendant sheet_12
+  - first:
+      213: 4544506367792045440
+    second: Flight Attendant sheet_13
+  - first:
+      213: 1091075043430037180
+    second: Flight Attendant sheet_14
+  - first:
+      213: 298620275481715708
+    second: Flight Attendant sheet_15
+  - first:
+      213: -2911801581177477285
+    second: Flight Attendant sheet_16
+  - first:
+      213: -1297830497256446254
+    second: Flight Attendant sheet_17
+  - first:
+      213: -840965389251383552
+    second: Flight Attendant sheet_18
+  - first:
+      213: 7506331476087167267
+    second: Flight Attendant sheet_19
+  - first:
+      213: 6376998471932633815
+    second: Flight Attendant sheet_20
+  - first:
+      213: 8620412102110165201
+    second: Flight Attendant sheet_21
+  - first:
+      213: -2074299265975527839
+    second: Flight Attendant sheet_22
+  - first:
+      213: 1353141208164513515
+    second: Flight Attendant sheet_23
+  - first:
+      213: -5096077101870826430
+    second: Flight Attendant sheet_24
+  - first:
+      213: -4984709925393140699
+    second: Flight Attendant sheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flight Attendant sheet_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 191
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a51d236e7aacb6a0800000000000000
+      internalID: -6432078707985410651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 191
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac90a81ce0c4552b0800000000000000
+      internalID: -5596483335677670966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 191
+        width: 16
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b777f19c5fbb73d70800000000000000
+      internalID: 9022887042775742331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_3
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 191
+        width: 16
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c89d65b9b74a2e0800000000000000
+      internalID: -2115430017850045364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_4
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 191
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a91735b02ed5d2f0800000000000000
+      internalID: -948607914431014491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 127
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 830002e0eeeb5db10800000000000000
+      internalID: 2005719138711896120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 127
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064edb91099d6c220800000000000000
+      internalID: 2505929455608652896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 127
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9783d312851d61110800000000000000
+      internalID: 1231401724577396857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_8
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 127
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dfdb65fc5f94880800000000000000
+      internalID: -8626093340389147362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_9
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 127
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc5a5c30e88bfd30800000000000000
+      internalID: 4466313952134585527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_10
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 63
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ab5e8d83c928820800000000000000
+      internalID: 2919067276460538491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_11
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 63
+        width: 21
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba795490aaaf08130800000000000000
+      internalID: 3567126513084372907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_12
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 63
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e63c25489411b40800000000000000
+      internalID: 5409185460121726610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_13
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 63
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ddeb3b674511f30800000000000000
+      internalID: 4544506367792045440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_14
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 63
+        width: 20
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6f0f2a8f6442f00800000000000000
+      internalID: 1091075043430037180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_15
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 63
+        width: 18
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf321d2fe89e42400800000000000000
+      internalID: 298620275481715708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_16
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 63
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57ee79a3e33797d0800000000000000
+      internalID: -2911801581177477285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_17
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 63
+        width: 16
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d66c58f90e2dfde0800000000000000
+      internalID: -1297830497256446254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fe5412f6a4454f0800000000000000
+      internalID: -840965389251383552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_19
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329528e05b8db2860800000000000000
+      internalID: 7506331476087167267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_20
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2e0ccc256af7850800000000000000
+      internalID: 6376998471932633815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_21
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d831cb422bd1a770800000000000000
+      internalID: 8620412102110165201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_22
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166dca5cecb9633e0800000000000000
+      internalID: -2074299265975527839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_23
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6b69372c257c210800000000000000
+      internalID: 1353141208164513515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_24
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24cbcf240e81749b0800000000000000
+      internalID: -5096077101870826430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flight Attendant sheet_25
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 0
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524f394abb0c2dab0800000000000000
+      internalID: -4984709925393140699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Flight Attendant sheet_0: -6432078707985410651
+      Flight Attendant sheet_1: -5596483335677670966
+      Flight Attendant sheet_10: 2919067276460538491
+      Flight Attendant sheet_11: 3567126513084372907
+      Flight Attendant sheet_12: 5409185460121726610
+      Flight Attendant sheet_13: 4544506367792045440
+      Flight Attendant sheet_14: 1091075043430037180
+      Flight Attendant sheet_15: 298620275481715708
+      Flight Attendant sheet_16: -2911801581177477285
+      Flight Attendant sheet_17: -1297830497256446254
+      Flight Attendant sheet_18: -840965389251383552
+      Flight Attendant sheet_19: 7506331476087167267
+      Flight Attendant sheet_2: 9022887042775742331
+      Flight Attendant sheet_20: 6376998471932633815
+      Flight Attendant sheet_21: 8620412102110165201
+      Flight Attendant sheet_22: -2074299265975527839
+      Flight Attendant sheet_23: 1353141208164513515
+      Flight Attendant sheet_24: -5096077101870826430
+      Flight Attendant sheet_25: -4984709925393140699
+      Flight Attendant sheet_3: -2115430017850045364
+      Flight Attendant sheet_4: -948607914431014491
+      Flight Attendant sheet_5: 2005719138711896120
+      Flight Attendant sheet_6: 2505929455608652896
+      Flight Attendant sheet_7: 1231401724577396857
+      Flight Attendant sheet_8: -8626093340389147362
+      Flight Attendant sheet_9: 4466313952134585527
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

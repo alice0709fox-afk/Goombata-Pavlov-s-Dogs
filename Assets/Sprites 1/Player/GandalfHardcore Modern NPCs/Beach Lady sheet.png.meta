@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: e463777f7d815ce459f62c8f5ddb444d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6413422870376557094
+    second: Beach Lady sheet_0
+  - first:
+      213: 4030041537556838267
+    second: Beach Lady sheet_1
+  - first:
+      213: -1448210108648153821
+    second: Beach Lady sheet_2
+  - first:
+      213: 2057138690741596216
+    second: Beach Lady sheet_3
+  - first:
+      213: 4701332730643433013
+    second: Beach Lady sheet_4
+  - first:
+      213: -6693747685751258693
+    second: Beach Lady sheet_5
+  - first:
+      213: 5956559241982504679
+    second: Beach Lady sheet_6
+  - first:
+      213: -7952972789724796355
+    second: Beach Lady sheet_7
+  - first:
+      213: 2297991920082840837
+    second: Beach Lady sheet_8
+  - first:
+      213: 8785331180987810855
+    second: Beach Lady sheet_9
+  - first:
+      213: 6033030076153061550
+    second: Beach Lady sheet_10
+  - first:
+      213: -2749580637013219092
+    second: Beach Lady sheet_11
+  - first:
+      213: -7360306855150259966
+    second: Beach Lady sheet_12
+  - first:
+      213: -4509687749360606760
+    second: Beach Lady sheet_13
+  - first:
+      213: -6540140204830603289
+    second: Beach Lady sheet_14
+  - first:
+      213: 7884932503530403863
+    second: Beach Lady sheet_15
+  - first:
+      213: -4308253329251490075
+    second: Beach Lady sheet_16
+  - first:
+      213: 8953394574669105833
+    second: Beach Lady sheet_17
+  - first:
+      213: 4277182991002986242
+    second: Beach Lady sheet_18
+  - first:
+      213: 8645360484303647211
+    second: Beach Lady sheet_19
+  - first:
+      213: -282602359627432486
+    second: Beach Lady sheet_20
+  - first:
+      213: -4889351624492682386
+    second: Beach Lady sheet_21
+  - first:
+      213: -5947119466201825361
+    second: Beach Lady sheet_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beach Lady sheet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a292fee1e010950800000000000000
+      internalID: 6413422870376557094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77f4242d659de730800000000000000
+      internalID: 4030041537556838267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d95e1449ce6ebe0800000000000000
+      internalID: -1448210108648153821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8307d537dbc6c8c10800000000000000
+      internalID: 2057138690741596216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 63
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5364be4b53d7e3140800000000000000
+      internalID: 4701332730643433013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 63
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb104bed1f70b13a0800000000000000
+      internalID: -6693747685751258693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_6
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 63
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eeefe54213f9a250800000000000000
+      internalID: 5956559241982504679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 63
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a2b18626d51a190800000000000000
+      internalID: -7952972789724796355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_8
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 63
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d614dd97b14ef10800000000000000
+      internalID: 2297991920082840837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_9
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72401f49924cbe970800000000000000
+      internalID: 8785331180987810855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_10
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0e950d3e0a9b350800000000000000
+      internalID: 6033030076153061550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_11
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8e8818af687d9d0800000000000000
+      internalID: -2749580637013219092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_12
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 63
+        width: 22
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20175ec69efead990800000000000000
+      internalID: -7360306855150259966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_13
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 0
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d12e63a2ee5a61c0800000000000000
+      internalID: -4509687749360606760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_14
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e742d58221cc35a0800000000000000
+      internalID: -6540140204830603289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_15
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 0
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7187cd6f558ec6d60800000000000000
+      internalID: 7884932503530403863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_16
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e622935c620634c0800000000000000
+      internalID: -4308253329251490075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_17
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aacf05bde8d04c70800000000000000
+      internalID: 8953394574669105833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_18
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2076312d44b9b5b30800000000000000
+      internalID: 4277182991002986242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_19
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be13e1e2e8d7af770800000000000000
+      internalID: 8645360484303647211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_20
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 0
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add38b5b6aef31cf0800000000000000
+      internalID: -282602359627432486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_21
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 0
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6372283a98852cb0800000000000000
+      internalID: -4889351624492682386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach Lady sheet_22
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 0
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafba3cca56977da0800000000000000
+      internalID: -5947119466201825361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Beach Lady sheet_0: 6413422870376557094
+      Beach Lady sheet_1: 4030041537556838267
+      Beach Lady sheet_10: 6033030076153061550
+      Beach Lady sheet_11: -2749580637013219092
+      Beach Lady sheet_12: -7360306855150259966
+      Beach Lady sheet_13: -4509687749360606760
+      Beach Lady sheet_14: -6540140204830603289
+      Beach Lady sheet_15: 7884932503530403863
+      Beach Lady sheet_16: -4308253329251490075
+      Beach Lady sheet_17: 8953394574669105833
+      Beach Lady sheet_18: 4277182991002986242
+      Beach Lady sheet_19: 8645360484303647211
+      Beach Lady sheet_2: -1448210108648153821
+      Beach Lady sheet_20: -282602359627432486
+      Beach Lady sheet_21: -4889351624492682386
+      Beach Lady sheet_22: -5947119466201825361
+      Beach Lady sheet_3: 2057138690741596216
+      Beach Lady sheet_4: 4701332730643433013
+      Beach Lady sheet_5: -6693747685751258693
+      Beach Lady sheet_6: 5956559241982504679
+      Beach Lady sheet_7: -7952972789724796355
+      Beach Lady sheet_8: 2297991920082840837
+      Beach Lady sheet_9: 8785331180987810855
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
