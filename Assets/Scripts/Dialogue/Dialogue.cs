@@ -15,6 +15,7 @@ public class Dialogue : MonoBehaviour
   public float writingSpeed;
   [SerializeField] private GameObject transitionObjectOnEnd;
   [SerializeField] private GameObject triggerObjectOnEnd;
+  [SerializeField] private string fallbackTransitionObjectName = "transition";
   [SerializeField] private string sceneToLoadOnEnd;
   [SerializeField] private string sceneSpawnPointName = "TargetSpawnPointName";
   [SerializeField] private bool allowRestartAfterEnd;
@@ -28,6 +29,7 @@ public class Dialogue : MonoBehaviour
 
     private void Awake()
     {
+      ResolveEndObjects();
         ToggleIndicator(false);
         ToggleWindow(false);
 
@@ -88,6 +90,7 @@ public class Dialogue : MonoBehaviour
 
     public void EndDialogue()
     {
+      ResolveEndObjects();
       dialogueActive = false;
 
       if (allowRestartAfterEnd)
@@ -114,6 +117,14 @@ public class Dialogue : MonoBehaviour
         }
 
         DialogueEnded?.Invoke();
+    }
+
+    private void ResolveEndObjects()
+    {
+      if (transitionObjectOnEnd == null && !string.IsNullOrWhiteSpace(fallbackTransitionObjectName))
+      {
+        transitionObjectOnEnd = GameObject.Find(fallbackTransitionObjectName);
+      }
     }
 
   IEnumerator Writing()

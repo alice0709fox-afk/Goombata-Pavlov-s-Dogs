@@ -14,8 +14,13 @@ public class BidirectionalCameraSwitchTrigger2D : MonoBehaviour
     [Header("Cameras")]
     [SerializeField] private CinemachineVirtualCameraBase negativeSideCamera;
     [SerializeField] private CinemachineVirtualCameraBase positiveSideCamera;
+    [SerializeField] private CinemachineVirtualCameraBase[] additionalCamerasToDeactivate;
     [SerializeField] private int activePriority = 20;
     [SerializeField] private int inactivePriority = 10;
+
+    [Header("Startup")]
+    [SerializeField] private bool forceCameraOnStart;
+    [SerializeField] private CinemachineVirtualCameraBase startupActiveCamera;
 
     [Header("Direction")]
     [SerializeField] private SwitchAxis axis = SwitchAxis.Horizontal;
@@ -32,6 +37,16 @@ public class BidirectionalCameraSwitchTrigger2D : MonoBehaviour
     {
         _trigger = GetComponent<Collider2D>();
         _trigger.isTrigger = true;
+    }
+
+    private void Start()
+    {
+        if (!forceCameraOnStart || startupActiveCamera == null)
+        {
+            return;
+        }
+
+        ApplySwitch(startupActiveCamera);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -85,10 +100,31 @@ public class BidirectionalCameraSwitchTrigger2D : MonoBehaviour
         {
             positiveSideCamera.Priority = activePriority;
             negativeSideCamera.Priority = inactivePriority;
+            DeactivateAdditionalCameras();
             return;
         }
 
         negativeSideCamera.Priority = activePriority;
         positiveSideCamera.Priority = inactivePriority;
+        DeactivateAdditionalCameras();
+    }
+
+    private void DeactivateAdditionalCameras()
+    {
+        if (additionalCamerasToDeactivate == null || additionalCamerasToDeactivate.Length == 0)
+        {
+            return;
+        }
+
+        for (var i = 0; i < additionalCamerasToDeactivate.Length; i++)
+        {
+            var camera = additionalCamerasToDeactivate[i];
+            if (camera == null)
+            {
+                continue;
+            }
+
+            camera.Priority = inactivePriority;
+        }
     }
 }
