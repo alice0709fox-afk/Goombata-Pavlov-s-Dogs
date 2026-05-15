@@ -1,27 +1,27 @@
 ﻿<Solution>
-  <Project Path="Unity.2D.Aseprite.Editor.csproj" />
   <Project Path="Unity.2D.Psdimporter.Editor.csproj" />
-  <Project Path="Unity.2D.IK.Runtime.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Unity.2D.SpriteShape.Editor.csproj" />
-  <Project Path="Unity.2D.Animation.Editor.csproj" />
+  <Project Path="Unity.2D.Aseprite.Editor.csproj" />
   <Project Path="Unity.2D.SpriteShape.Runtime.csproj" />
-  <Project Path="Unity.2D.Tilemap.Extras.Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="PsdPlugin.csproj" />
   <Project Path="Unity.2D.IK.Editor.csproj" />
-  <Project Path="Unity.2D.Tooling.Editor.csproj" />
   <Project Path="Unity.InternalAPIEditorBridge.001.csproj" />
+  <Project Path="Unity.2D.Tooling.Editor.csproj" />
   <Project Path="CFXRRuntime.csproj" />
+  <Project Path="Unity.2D.Animation.Editor.csproj" />
   <Project Path="Unity.2D.Aseprite.EditorTests.csproj" />
-  <Project Path="CFXRDemo.csproj" />
+  <Project Path="Unity.2D.Tilemap.Extras.Editor.csproj" />
   <Project Path="CFXREditor.csproj" />
-  <Project Path="Unity.2D.Animation.EditorTests.csproj" />
   <Project Path="Unity.2D.Tilemap.Extras.csproj" />
   <Project Path="Unity.2D.Animation.Runtime.csproj" />
-  <Project Path="KinoBloom.Runtime.csproj" />
+  <Project Path="Unity.2D.IK.Runtime.csproj" />
   <Project Path="Unity.2D.Aseprite.Common.csproj" />
   <Project Path="CFXR.WelcomeScreen.csproj" />
+  <Project Path="CFXRDemo.csproj" />
   <Project Path="ToonyColorsPro.Demo.Editor.csproj" />
+  <Project Path="Unity.2D.Animation.EditorTests.csproj" />
+  <Project Path="KinoBloom.Runtime.csproj" />
   <Project Path="Unity.2D.SpriteShape.EditorTests.csproj" />
   <Project Path="Unity.2D.Psdimporter.EditorTests.csproj" />
 </Solution>
